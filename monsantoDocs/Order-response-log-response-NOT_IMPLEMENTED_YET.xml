@@ -1,0 +1,2378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<ag:outboundData xmlns:ag="urn:aggateway:names:ws:docexchange">
+			<ag:processStep>OrderResponseLogResponse</ag:processStep>
+			<ag:messageId/>
+			<ag:xmlPayload>
+				<urn:OrderResponseLogResponse xmlns:urn="urn:cidx:names:specification:ces:schema:all:5:3" Version="5.3">
+					<urn:Header>
+						<urn:ThisDocumentIdentifier>
+							<urn:DocumentIdentifier>m3BsEPRkuZJi02qQKDR15g==</urn:DocumentIdentifier>
+						</urn:ThisDocumentIdentifier>
+						<urn:ThisDocumentDateTime>
+							<urn:DateTime DateTimeQualifier="On">2019-06-28T23:23:46Z</urn:DateTime>
+						</urn:ThisDocumentDateTime>
+						<urn:From>
+							<urn:PartnerInformation>
+								<urn:PartnerName>MONSANTO AGRICULTURAL CO</urn:PartnerName>
+								<urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+							</urn:PartnerInformation>
+						</urn:From>
+						<urn:To>
+							<urn:PartnerInformation>
+								<urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+								<urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+								<urn:ContactInformation>
+									<urn:ContactName>DataSource</urn:ContactName>
+									<urn:ContactDescription>WS-XML</urn:ContactDescription>
+								</urn:ContactInformation>
+								<urn:ContactInformation>
+									<urn:ContactName>SoftwareVersion</urn:ContactName>
+									<urn:ContactDescription>1.0.0</urn:ContactDescription>
+								</urn:ContactInformation>
+								<urn:ContactInformation>
+									<urn:ContactName>SeedYear</urn:ContactName>
+									<urn:ContactDescription>2019</urn:ContactDescription>
+								</urn:ContactInformation>
+							</urn:PartnerInformation>
+						</urn:To>
+					</urn:Header>
+					<urn:OrderResponseLogResponseBody>
+						<urn:OrderResponseLogResponseProperties>
+							<urn:CurrencyCode Domain="ISO-4217">USD</urn:CurrencyCode>
+							<urn:LanguageCode Domain="ISO-639-2T">Eng</urn:LanguageCode>
+							<urn:LastRequestDate>
+								<urn:DateTime DateTimeQualifier="On">2019-06-28T23:23:46Z</urn:DateTime>
+							</urn:LastRequestDate>
+							<urn:ZoneID>0</urn:ZoneID>
+							<urn:ProductClassification>0</urn:ProductClassification>
+						</urn:OrderResponseLogResponseProperties>
+						<urn:OrderResponseLogResponsePartners>
+							<urn:Buyer>
+								<urn:PartnerInformation>
+									<urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+									<urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+								</urn:PartnerInformation>
+							</urn:Buyer>
+							<urn:Seller>
+								<urn:PartnerInformation>
+									<urn:PartnerName>MONSANTO AGRICULTURAL CO</urn:PartnerName>
+									<urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+								</urn:PartnerInformation>
+							</urn:Seller>
+						</urn:OrderResponseLogResponsePartners>
+						<urn:OrderResponseLogResponseDetails>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Changed By Dealer</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; DEALER-STB2B-GO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580952880</urn:ProductIdentifier>
+									<urn:ProductName>DKC55-20RIB AR SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC55-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-06-28T17:02:59-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>10.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Changed By Dealer</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; DEALER-STB2B-GO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580952880</urn:ProductIdentifier>
+									<urn:ProductName>DKC55-20RIB AR SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC55-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-06-28T10:36:15-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed removal</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835305</urn:ProductIdentifier>
+									<urn:ProductName>DKC51-20RIB AR2 DGVT2P 80M BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC51-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-03-19T09:38:28-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Decrease</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>5.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835312</urn:ProductIdentifier>
+									<urn:ProductName>DKC51-20RIB AF2 DGVT2P 80M BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC51-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-03-19T09:38:28-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>10.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Changed By Dealer</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; DEALER-3350963-GO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580834872</urn:ProductIdentifier>
+									<urn:ProductName>DKC51-19RIB AR2 DGVT3P 80M BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC51-19RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-03-19T09:37:21-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346109508</urn:ProductIdentifier>
+									<urn:ProductName>DKC60-69RIB AR DGVT2P SP50 BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC60-69RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-03-12T14:51:29-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Changed By Dealer</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; DEALER-3350963-GO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580684408</urn:ProductIdentifier>
+									<urn:ProductName>DKC52-61RIB AR VT2P 80M BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC52-61RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-03-12T14:00:13-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Changed By Dealer</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; DEALER-3350963-GO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580684446</urn:ProductIdentifier>
+									<urn:ProductName>DKC52-61RIB AF2 VT2P 80M BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC52-61RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-03-12T14:00:13-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Changed By Dealer</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; DEALER-3350963-GO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119958</urn:ProductIdentifier>
+									<urn:ProductName>DKC53-68RIB AF2 SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC53-68RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-03-12T14:00:13-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Treatment Subs</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580264334</urn:ProductIdentifier>
+									<urn:ProductName>DKS28-05 50# Concep/Poncho</urn:ProductName>
+									<urn:ProductDescription>Sorghum Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKS28-05</urn:ProductGradeDescription>
+									<urn:ProductClassification>S</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-03-11T16:01:27-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Treatment Subs</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed removal</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580264327</urn:ProductIdentifier>
+									<urn:ProductName>DKS28-05 50# Concep</urn:ProductName>
+									<urn:ProductDescription>Sorghum Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKS28-05</urn:ProductGradeDescription>
+									<urn:ProductClassification>S</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-03-11T16:00:28-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Decrease</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>20.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00190794008464</urn:ProductIdentifier>
+									<urn:ProductName>AG26X8 RR2X 40SCU_MB LGM UNTR</urn:ProductName>
+									<urn:ProductDescription>Soybean Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>AG26X8</urn:ProductGradeDescription>
+									<urn:ProductClassification>B</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-02-13T14:04:18-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346315848</urn:ProductIdentifier>
+									<urn:ProductName>DKC56-45RIB AF2 SS SP50 BAS500 B</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC56-45RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-31T13:18:30-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346080548</urn:ProductIdentifier>
+									<urn:ProductName>DKC61-55RIB AR DGVT2P SP50 BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC61-55RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-30T11:10:38-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Seed Size Sub</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835244</urn:ProductIdentifier>
+									<urn:ProductName>DKC51-20RIB AR2 DGVT2P SP45 BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC51-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-28T09:11:10-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>135.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Package Type Subs</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835305</urn:ProductIdentifier>
+									<urn:ProductName>DKC51-20RIB AR2 DGVT2P 80M BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC51-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-28T09:11:10-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Seed Size Sub</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed removal</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835237</urn:ProductIdentifier>
+									<urn:ProductName>DKC51-20RIB AF2 DGVT2P SP50 BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC51-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-28T09:11:10-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Decrease</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>50.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Changed By Dealer</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; DEALER-3350963-GO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119941</urn:ProductIdentifier>
+									<urn:ProductName>DKC53-68RIB AR2 SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC53-68RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-24T09:53:37-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>40.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Seed Size Sub</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119910</urn:ProductIdentifier>
+									<urn:ProductName>DKC53-68RIB AF SS SP50 BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC53-68RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-23T09:58:17-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>50.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Seed Size Sub</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed removal</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119927</urn:ProductIdentifier>
+									<urn:ProductName>DKC53-68RIB AR2 SS SP45 BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC53-68RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-23T09:58:17-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Decrease</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>45.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119941</urn:ProductIdentifier>
+									<urn:ProductName>DKC53-68RIB AR2 SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC53-68RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-11T13:31:03-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119927</urn:ProductIdentifier>
+									<urn:ProductName>DKC53-68RIB AR2 SS SP45 BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC53-68RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-11T13:31:03-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119910</urn:ProductIdentifier>
+									<urn:ProductName>DKC53-68RIB AF SS SP50 BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC53-68RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-11T12:04:22-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346120435</urn:ProductIdentifier>
+									<urn:ProductName>DKC63-60RIB AF SS SP50 BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC63-60RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-11T08:48:35-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed removal</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346120497</urn:ProductIdentifier>
+									<urn:ProductName>DKC63-60RIB AF SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC63-60RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-11T08:48:24-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Decrease</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>100.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346120497</urn:ProductIdentifier>
+									<urn:ProductName>DKC63-60RIB AF SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC63-60RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-11T08:47:13-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>48.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Changed By Dealer</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; DEALER-3350963-GO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580264327</urn:ProductIdentifier>
+									<urn:ProductName>DKS28-05 50# Concep</urn:ProductName>
+									<urn:ProductDescription>Sorghum Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKS28-05</urn:ProductGradeDescription>
+									<urn:ProductClassification>S</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2019-01-09T13:56:30-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346667343</urn:ProductIdentifier>
+									<urn:ProductName>DKC60-67RIB AF2 SS 80M BAS500 N</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC60-67RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-29T10:49:47-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346667398</urn:ProductIdentifier>
+									<urn:ProductName>DKC60-67RIB AF2 SS SP50 BAS500 N</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC60-67RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-29T10:49:06-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>200.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346120497</urn:ProductIdentifier>
+									<urn:ProductName>DKC63-60RIB AF SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC63-60RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:26:12-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>46.000</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835312</urn:ProductIdentifier>
+									<urn:ProductName>DKC51-20RIB AF2 DGVT2P 80M BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC51-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:24:44-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953573</urn:ProductIdentifier>
+									<urn:ProductName>DKC61-54RIB AF2 SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC61-54RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:24:44-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346883163</urn:ProductIdentifier>
+									<urn:ProductName>DKC58-34RIB AF2 SS 80M ELT500 B-N-E</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC58-34RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:24:44-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580840873</urn:ProductIdentifier>
+									<urn:ProductName>DKC62-27RIB AF DGVT2P 80M BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC62-27RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:21:43-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953511</urn:ProductIdentifier>
+									<urn:ProductName>DKC61-54RIB AF2 SS SP50 BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC61-54RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:21:43-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346120497</urn:ProductIdentifier>
+									<urn:ProductName>DKC63-60RIB AF SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC63-60RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:21:43-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953542</urn:ProductIdentifier>
+									<urn:ProductName>DKC61-54RIB AR2 SS SP45 BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC61-54RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:21:43-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835244</urn:ProductIdentifier>
+									<urn:ProductName>DKC51-20RIB AR2 DGVT2P SP45 BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC51-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:21:43-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346080623</urn:ProductIdentifier>
+									<urn:ProductName>DKC61-55RIB AF2 DGVT2P 80M BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC61-55RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:21:43-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346883156</urn:ProductIdentifier>
+									<urn:ProductName>DKC58-34RIB AF2 SS SP50 ELT500 B-N-E</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC58-34RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:21:43-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835237</urn:ProductIdentifier>
+									<urn:ProductName>DKC51-20RIB AF2 DGVT2P SP50 BAS250</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC51-20RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-27T07:21:43-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580839471</urn:ProductIdentifier>
+									<urn:ProductName>DKC60-67RIB AR2 SS 80M BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC60-67RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-19T09:17:05-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346667398</urn:ProductIdentifier>
+									<urn:ProductName>DKC60-67RIB AF2 SS SP50 BAS500 N</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC60-67RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-19T09:17:05-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Dealer Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580839457</urn:ProductIdentifier>
+									<urn:ProductName>DKC60-67RIB AR2 SS SP45 BAS500</urn:ProductName>
+									<urn:ProductDescription>Corn Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>DKC60-67RIB</urn:ProductGradeDescription>
+									<urn:ProductClassification>C</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-19T09:17:05-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346592751</urn:ProductIdentifier>
+									<urn:ProductName>AG26X8 RR2X 140M UNTR</urn:ProductName>
+									<urn:ProductDescription>Soybean Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>AG26X8</urn:ProductGradeDescription>
+									<urn:ProductClassification>B</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-16T14:51:28-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346592805</urn:ProductIdentifier>
+									<urn:ProductName>AG26X8 RR2X 40SCU_MB UNTR</urn:ProductName>
+									<urn:ProductDescription>Soybean Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>AG26X8</urn:ProductGradeDescription>
+									<urn:ProductClassification>B</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-16T14:51:28-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346610608</urn:ProductIdentifier>
+									<urn:ProductName>AG27X8 RR2X 40SCU_MB UNTR</urn:ProductName>
+									<urn:ProductDescription>Soybean Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>AG27X8</urn:ProductGradeDescription>
+									<urn:ProductClassification>B</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-16T14:51:28-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+							<urn:OrderResponseLogResponseProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:SoldTo>
+									<urn:PartnerInformation>
+										<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+										<urn:PartnerIdentifier Agency="AssignedBySeller">1100032937530</urn:PartnerIdentifier>
+										<urn:AddressInformation>
+											<urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+											<urn:CityName>WALLACE</urn:CityName>
+											<urn:StateOrProvince>NE</urn:StateOrProvince>
+											<urn:PostalCode>69169-6007</urn:PostalCode>
+											<urn:PostalCountry>US</urn:PostalCountry>
+										</urn:AddressInformation>
+									</urn:PartnerInformation>
+								</urn:SoldTo>
+								<urn:ChangeIndicator>
+									<urn:ChangeIndicatorType>Other</urn:ChangeIndicatorType>
+									<urn:ChangeExplantion>Other</urn:ChangeExplantion>
+									<urn:Comment>
+										<urn:Content>ChangeIndicatorType; Acct Manager Request</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>ChangeExplantion; Confirmed</urn:Content>
+									</urn:Comment>
+									<urn:Comment>
+										<urn:Content>MadeBy; MONSANTO</urn:Content>
+									</urn:Comment>
+								</urn:ChangeIndicator>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346610653</urn:ProductIdentifier>
+									<urn:ProductName>AG27X8 RR2X 140M UNTR</urn:ProductName>
+									<urn:ProductDescription>Soybean Commercial</urn:ProductDescription>
+									<urn:ProductGradeDescription>AG27X8</urn:ProductGradeDescription>
+									<urn:ProductClassification>B</urn:ProductClassification>
+								</urn:ProductIdentification>
+								<urn:IncreaseOrDecreaseDateTime>
+									<urn:DateTime DateTimeQualifier="On">2018-11-16T14:51:28-06:00</urn:DateTime>
+								</urn:IncreaseOrDecreaseDateTime>
+								<urn:IncreaseOrDecrease>
+									<urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+									<urn:ProductQuantityChange>
+										<urn:Measurement>
+											<urn:MeasurementValue>0</urn:MeasurementValue>
+											<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+										</urn:Measurement>
+									</urn:ProductQuantityChange>
+								</urn:IncreaseOrDecrease>
+							</urn:OrderResponseLogResponseProductLineItem>
+						</urn:OrderResponseLogResponseDetails>
+					</urn:OrderResponseLogResponseBody>
+				</urn:OrderResponseLogResponse>
+			</ag:xmlPayload>
+		</ag:outboundData>
+	</soapenv:Body>
+</soapenv:Envelope>

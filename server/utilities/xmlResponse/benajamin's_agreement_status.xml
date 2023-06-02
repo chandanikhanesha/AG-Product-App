@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ag:outboundData xmlns:ag="urn:aggateway:names:ws:docexchange">
+         <ag:processStep>AgreementStatusRequest-API</ag:processStep>
+         <ag:messageId>d181b183-b11d-4532-bf95-0657c9948397</ag:messageId>
+         <ag:xmlPayload>
+            <AgreementStatusResponse xmlns="urn:cidx:names:specification:ces:schema:all:5:3">
+               <Header>
+                  <ThisDocumentIdentifier>
+                     <DocumentIdentifier>39326a57-9a19-4f35-b612-9eb749d93d78</DocumentIdentifier>
+                  </ThisDocumentIdentifier>
+                  <ThisDocumentDateTime>
+                     <DateTime DateTimeQualifier="On">2022-04-22T05:18:46.398Z</DateTime>
+                  </ThisDocumentDateTime>
+                  <From>
+                     <PartnerInformation>
+                        <PartnerName>Bayer Crop Science</PartnerName>
+                        <PartnerIdentifier Agency="GLN">0062668030000</PartnerIdentifier>
+                     </PartnerInformation>
+                  </From>
+                  <To>
+                     <PartnerInformation>
+                        <PartnerName>Bayer</PartnerName>
+                        <PartnerIdentifier Agency="GLN">1100032937530</PartnerIdentifier>
+                        <PartnerIdentifier Agency="AssignedBySeller">50835965</PartnerIdentifier>
+                        <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                     </PartnerInformation>
+                  </To>
+               </Header>
+               <AgreementStatusResponseBody>
+                  <AgreementStatusResponsePartners>
+                     <Buyer>
+                        <PartnerInformation>
+                           <PartnerName>Bayer</PartnerName>
+                           <PartnerIdentifier Agency="GLN">1100032937530</PartnerIdentifier>
+                           <PartnerIdentifier Agency="AssignedBySeller">50835965</PartnerIdentifier>
+                           <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                        </PartnerInformation>
+                     </Buyer>
+                     <Seller>
+                        <PartnerInformation>
+                           <PartnerName>Bayer Crop Science</PartnerName>
+                           <PartnerIdentifier Agency="GLN">0062668030000</PartnerIdentifier>
+                        </PartnerInformation>
+                     </Seller>
+                     <ShipTo>
+                        <PartnerInformation>
+                           <PartnerName>Benjamin Jeffrey Pelster</PartnerName>
+                           <PartnerIdentifier Agency="GLN">1100018447992</PartnerIdentifier>
+                           <PartnerIdentifier Agency="AssignedBySeller">50358149</PartnerIdentifier>
+                        </PartnerInformation>
+                     </ShipTo>
+                  </AgreementStatusResponsePartners>
+                  <AgreementStatusResponseProperties>
+                     <AgreementStatusList>
+                        <LicenseNumber>50358149</LicenseNumber>
+                        <AgreementName>MTA2</AgreementName>
+                        <AgreementStatus>Licensed</AgreementStatus>
+                        <Zone>
+                           <ProductClassification>C</ProductClassification>
+                           <ProductDescription>CORN</ProductDescription>
+                           <ZoneID>AB</ZoneID>
+                           <ZoneType>Corn Rootworm Zones 2022</ZoneType>
+                           <ZoneName>Zone 12</ZoneName>
+                        </Zone>
+                     </AgreementStatusList>
+                     <AgreementStatusList>
+                        <LicenseNumber>50358149</LicenseNumber>
+                        <AgreementName>MTA2</AgreementName>
+                        <AgreementStatus>Licensed</AgreementStatus>
+                        <Zone>
+                           <ProductClassification>B</ProductClassification>
+                           <ProductDescription>SOYBEAN</ProductDescription>
+                           <ZoneID>S2</ZoneID>
+                           <ZoneType>Soybean Pricing Zones</ZoneType>
+                           <ZoneName>No Zone</ZoneName>
+                        </Zone>
+                     </AgreementStatusList>
+                     <AgreementStatusList>
+                        <LicenseNumber>50358149</LicenseNumber>
+                        <AgreementName>MTA2</AgreementName>
+                        <AgreementStatus>Licensed</AgreementStatus>
+                        <Zone>
+                           <ProductClassification>A</ProductClassification>
+                           <ProductDescription>ALFALFA</ProductDescription>
+                           <ZoneID>AE</ZoneID>
+                           <ZoneType>Roundup Ready Alfalfa Pricing Zones 2016,2017,2018,2019,2020,2021 and 2022</ZoneType>
+                           <ZoneName>East</ZoneName>
+                        </Zone>
+                     </AgreementStatusList>
+                  </AgreementStatusResponseProperties>
+               </AgreementStatusResponseBody>
+            </AgreementStatusResponse>
+         </ag:xmlPayload>
+      </ag:outboundData>
+   </soapenv:Body>
+</soapenv:Envelope>

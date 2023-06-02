@@ -1,0 +1,100 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:aggateway:names:ws:docexchange">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-3">
+				<!--REQUIRED AND PROVIDED BY MONSANTO -->
+				<wsse:Username>3350963</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">USITsup$3</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soapenv:Header>
+	<soapenv:Body>
+		<urn:inboundData>
+			<!--CONSTANT -->
+			<urn:businessProcess>PriceSheetWS</urn:businessProcess>
+			<!--CONSTANT -->
+			<urn:processStep>PriceSheetRequest</urn:processStep>
+			<!--	SEED DEALER GLN or AGIIS-EBID  ID -->
+			<urn:partnerId>1100032937530</urn:partnerId>
+			<!--DEPENDING OF THE CODE, CAN BE AGIIS-EBID OR  GLN -->
+			<urn:partnerType>AGIIS-EBID</urn:partnerType>
+			<!--OPTIONAL, PROBABLY USELESS, YOU CAN PUT A UUID-->
+			<urn:messageId>abc1234-test</urn:messageId>
+
+			<urn:xmlPayload>
+				<!--NAMESPACES IDS ARE UP TO YOU, BE CAREFUL TO MAKE IT CONSISTENT IF THEY CHANGE -->
+				<mon:PriceSheetRequest
+						xmlns:cidx="urn:cidx:names:specification:ces:schema:all:5:1:1"
+						xmlns:mon="urn:mon:pricesheetrequest:5:1:1">
+					<cidx:Header>
+						<!--	YOU can put here a UUID but it is optional		-->
+						<cidx:ThisDocumentIdentifier>
+							<cidx:DocumentIdentifier>Test1234</cidx:DocumentIdentifier>
+						</cidx:ThisDocumentIdentifier>
+						<!--	USE A CURRENT TIME STAMP at ISO FORMAT				-->
+						<cidx:ThisDocumentDateTime>
+							<cidx:DateTime DateTimeQualifier="On">2019-06-03T02:57:59Z</cidx:DateTime>
+						</cidx:ThisDocumentDateTime>
+						<!--		THIS IS THE SEED DEALER INFORMATION				-->
+						<cidx:From>
+							<cidx:PartnerInformation>
+								<cidx:PartnerName>SHAWN SULLIVAN SEED </cidx:PartnerName>
+								<cidx:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</cidx:PartnerIdentifier>
+								<cidx:ContactInformation>
+									<cidx:ContactName>2019</cidx:ContactName>
+									<cidx:ContactDescription>SeedYear</cidx:ContactDescription>
+								</cidx:ContactInformation>
+								<cidx:ContactInformation>
+									<cidx:ContactName>WS-XML</cidx:ContactName>
+									<cidx:ContactDescription>DataSource</cidx:ContactDescription>
+								</cidx:ContactInformation>
+								<cidx:ContactInformation>
+									<cidx:ContactName>AgriDealer</cidx:ContactName>
+									<cidx:ContactDescription>SoftwareName</cidx:ContactDescription>
+								</cidx:ContactInformation>
+								<cidx:ContactInformation>
+									<cidx:ContactName>1.0.0</cidx:ContactName>
+									<cidx:ContactDescription>SoftwareVersion</cidx:ContactDescription>
+								</cidx:ContactInformation>
+							</cidx:PartnerInformation>
+						</cidx:From>
+						<!--	THIS IS MONSANTO INFORMATION, THAT IS MOSTLY CONSTANT, ALTHOUGH THE ID CAN CHANGE -->
+						<cidx:To>
+							<cidx:PartnerInformation>
+								<cidx:PartnerName>MONSANTO COMPANY</cidx:PartnerName>
+								<cidx:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</cidx:PartnerIdentifier>
+							</cidx:PartnerInformation>
+						</cidx:To>
+					</cidx:Header>
+					<mon:PriceSheetRequestBody>
+						<!--		All these properties are required			-->
+						<mon:PriceSheetRequestProperties>
+							<!--		these 2 Domains attrs are standards on xml definition			-->
+							<cidx:CurrencyCode Domain="ISO-4217">USD</cidx:CurrencyCode>
+							<cidx:LanguageCode Domain="ISO-639-2T">eng</cidx:LanguageCode>
+							<mon:LastRequestDate>
+								<cidx:DateTime DateTimeQualifier="On">2018-06-01T00:00:00Z</cidx:DateTime>
+							</mon:LastRequestDate>
+							<!-- Not zoned crops like B should have * as zoneID, else have an specific one	 -->
+							<cidx:ZoneID>AB</cidx:ZoneID>
+							<!-- ENUM("C", "S", "B", "A", "L"), // corn, sorghum, soybean, alfalfa , canola	-->
+							<cidx:ProductClassification>C</cidx:ProductClassification>
+						</mon:PriceSheetRequestProperties>
+
+						<!-- SEED DEALER INFORMATION INCLUDING ONLY NAME AND IDENTIFIER -->
+						<mon:PriceSheetRequestPartners>
+							<cidx:Buyer>
+								<cidx:PartnerInformation>
+									<cidx:PartnerName>SHAWN SULLIVAN SEED </cidx:PartnerName>
+									<cidx:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</cidx:PartnerIdentifier>
+								</cidx:PartnerInformation>
+							</cidx:Buyer>
+						</mon:PriceSheetRequestPartners>
+
+
+					</mon:PriceSheetRequestBody>
+				</mon:PriceSheetRequest>
+			</urn:xmlPayload>
+		</urn:inboundData>
+	</soapenv:Body>
+</soapenv:Envelope>

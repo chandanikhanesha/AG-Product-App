@@ -1,0 +1,84 @@
+.table-line-break-helper {
+  position: absolute;
+  top: 5px !important;
+  left: -36px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.marginTop {
+  margin-top: -20px !important;
+}
+
+.rightAlignIcon {
+  left: 830px !important;
+}
+
+.table-break {
+  page-break-before: always;
+  width: calc(100% + 20mm);
+  height: 0px;
+  left: -10mm;
+  border-bottom: 1px dashed gray;
+  position: relative;
+}
+
+.default-break {
+  position: absolute;
+  height: 1px;
+  border-bottom: 1px dashed gray;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.rt-tr-group.invoice-print-highlight {
+  cursor: pointer;
+  background-color: #f1b87f96;
+}
+
+@media print {
+  .table-line-break-helper {
+    display: none;
+  }
+  /* 
+  .header{
+    color:"white"
+
+  } */
+  .content-block,
+  p {
+    page-break-inside: avoid;
+  }
+
+  .table-break,
+  .default-break {
+    border: none;
+  }
+
+  #pageFooter {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media screen {
+  #pageFooter {
+    display: none;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 10mm;
+  color: aliceblue;
+  page-break-after: always;
+  /* @bottom-left {
+    content: counter(page) '  Hellllo of ' counter(pages);
+  } */
+}
+/* #pageFooter {
+  display: table-footer-group;
+} */

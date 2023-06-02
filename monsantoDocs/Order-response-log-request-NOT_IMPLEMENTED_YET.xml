@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:urn1="urn:cidx:names:specification:ces:schema:all:5:3" xmlns:urn="urn:aggateway:names:ws:docexchange" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-BAFF8E68A8D786C41314389777816581">
+				<wsse:Username>3350963</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">USITsup$3</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soapenv:Header>
+	<soapenv:Body>
+		<urn:inboundData>
+			<urn:businessProcess>OrderResponseLogWS53</urn:businessProcess>
+			<urn:processStep>OrderResponseLogRequest</urn:processStep>
+			<urn:partnerId>1100032937530</urn:partnerId>
+			<urn:partnerType>AGIIS-EBID</urn:partnerType>
+			<urn:conversationId/>
+			<urn:messageId>OrderResponseLogWS53_061819-1</urn:messageId>
+			<urn:xmlPayload>
+				<n1:OrderResponseLogRequest Version="5.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3">
+					<n1:Header>
+						<n1:ThisDocumentIdentifier>
+							<n1:DocumentIdentifier>ORL_5_3_request_061819-1</n1:DocumentIdentifier>
+						</n1:ThisDocumentIdentifier>
+						<n1:ThisDocumentDateTime>
+							<n1:DateTime DateTimeQualifier="On">2019-06-18T11:06:24-05:00</n1:DateTime>
+						</n1:ThisDocumentDateTime>
+						<n1:From>
+							<n1:PartnerInformation>
+								<n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+								<n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+								<n1:ContactInformation>
+									<n1:ContactName>WS-XML</n1:ContactName>
+									<n1:ContactDescription>DataSource</n1:ContactDescription>
+								</n1:ContactInformation>
+								<n1:ContactInformation>
+									<n1:ContactName>2019</n1:ContactName>
+									<n1:ContactDescription>SeedYear</n1:ContactDescription>
+								</n1:ContactInformation>
+								<n1:ContactInformation>
+									<n1:ContactName>AgriDealer</n1:ContactName>
+									<n1:ContactDescription>SoftwareName</n1:ContactDescription>
+								</n1:ContactInformation>
+								<n1:ContactInformation>
+									<n1:ContactName>1.0.0</n1:ContactName>
+									<n1:ContactDescription>SoftwareVersion</n1:ContactDescription>
+								</n1:ContactInformation>
+							</n1:PartnerInformation>
+						</n1:From>
+						<n1:To>
+							<n1:PartnerInformation>
+								<n1:PartnerName>MONSANTO COMPANY</n1:PartnerName>
+								<n1:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</n1:PartnerIdentifier>
+							</n1:PartnerInformation>
+						</n1:To>
+					</n1:Header>
+					<n1:OrderResponseLogRequestBody>
+						<n1:OrderResponseLogRequestProperties>
+							<n1:ProductYear>2019</n1:ProductYear>
+							<n1:DateTimeRange>
+								<n1:FromDateTime>2018-09-01T00:00:00Z</n1:FromDateTime>
+								<n1:ToDateTime>2019-08-31T00:00:00Z</n1:ToDateTime>
+							</n1:DateTimeRange>
+						</n1:OrderResponseLogRequestProperties>
+						<n1:OrderResponseLogRequestPartners>
+							<n1:Buyer>
+								<n1:PartnerInformation>
+									<n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+									<n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+								</n1:PartnerInformation>
+							</n1:Buyer>
+							<n1:Seller>
+								<n1:PartnerInformation>
+									<n1:PartnerName>MONSANTO COMPANYO</n1:PartnerName>
+									<n1:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</n1:PartnerIdentifier>
+								</n1:PartnerInformation>
+							</n1:Seller>
+						</n1:OrderResponseLogRequestPartners>
+						<n1:OrderResponseLogRequestDetails/>
+					</n1:OrderResponseLogRequestBody>
+				</n1:OrderResponseLogRequest>
+			</urn:xmlPayload>
+		</urn:inboundData>
+	</soapenv:Body>
+</soapenv:Envelope>  

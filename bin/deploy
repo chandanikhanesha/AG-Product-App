@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Check if environment argument is passed
+ENVIRONMENT=$1
+
+if [[ -z $ENVIRONMENT ]]; then
+    echo Must specify an environment: development, dev2, stage, demo, or app
+    exit 1
+fi
+
+# can pass: client or server as an option
+# if no option is pased, both are built
+OPTION=$2
+
+# if ends with rebuild
+if [[ $ENVIRONMENT =~ :rebuild$ ]]; then
+    if [ -z $OPTION ] || [ "$OPTION" == "client" ]; then
+        docker-compose build frontend
+    fi
+    if [ -z $OPTION ] || [ "$OPTION" == "server" ]; then
+        docker-compose build server
+    fi
+fi
+
+
+# run tests, if tests fail then script stops
+#docker-compose run frontend /bin/bash -c "CI=true yarn run test --ci"
+
+
+# Set the frontend host based on the environment and reset environment
+if [[ $ENVIRONMENT =~ ^development.* ]]
+then
+  HOST=https://dev.agridealer.app/api
+  ENVIRONMENT=development
+elif [[ $ENVIRONMENT =~ ^dev2.* ]]
+then
+  HOST=https://dev2.agridealer.app/api
+  ENVIRONMENT=dev2
+elif [[ $ENVIRONMENT =~ ^stage.* ]]
+then
+  HOST=https://2023.agridealer.app/api
+  ENVIRONMENT=stage
+elif [[ $ENVIRONMENT =~ ^demo.* ]]
+then
+  HOST=https://demo.agridealer.app/api
+  ENVIRONMENT=demo
+elif [[ $ENVIRONMENT =~ ^app.* ]]
+then
+  HOST=https://agridealer.app/api
+  ENVIRONMENT=app
+elif [[ $ENVIRONMENT =~ ^production2023jenkins.* ]]
+then
+  HOST=https://api.2023jenkins.agridealer.app/api
+  ENVIRONMENT=production2023jenkins
+else
+  echo Environment must be one of: development, dev2, stage, demo or app
+  exit 1
+fi
+
+if [ -z $OPTION ] || [ "$OPTION" == "client" ]; then
+  # Build the client
+  docker-compose run frontend /bin/bash -c "REACT_APP_API_BASE=$HOST yarn build"
+
+  # Frontend docker container
+  cd ./client
+  docker build -t agri-dealer-client:$ENVIRONMENT -f Dockerfile.production .
+  docker tag agri-dealer-client:$ENVIRONMENT agridealer/ag-client:$ENVIRONMENT
+  docker push agridealer/ag-client:$ENVIRONMENT
+  cd .. # return to top in case we then need to build server too
+fi
+
+if [ -z $OPTION ] || [ "$OPTION" == "server" ]; then
+  # Server docker container
+  cd ./server
+  docker build -t agri-dealer-server:$ENVIRONMENT -f Dockerfile.production .
+  docker tag agri-dealer-server:$ENVIRONMENT agridealer/ag-server:$ENVIRONMENT
+  docker push agridealer/ag-server:$ENVIRONMENT
+fi

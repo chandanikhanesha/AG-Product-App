@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<ag:outboundData xmlns:ag="urn:aggateway:names:ws:docexchange">
+			<ag:processStep>PriceAndAvailabilityResponse53</ag:processStep>
+			<ag:messageId/>
+			<ag:xmlPayload>
+				<urn:PriceAndAvailabilityResponse xmlns:urn="urn:cidx:names:specification:ces:schema:all:5:3" Version="5.3">
+					<urn:Header>
+						<urn:ThisDocumentIdentifier>
+							<urn:DocumentIdentifier>s9w6Rm+xOTtr/zAbhINnTg==</urn:DocumentIdentifier>
+						</urn:ThisDocumentIdentifier>
+						<urn:ThisDocumentDateTime>
+							<urn:DateTime DateTimeQualifier="On">2019-06-28T23:14:19Z</urn:DateTime>
+						</urn:ThisDocumentDateTime>
+						<urn:From>
+							<urn:PartnerInformation>
+								<urn:PartnerName>MONSANTO AGRICULTURAL CO</urn:PartnerName>
+								<urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+							</urn:PartnerInformation>
+						</urn:From>
+						<urn:To>
+							<urn:PartnerInformation>
+								<urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+								<urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+							</urn:PartnerInformation>
+						</urn:To>
+					</urn:Header>
+					<urn:PriceAndAvailabilityResponseBody>
+						<urn:PriceAndAvailabilityResponseProperties>
+							<urn:RequisitionNumber>
+								<urn:DocumentIdentifier>a</urn:DocumentIdentifier>
+							</urn:RequisitionNumber>
+							<urn:RequisitionTypeCode Domain="ANSI-ASC-X12-92">DEALRPAL</urn:RequisitionTypeCode>
+							<urn:LanguageCode Domain="ISO-639-2T">eng</urn:LanguageCode>
+							<urn:CurrencyCode Domain="ISO-4217">USD</urn:CurrencyCode>
+						</urn:PriceAndAvailabilityResponseProperties>
+						<urn:PriceAndAvailabilityResponsePartners>
+							<urn:Buyer>
+								<urn:PartnerInformation>
+									<urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+									<urn:PartnerIdentifier Agency="AssignedByPapiNet">0003350963</urn:PartnerIdentifier>
+								</urn:PartnerInformation>
+							</urn:Buyer>
+							<urn:Seller>
+								<urn:PartnerInformation>
+									<urn:PartnerName>MONSANTO AGRICULTURAL CO</urn:PartnerName>
+									<urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+								</urn:PartnerInformation>
+							</urn:Seller>
+							<urn:ShipTo>
+								<urn:PartnerInformation>
+									<urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+									<urn:PartnerIdentifier Agency="AssignedByPapiNet">0003350963</urn:PartnerIdentifier>
+								</urn:PartnerInformation>
+							</urn:ShipTo>
+							<urn:Payer>
+								<urn:PartnerInformation>
+									<urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+									<urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+								</urn:PartnerInformation>
+							</urn:Payer>
+						</urn:PriceAndAvailabilityResponsePartners>
+						<urn:PriceAndAvailabilityResponseDetails/>
+					</urn:PriceAndAvailabilityResponseBody>
+				</urn:PriceAndAvailabilityResponse>
+			</ag:xmlPayload>
+		</ag:outboundData>
+	</soapenv:Body>
+</soapenv:Envelope>

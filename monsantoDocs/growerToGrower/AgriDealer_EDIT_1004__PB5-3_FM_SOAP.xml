@@ -1,0 +1,243 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:aggateway:names:ws:docexchange">
+    <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-4">
+            <wsse:Username>3350963</wsse:Username>
+            <wsse:Password wsse:Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">USITsup$3</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+     <urn:inboundData>
+         <urn:businessProcess>ProductBookingWS53</urn:businessProcess>
+         <urn:processStep>ProductBookingWSRequest</urn:processStep>
+         <urn:partnerId>1100032937530</urn:partnerId>
+         <urn:partnerType>AGIIS-EBID</urn:partnerType>
+         <urn:conversationId/>
+         <urn:messageId>Test-ProductBooking5.3-4</urn:messageId>
+         <urn:xmlPayload>
+                    <ProductBooking xmlns="urn:cidx:names:specification:ces:schema:all:5:3" >
+            <Header>
+               <ThisDocumentIdentifier>
+                  <DocumentIdentifier>Test_InsertPB_040618-FM-EDIT</DocumentIdentifier>
+               </ThisDocumentIdentifier>
+               <ThisDocumentDateTime>
+                  <DateTime DateTimeQualifier="On">2018-04-06T16:01:24.496000-06:00</DateTime>
+               </ThisDocumentDateTime>
+               <From>
+                  <PartnerInformation>
+                     <PartnerName>SHAWN SULLIVAN SEED</PartnerName>
+                     <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                     <ContactInformation>
+                        <ContactName>Control SS</ContactName>
+                        <ContactDescription>DataSource</ContactDescription>
+                     </ContactInformation>
+                     <ContactInformation>
+                        <ContactName>2018</ContactName>
+                        <ContactDescription>SeedYear</ContactDescription>
+                     </ContactInformation>
+                     <ContactInformation>
+                        <ContactName>1.0.0</ContactName>
+                        <ContactDescription>SoftwareVersion</ContactDescription>
+                     </ContactInformation>
+                  </PartnerInformation>
+               </From>
+               <To>
+                  <PartnerInformation>
+                     <PartnerName>MONSANTO AGRICULTURAL CO</PartnerName>
+                     <PartnerIdentifier Agency="AGIIS-EBID">0062668030000</PartnerIdentifier>
+                  </PartnerInformation>
+               </To>
+            </Header>
+            <ProductBookingBody>
+               <ProductBookingProperties>
+                  <ProductBookingType>Changed</ProductBookingType>
+                  <ProductBookingOrderNumber>1004</ProductBookingOrderNumber>
+                  <ProductBookingOrderTypeCode Domain="ANSI-ASC-X12-92">KN</ProductBookingOrderTypeCode>
+                  <ProductBookingOrderIssuedDate>
+                     <DateTime DateTimeQualifier="On">2018-04-06T16:01:24.496000-06:00</DateTime>
+                  </ProductBookingOrderIssuedDate>
+                  <LanguageCode Domain="ISO-639-2T">EN</LanguageCode>
+                  <CurrencyCode Domain="ISO-4217">USD</CurrencyCode>
+                  <BuyerSequenceNumber>0</BuyerSequenceNumber>
+                  <SoftwareInformation>
+                     <SoftwareSource>Control SS</SoftwareSource>
+                     <SoftwareVersion>1.0.0</SoftwareVersion>
+                  </SoftwareInformation>
+                  <ProductYear>2018</ProductYear>
+                  <ReferenceInformation ReferenceType="SalesOrderReference">
+                     <DocumentReference>
+                        <DocumentIdentifier>0611380602</DocumentIdentifier>
+                     </DocumentReference>
+                  </ReferenceInformation>
+                  <DirectShipFlag>0</DirectShipFlag>
+               </ProductBookingProperties>
+               <ProductBookingPartners>
+                  <Buyer>
+                     <PartnerInformation>
+                        <PartnerName>SHAWN SULLIVAN SEED</PartnerName>
+                        <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                        <AddressInformation>
+                           <AddressLine>74971 AVENUE 358</AddressLine>
+                           <CityName>WALLACE</CityName>
+                           <StateOrProvince>IA</StateOrProvince>
+                           <PostalCode>69169</PostalCode>
+                           <PostalCountry>US</PostalCountry>
+                        </AddressInformation>
+                     </PartnerInformation>
+                  </Buyer>
+                  <Seller>
+                     <PartnerInformation>
+                        <PartnerName>MONSANTO AGRICULTURAL CO</PartnerName>
+                        <PartnerIdentifier Agency="AGIIS-EBID">0062668030000</PartnerIdentifier>
+                     </PartnerInformation>
+                  </Seller>
+                  <ShipTo>
+                     <PartnerInformation>
+                        <PartnerName>SCOTT WILKEN</PartnerName>
+                        <PartnerIdentifier Agency="GLN">1100040077402</PartnerIdentifier>
+                        <AddressInformation>
+                           <AddressLine>470 E 2400 NORTH RD</AddressLine>
+                           <CityName>DANFORTH</CityName>
+                           <StateOrProvince>IL</StateOrProvince>
+                           <PostalCode>60930</PostalCode>
+                           <PostalCountry>US</PostalCountry>
+                        </AddressInformation>
+                     </PartnerInformation>
+                  </ShipTo>
+                  <SoldTo>
+                     <PartnerInformation>
+                        <PartnerName>SHAWN SULLIVAN SEED</PartnerName>
+                        <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                     </PartnerInformation>
+                  </SoldTo>
+                  <Payer>
+                     <PartnerInformation>
+                        <PartnerName>SHAWN SULLIVAN SEED</PartnerName>
+                        <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                     </PartnerInformation>
+                  </Payer>
+				  <OtherPartner PartnerRole="FinancialInstitution">
+					<PartnerInformation>
+						<PartnerName>HERTZ FARM MGMT KANKAKEE</PartnerName>
+						<PartnerIdentifier Agency="AssignedBySeller">50796163</PartnerIdentifier>
+						<AddressInformation>
+							<AddressLine>200 E COURT ST STE 502</AddressLine>
+							<CityName>KANKAKEE</CityName>
+							<StateOrProvince>IL</StateOrProvince>
+							<PostalCode>60901</PostalCode>
+							<PostalCountry>US</PostalCountry>
+						  </AddressInformation>
+					</PartnerInformation>	
+				  </OtherPartner>
+               </ProductBookingPartners>
+               <ProductBookingDetails>
+                  <ProductBookingProductLineItem>
+                     <LineNumber>000010</LineNumber>
+                     <ActionRequest>Change</ActionRequest>
+                     <LineItemType>Sale</LineItemType>
+                     <ProductBookingOrderLineItemNumber>1</ProductBookingOrderLineItemNumber>
+                     <ProductIdentification>
+                        <ProductIdentifier Agency="AGIIS-ProductID">00883580841597</ProductIdentifier>
+                     </ProductIdentification>
+                     <ReferenceInformation ReferenceType="ContractNumber">
+                        <DocumentReference>
+                           <DocumentIdentifier>1</DocumentIdentifier>
+                        </DocumentReference>
+                     </ReferenceInformation>
+                     <IncreaseOrDecrease>
+                        <IncreaseOrDecreaseType>Decrease</IncreaseOrDecreaseType>
+                        <ProductQuantityChange>
+                           <Measurement>
+                              <MeasurementValue>100</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ProductQuantityChange>
+                     </IncreaseOrDecrease>
+                     <ProductQuantity>
+                        <Measurement>
+                           <MeasurementValue>150</MeasurementValue>
+                           <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                        </Measurement>
+                     </ProductQuantity>
+                     <RequestedShipDateTime>
+                        <DateTimeInformation>
+                           <DateTime DateTimeQualifier="After">2018-04-06T16:01:24.428000-06:00</DateTime>
+                        </DateTimeInformation>
+                     </RequestedShipDateTime>
+                  </ProductBookingProductLineItem>
+                  <ProductBookingProductLineItem>
+                     <LineNumber>000020</LineNumber>
+                     <ActionRequest>Change</ActionRequest>
+                     <LineItemType>Sale</LineItemType>
+                     <ProductBookingOrderLineItemNumber>2</ProductBookingOrderLineItemNumber>
+                     <ProductIdentification>
+                        <ProductIdentifier Agency="AGIIS-ProductID">00883580952811</ProductIdentifier>
+                     </ProductIdentification>
+                     <ReferenceInformation ReferenceType="ContractNumber">
+                        <DocumentReference>
+                           <DocumentIdentifier>1</DocumentIdentifier>
+                        </DocumentReference>
+                     </ReferenceInformation>
+                     <IncreaseOrDecrease>
+                        <IncreaseOrDecreaseType>Increase</IncreaseOrDecreaseType>
+                        <ProductQuantityChange>
+                           <Measurement>
+                              <MeasurementValue>50</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ProductQuantityChange>
+                     </IncreaseOrDecrease>
+                     <ProductQuantity>
+                        <Measurement>
+                           <MeasurementValue>250</MeasurementValue>
+                           <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                        </Measurement>
+                     </ProductQuantity>
+                     <RequestedShipDateTime>
+                        <DateTimeInformation>
+                           <DateTime DateTimeQualifier="After">2018-04-06T16:01:24.428000-06:00</DateTime>
+                        </DateTimeInformation>
+                     </RequestedShipDateTime>
+                  </ProductBookingProductLineItem>
+                  <ProductBookingProductLineItem>
+                     <LineNumber>000030</LineNumber>
+                     <ActionRequest>Delete</ActionRequest>
+                     <LineItemType>Sale</LineItemType>
+                     <ProductBookingOrderLineItemNumber>3</ProductBookingOrderLineItemNumber>
+                     <ProductIdentification>
+                        <ProductIdentifier Agency="AGIIS-ProductID">00883580953573</ProductIdentifier>
+                     </ProductIdentification>
+                     <ReferenceInformation ReferenceType="ContractNumber">
+                        <DocumentReference>
+                           <DocumentIdentifier>1</DocumentIdentifier>
+                        </DocumentReference>
+                     </ReferenceInformation>
+                     <IncreaseOrDecrease>
+                        <IncreaseOrDecreaseType>Decrease</IncreaseOrDecreaseType>
+                        <ProductQuantityChange>
+                           <Measurement>
+                              <MeasurementValue>35</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ProductQuantityChange>
+                     </IncreaseOrDecrease>
+                     <ProductQuantity>
+                        <Measurement>
+                           <MeasurementValue>0</MeasurementValue>
+                           <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                        </Measurement>
+                     </ProductQuantity>
+                     <RequestedShipDateTime>
+                        <DateTimeInformation>
+                           <DateTime DateTimeQualifier="After">2018-04-06T16:01:24.428000-06:00</DateTime>
+                        </DateTimeInformation>
+                     </RequestedShipDateTime>
+                  </ProductBookingProductLineItem>
+               </ProductBookingDetails>
+            </ProductBookingBody>
+         </ProductBooking>
+         </urn:xmlPayload>
+      </urn:inboundData>
+   </soapenv:Body>
+</soapenv:Envelope>

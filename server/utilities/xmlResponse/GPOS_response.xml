@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Header/>
+   <env:Body xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <ag:outboundData xmlns:ag="urn:aggateway:names:ws:docexchange">
+         <ag:processStep>TechnicalAck</ag:processStep>
+         <ag:messageId/>
+         <ag:xmlPayload>
+            <cidx:Header xmlns:cidx="urn:cidx:names:specification:ces:schema:all:5:0">
+               <cidx:ThisDocumentIdentifier>
+                  <cidx:DocumentIdentifier/>
+               </cidx:ThisDocumentIdentifier>
+               <cidx:ThisDocumentDateTime>
+                  <cidx:DateTime DateTimeQualifier="On">2022-04-22T11:30:04Z</cidx:DateTime>
+               </cidx:ThisDocumentDateTime>
+               <cidx:RequestingDocumentIdentifier>
+                  <cidx:DocumentIdentifier>285a9e3b-b4a6-4397-aef3-d992d39ac155</cidx:DocumentIdentifier>
+               </cidx:RequestingDocumentIdentifier>
+               <cidx:From>
+                  <cidx:PartnerInformation>
+                     <cidx:PartnerName>BAYER</cidx:PartnerName>
+                     <cidx:PartnerIdentifier Agency="GLN">0062668030000</cidx:PartnerIdentifier>
+                  </cidx:PartnerInformation>
+               </cidx:From>
+               <cidx:To>
+                  <cidx:PartnerInformation>
+                     <cidx:PartnerName>hemaxi's Farm</cidx:PartnerName>
+                     <cidx:PartnerIdentifier Agency="GLN">1100032937530</cidx:PartnerIdentifier>
+                     <cidx:ContactInformation>
+                        <cidx:ContactName>WS-XML</cidx:ContactName>
+                        <cidx:ContactDescription>DataSource</cidx:ContactDescription>
+                     </cidx:ContactInformation>
+                     <cidx:ContactInformation>
+                        <cidx:ContactName>AgriDealer</cidx:ContactName>
+                        <cidx:ContactDescription>SoftwareName</cidx:ContactDescription>
+                     </cidx:ContactInformation>
+                     <cidx:ContactInformation>
+                        <cidx:ContactName>3.0.0</cidx:ContactName>
+                        <cidx:ContactDescription>SoftwareVersion</cidx:ContactDescription>
+                     </cidx:ContactInformation>
+                     <cidx:ContactInformation>
+                        <cidx:ContactName>2022</cidx:ContactName>
+                        <cidx:ContactDescription>SeedYear</cidx:ContactDescription>
+                     </cidx:ContactInformation>
+                  </cidx:PartnerInformation>
+               </cidx:To>
+            </cidx:Header>
+         </ag:xmlPayload>
+      </ag:outboundData>
+   </env:Body>
+</env:Envelope>

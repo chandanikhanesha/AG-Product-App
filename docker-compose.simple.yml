@@ -1,0 +1,29 @@
+# version: '3'
+
+# services:
+#   postgres:
+#     image: postgres:latest
+#     environment:
+#       POSTGRES_DB: agri_dealer
+#     ports:
+#       - '5432:5432'
+#     volumes:
+#       - 'db:/var/lib/postgresql/data'
+
+#   migrations:
+#     build: ./server
+#     image: agri_dealer_server
+#     links:
+#       - postgres
+#     volumes:
+#       - ./server/src:/app/src
+#       - ./server/config:/app/config
+#       - ./server/migrations:/app/migrations
+#     environment:
+#       DATABASE_HOST: postgres
+#       DATABASE_NAME: agri_dealer
+#       DATABASE_USER: postgres
+#     command: bash -c 'while ! nc -q 1 postgres 5432 </dev/null; do sleep 1; done && ./node_modules/.bin/sequelize db:migrate'
+
+# volumes:
+#   db:

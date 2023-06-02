@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/delete_outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,19.3203414 C6,20.4203414 6.9,21.3203414 8,21.3203414 L16,21.3203414 C17.1,21.3203414 18,20.4203414 18,19.3203414 L18,7.32034141 L6,7.32034141 L6,19.3203414 Z M8,9.32034141 L16,9.32034141 L16,19.3203414 L8,19.3203414 L8,9.32034141 Z M15.5,4.32034141 L14.5,3.32034141 L9.5,3.32034141 L8.5,4.32034141 L5,4.32034141 L5,6.32034141 L19,6.32034141 L19,4.32034141 L15.5,4.32034141 Z" id="path-1"></path>
+    </defs>
+    <g id="ic/delete_outline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Shape" fill="#999999" xlink:href="#path-1"></use>
+    </g>
+</svg>

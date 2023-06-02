@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ag:outboundData xmlns:ag="urn:aggateway:names:ws:docexchange">
+         <ag:processStep>AgreementStatusRequest-API</ag:processStep>
+         <ag:messageId>15431588-989a-4f5a-a215-98d6215cbe4c</ag:messageId>
+         <ag:xmlPayload>
+            <AgreementStatusResponse xmlns="urn:cidx:names:specification:ces:schema:all:5:3">
+               <Header>
+                  <ThisDocumentIdentifier>
+                     <DocumentIdentifier>f65b45bd-f2f3-461c-a15b-8fa190660389</DocumentIdentifier>
+                  </ThisDocumentIdentifier>
+                  <ThisDocumentDateTime>
+                     <DateTime DateTimeQualifier="On">2022-04-22T05:01:03.014Z</DateTime>
+                  </ThisDocumentDateTime>
+                  <From>
+                     <PartnerInformation>
+                        <PartnerName>Bayer Crop Science</PartnerName>
+                        <PartnerIdentifier Agency="GLN">0062668030000</PartnerIdentifier>
+                     </PartnerInformation>
+                  </From>
+                  <To>
+                     <PartnerInformation>
+                        <PartnerName>Hemaxi Chovatia</PartnerName>
+                        <PartnerIdentifier Agency="GLN">1100032937530</PartnerIdentifier>
+                        <PartnerIdentifier Agency="AssignedBySeller">50835965</PartnerIdentifier>
+                        <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                     </PartnerInformation>
+                  </To>
+               </Header>
+               <AgreementStatusResponseBody>
+                  <AgreementStatusResponsePartners>
+                     <Buyer>
+                        <PartnerInformation>
+                           <PartnerName>Hemaxi Chovatia</PartnerName>
+                           <PartnerIdentifier Agency="GLN">1100032937530</PartnerIdentifier>
+                           <PartnerIdentifier Agency="AssignedBySeller">50835965</PartnerIdentifier>
+                           <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                        </PartnerInformation>
+                     </Buyer>
+                     <Seller>
+                        <PartnerInformation>
+                           <PartnerName>Bayer Crop Science</PartnerName>
+                           <PartnerIdentifier Agency="GLN">0062668030000</PartnerIdentifier>
+                        </PartnerInformation>
+                     </Seller>
+                     <ShipTo>
+                        <PartnerInformation>
+                           <PartnerName>Hemaxi Chovatia</PartnerName>
+                           <PartnerIdentifier Agency="GLN">1100032937530</PartnerIdentifier>
+                           <PartnerIdentifier Agency="AssignedBySeller">50835965</PartnerIdentifier>
+                           <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                        </PartnerInformation>
+                     </ShipTo>
+                  </AgreementStatusResponsePartners>
+                  <AgreementStatusResponseProperties>
+                     <AgreementStatusList>
+                        <LicenseNumber>50835965</LicenseNumber>
+                        <AgreementName>MTA2</AgreementName>
+                        <AgreementStatus>Licensed</AgreementStatus>
+                        <Zone>
+                           <ProductClassification>C</ProductClassification>
+                           <ProductDescription>CORN</ProductDescription>
+                           <ZoneID>AB</ZoneID>
+                           <ZoneType>Corn Rootworm Zones 2022</ZoneType>
+                           <ZoneName>Zone 12</ZoneName>
+                        </Zone>
+                     </AgreementStatusList>
+                     <AgreementStatusList>
+                        <LicenseNumber>50835965</LicenseNumber>
+                        <AgreementName>MTA2</AgreementName>
+                        <AgreementStatus>Licensed</AgreementStatus>
+                        <Zone>
+                           <ProductClassification>B</ProductClassification>
+                           <ProductDescription>SOYBEAN</ProductDescription>
+                           <ZoneID>S2</ZoneID>
+                           <ZoneType>Soybean Pricing Zones</ZoneType>
+                           <ZoneName>No Zone</ZoneName>
+                        </Zone>
+                     </AgreementStatusList>
+                     <AgreementStatusList>
+                        <LicenseNumber>50835965</LicenseNumber>
+                        <AgreementName>MTA2</AgreementName>
+                        <AgreementStatus>Licensed</AgreementStatus>
+                        <Zone>
+                           <ProductClassification>A</ProductClassification>
+                           <ProductDescription>ALFALFA</ProductDescription>
+                           <ZoneID>AE</ZoneID>
+                           <ZoneType>Roundup Ready Alfalfa Pricing Zones 2016,2017,2018,2019,2020,2021 and 2022</ZoneType>
+                           <ZoneName>East</ZoneName>
+                        </Zone>
+                     </AgreementStatusList>
+                  </AgreementStatusResponseProperties>
+               </AgreementStatusResponseBody>
+            </AgreementStatusResponse>
+         </ag:xmlPayload>
+      </ag:outboundData>
+   </soapenv:Body>
+</soapenv:Envelope>

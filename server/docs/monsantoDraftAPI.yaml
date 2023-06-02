@@ -1,0 +1,1008 @@
+openapi: 3.0.1
+info:
+  title: Monsanto Test API
+  description: ""
+  contact:
+    email: godinez_ra@soshace.com
+  version: 0.0.1
+servers:
+- url: https://monsantotest.swagger.io/v2
+tags:
+- name: PriceSheet
+  description: Prices for the season.
+- name: Product Booking
+  description: Product orders details
+- name: Product Booking Summary
+  description: Not info yet
+- name: Retailer Order Summary
+  description: aka Dealer Order Summary
+- name: Price and Availability List
+  description: aka PAL
+- name: Farm Manager List
+- name: Order Response Log
+  description: aka Change Log
+paths:
+  /pricesheet:
+    post:
+      tags:
+      - PriceSheet
+      summary: get all prices for the season
+      operationId: getPriceSheet
+      requestBody:
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/PriceSheetRequest'
+        required: true
+      responses:
+        200:
+          description: ""
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/PriceSheetResponse'
+  /productbooking:
+     post:
+       tags:
+       - Product Booking
+       summary: Place an order for a pet
+       operationId: addProductBooking
+       requestBody:
+         description: order placed for purchasing the pet
+         content:
+           '*/*':
+             schema:
+               $ref: '#/components/schemas/ProductBookingRequest'
+         required: true
+       responses:
+         200:
+           description: successful operation
+           content:
+             application/xml:
+               schema:
+                 $ref: '#/components/schemas/ProductBookingResponse'
+             application/json:
+               schema:
+                 $ref: '#/components/schemas/ProductBookingResponse'
+         400:
+           description: Invalid Order
+           content: {}
+#   /productbooking/summary:
+#     post:
+#       tags:
+#       - Product Booking Summary
+#       summary: Find purchase order by ID
+#       description: For valid response try integer IDs with value >= 1 and <= 10.         Other
+#         values will generated exceptions
+#       operationId: getProductBookingSummary
+#       parameters:
+#       - name: orderId
+#         in: path
+#         description: ID of pet that needs to be fetched
+#         required: true
+#         schema:
+#           maximum: 10.0
+#           minimum: 1.0
+#           type: integer
+#           format: int64
+#       responses:
+#         200:
+#           description: successful operation
+#           content:
+#             application/xml:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#             application/json:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#         400:
+#           description: Invalid ID supplied
+#           content: {}
+#         404:
+#           description: Order not found
+#           content: {}
+#   /retailerorder/summary:
+#     post:
+#       tags:
+#       - Retailer Order Summary
+#       summary: Find purchase order by ID
+#       description: For valid response try integer IDs with value >= 1 and <= 10.         Other
+#         values will generated exceptions
+#       operationId: getRetailerOrderSummary
+#       parameters:
+#       - name: orderId
+#         in: path
+#         description: ID of pet that needs to be fetched
+#         required: true
+#         schema:
+#           maximum: 10.0
+#           minimum: 1.0
+#           type: integer
+#           format: int64
+#       responses:
+#         200:
+#           description: successful operation
+#           content:
+#             application/xml:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#             application/json:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#         400:
+#           description: Invalid ID supplied
+#           content: {}
+#         404:
+#           description: Order not found
+#           content: {}
+#   /priceavailability:
+#     post:
+#       tags:
+#       - Price and Availability List
+#       summary: Find purchase order by ID
+#       description: For valid response try integer IDs with value >= 1 and <= 10.         Other
+#         values will generated exceptions
+#       operationId: getPriceAvailabilityList
+#       parameters:
+#       - name: orderId
+#         in: path
+#         description: ID of pet that needs to be fetched
+#         required: true
+#         schema:
+#           maximum: 10.0
+#           minimum: 1.0
+#           type: integer
+#           format: int64
+#       responses:
+#         200:
+#           description: successful operation
+#           content:
+#             application/xml:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#             application/json:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#         400:
+#           description: Invalid ID supplied
+#           content: {}
+#         404:
+#           description: Order not found
+#           content: {}
+#   /farmmanager:
+#     post:
+#       tags:
+#       - Farm Manager List
+#       summary: Find purchase order by ID
+#       description: For valid response try integer IDs with value >= 1 and <= 10.         Other
+#         values will generated exceptions
+#       operationId: getFarmManagerList
+#       parameters:
+#       - name: orderId
+#         in: path
+#         description: ID of pet that needs to be fetched
+#         required: true
+#         schema:
+#           maximum: 10.0
+#           minimum: 1.0
+#           type: integer
+#           format: int64
+#       responses:
+#         200:
+#           description: successful operation
+#           content:
+#             application/xml:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#             application/json:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#         400:
+#           description: Invalid ID supplied
+#           content: {}
+#         404:
+#           description: Order not found
+#           content: {}
+#   /orderresponselog:
+#     post:
+#       tags:
+#       - Order Response Log
+#       summary: Find purchase order by ID
+#       description: For valid response try integer IDs with value >= 1 and <= 10.         Other
+#         values will generated exceptions
+#       operationId: getOrderResponseLog
+#       parameters:
+#       - name: orderId
+#         in: path
+#         description: ID of pet that needs to be fetched
+#         required: true
+#         schema:
+#           maximum: 10.0
+#           minimum: 1.0
+#           type: integer
+#           format: int64
+#       responses:
+#         200:
+#           description: successful operation
+#           content:
+#             application/xml:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#             application/json:
+#               schema:
+#                 $ref: '#/components/schemas/ProductBooking'
+#         400:
+#           description: Invalid ID supplied
+#           content: {}
+#         404:
+#           description: Order not found
+#           content: {}
+components:
+  schemas:
+    #Generic schemas:
+    Request:
+      type: object
+      properties:
+        businessProcess:
+          example: PriceSheetWS
+          type: string
+        processStep:
+          type: string
+          example: PriceSheetRequest
+        partnerId:
+          type: string
+          example: 1100032937530
+        partnerType:
+          type: string
+          example: AGIIS-EBID
+        messageId:
+          type: string
+          example: abc1234-test
+    Response:
+      type: object
+      properties:
+        processStep: 
+          type: string
+          example: PriceSheet
+        messageId:
+          type: string
+    Header: 
+      type: object
+      properties:
+        ThisDocumentIdentifier:
+          $ref: "#/components/schemas/DocumentIdentifier"
+        ThisDocumentDateTime:
+          $ref: "#/components/schemas/DateTime"
+    RequestHeader:
+      allOf:
+      - $ref: '#/components/schemas/Header'
+      - type: object
+      properties:
+        From:
+          $ref: '#/components/schemas/PartnerInformation'
+        To:
+          $ref: '#/components/schemas/PartnerInformation'
+    ResponseHeader:
+      allOf:
+      - $ref: '#/components/schemas/Header'
+      - type: object
+      properties:
+        From:
+          $ref: '#/components/schemas/PartnerInformation'
+        To:
+          $ref: '#/components/schemas/PartnerInformation'
+          
+    DateTime:
+      type: object
+      properties:
+        DateTime:
+          type: object
+          example: "2019-06-03T02:57:59Z"
+          properties:
+            DateTimeQualifier:
+              type: string
+              xml:
+                attribute: true
+    DateTimeRange:
+      type: object
+      properties:
+        FromDateTime:
+          type: string
+          example: "2018-09-01T00:00:00.000-05:00"
+          format: date-time
+        ToDateTime:
+          type: string
+          example: "2019-08-31T00:00:00.000-05:00"
+          format: date-time            
+          
+    DocumentIdentifier:
+      type: object
+      properties:
+        DocumentIdentifier: 
+          type: string
+          example: "9999999999"
+    PartnerInformation:
+      type: object
+      properties:
+        PartnerInformation:
+          type: object
+          required:
+            - PartnerName
+            - PartnerIdentifier
+          properties:
+            PartnerName:
+              type: string
+              example: MONSANTO COMPANY
+            PartnerIdentifier:
+              $ref: '#/components/schemas/PartnerIdentifier'
+            ContactInformation:
+              $ref: '#/components/schemas/ContactInformation'
+            AddressInformation:
+              $ref: '#/components/schemas/AddressInformation'
+    PartnerIdentifier:
+      type: object
+      example: 0062668030000
+      properties:
+        Agency:
+          type: string
+          example: AGIIS-EBID
+          xml:
+            attribute: true
+    ContactInformation:
+      anyOf:
+      - type: array
+      - type: object
+      example:
+          - ContactName: 2019
+            ContactDescription: SeedYear
+          - ContactName: WS-XML
+            ContactDescription: DataSource
+          - ContactName: AgriDealer
+            ContactDescription: SoftwareName
+          - ContactName: 1.0.0
+            ContactDescription: SoftwareVersion
+      items: 
+        type: object
+        properties:
+          ContactName:
+            type: string
+          ContactDescription:
+            type: string
+    AddressInformation:
+      type: object
+      properties:
+        AddressLine:
+          type: string
+          example: "74971 AVENUE 358"
+        CityName:
+          type: string
+          example: WALLACE
+        StateOrProvince:
+          type: string
+          example: "NE"
+        PostalCode:
+          type: string
+          example: "69169"
+        PostalCountry:
+          type: string
+          example: "US"
+          
+    Location:
+      type: object
+      properties:
+        LocationType:
+          type: string
+          example: "Destination"
+        ZoneID:
+          type: string
+          example: "AB"
+    CurrencyCode:
+      oneOf:
+        - type: object
+        - type: string
+      example: "USD"
+      properties:
+        Domain:
+          type: string
+          example: "ISO-4217"
+          xml:
+            attribute: true
+    LanguageCode:
+      anyOf:
+      - type: object
+      - type: string
+      example: "eng"
+      properties:
+        Domain:
+          example: "ISO-639-2T"
+          type: string
+          xml:
+            attribute: true
+    
+    #Price Sheet
+    PriceSheetRequest:
+      allOf:
+      - $ref: '#/components/schemas/Request'
+      - type: object
+      properties: 
+          xmlPayload:
+            type: "object"
+            properties:
+              PriceSheetRequest:
+                type: object
+                properties:
+                  Header:
+                    $ref: '#/components/schemas/RequestHeader'
+                  PriceSheetRequestBody:
+                    $ref: '#/components/schemas/PriceSheetRequestBody' 
+          
+    PriceSheetRequestBody:
+      type: object
+      properties:
+        PriceSheetRequestProperties:
+          $ref: "#/components/schemas/PriceSheetRequestProperties"
+        PriceSheetRequestPartners:
+          $ref: "#/components/schemas/PriceSheetRequestPartners"
+    PriceSheetRequestPartners:
+      type: object
+      properties:
+        Buyer:
+          $ref: '#/components/schemas/PartnerInformation'  
+    PriceSheetRequestProperties:
+      type: object
+      properties:
+        CurrencyCode:
+          $ref: '#/components/schemas/CurrencyCode'
+        LanguageCode:
+          $ref: '#/components/schemas/LanguageCode'
+        LastRequestDate:
+           $ref: "#/components/schemas/DateTime"
+        ZoneID:
+          type: string
+          example: AB
+        ProductClassification:
+          type: string
+          example: C
+
+    PriceSheetResponse:
+      allOf:
+      - $ref: '#/components/schemas/Response'
+      - type: object
+      properties: 
+          xmlPayload:
+            type: "object"
+            properties:
+              PriceSheet:
+                $ref: "#/components/schemas/PriceSheet"
+      xml:
+        name: inboundData
+                
+    PriceSheet:
+      type: object
+      properties:
+        version:
+          type: string
+          example: "5.1.1"
+          xml:
+            attribute: true
+        Header:
+          $ref: '#/components/schemas/ResponseHeader'
+        PriceSheetRequestBody:
+          type: object
+          allOf:
+          - $ref: '#/components/schemas/PriceSheetBody'
+          - type: object
+            xml:
+              name: PriceSheetRequestBody
+              wrapped: true
+            
+              
+    PriceSheetBody:
+      type: object
+      properties:
+        PriceSheetProperties:
+          $ref: "#/components/schemas/PriceSheetProperties"
+        PriceSheetPartners:
+          $ref: '#/components/schemas/PriceSheetPartners'
+        PriceSheetDetails:
+          $ref: '#/components/schemas/PriceSheetDetails'
+    
+    PriceSheetProperties:
+      type: object
+      properties:
+        CurrencyCode:
+          $ref: '#/components/schemas/CurrencyCode'
+        LanguageCode:
+          $ref: '#/components/schemas/LanguageCode'
+        PriceSheetReason:
+          type: string
+          example: Update
+        PriceSheetInformation:
+          $ref: '#/components/schemas/PriceSheetInformation'
+          
+    PriceSheetInformation:
+      type: object
+      properties:
+        PriceSheetIdentifier:
+          type: string
+          example: 110003293753020190710211351622
+        PriceSheetDescription:
+          type: string
+          example: "2019 ASGROW, DEKALB, DELTAPINE SUGGESTED RETAIL PRICE"
+        PriceSheetEffectiveDate:
+          type: object
+          properties:
+            DateTimeInformation:
+             $ref: "#/components/schemas/DateTime"
+        SpecialInstructions:
+          type: string
+          example: "For Agronomic Zone Geography definition, please reference Price Sheet.  All suggested retail prices are applicable for farmers assigned to the Agronomic Zone for crops that have zone pricing.  Farmer's agronomic zone assignment lookup is available via www.MyMonsanto.com or call 1-877-AGZONE1.  PRICES, TERMS, CONDITIONS, AND PRODUCT AVAILABILITY MAY CHANGE WITHOUT NOTICE.  Please refer to the Price Sheet for further detailed information."
+
+    PriceSheetPartners:
+      type: object
+      properties:
+        Seller: 
+          $ref: '#/components/schemas/PartnerInformation'
+        Buyer:
+          $ref: '#/components/schemas/PartnerInformation'
+    
+    PriceSheetDetails:
+      type: object
+      properties:
+        PriceZoneGeographyList:
+          type: object
+          properties:
+            PriceZoneGeography:
+              properties:
+                PriceZone:
+                  $ref: '#/components/schemas/PriceZone'
+                ZoneGeographies:
+                  type: object
+                  properties:
+                    ZoneGeography:
+                      $ref: '#/components/schemas/ZoneGeography'
+        PriceSheetProductLineItem:
+          type: array
+          items:
+            $ref: '#/components/schemas/PriceSheetProductLineItem'
+    
+    PriceZone:
+      type: object
+      properties:
+        ZoneID:
+          type: string
+          example: "AB"
+        ZoneType:
+          type: string
+          example: "General"
+        ZoneName:
+          type: string
+          example: "ZONE 12"
+          
+    ZoneGeography:
+      type: object
+      properties:
+        PostalCountry:
+          type: string
+          example: US
+    
+    PriceSheetProductLineItem:
+      type: object
+      properties:
+        Action:
+          type: string
+          xml:
+            attribute: true
+        LineNumber:
+          type: string
+        ProductInformation:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductInformation'
+        PriceSheetPriceData:
+          type: object
+          properties:
+            PriceApplicabilityCriteria:
+              $ref: '#/components/schemas/PriceApplicabilityCriteria'
+            ListPrice:
+              type: object
+              properties:
+                Pricing:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/Pricing'
+           
+           
+    PriceApplicabilityCriteria:
+      type: object
+      properties:
+        OrderFeatures:
+          type: object
+          properties:
+            PriceSheetEffectiveDate:
+              type: object
+              properties:
+                DateTimeInformation:
+                  type: object
+                  properties:
+                    DateTimeRange:
+                      $ref: '#/components/schemas/DateTimeRange'
+                        
+        GeographicFeatures:
+          type: object
+          properties:
+            Location:
+              $ref: '#/components/schemas/Location'
+    Pricing:
+      type: object
+      properties:
+        PriceType:
+          example: SuggestedDealerOrRetailerPrice
+          type: string
+          xml:
+            attribute: true
+        PricingPerUnit:
+          type: object
+          properties:
+            MonetaryAmount:
+              $ref: '#/components/schemas/MonetaryAmount'
+            PriceBasis:
+              type: object
+              properties:
+                Measurement:
+                  $ref: '#/components/schemas/Measurement'
+            
+    MonetaryAmount:
+      type: object
+      properties:
+        MonetaryValue:
+          type: number
+          format: float
+          example: 286.00
+        CurrencyCode: 
+          $ref: '#/components/schemas/CurrencyCode'  
+  
+    ProductInformation:
+      type: object
+      properties:
+        ProductIdentification:
+           $ref: '#/components/schemas/ProductIdentification'
+    
+    ProductIdentification:
+      required:
+      - ProductIdentifier
+      type: object
+      properties:
+        ProductIdentifier:
+          type: object
+          example: 883580073417
+          properties:
+            Agency:
+              type: string
+              xml:
+                attribute: true
+        ProductName:
+          type: string
+        ProductDescription:
+          type: string
+        ProductClassification:
+          type: string
+          
+    #ProductBooking
+    ProductBookingRequest:
+      allOf:
+      - $ref: '#/components/schemas/Request'
+      - type: object
+      properties: 
+          xmlPayload:
+            type: "object"
+            properties:
+              ProductBooking:
+                $ref: '#/components/schemas/ProductBooking'
+                
+    ProductBookingResponse:
+      allOf:
+      - $ref: '#/components/schemas/Response'
+      - type: object
+      properties: 
+        xmlPayload:
+          type: object
+          properties:
+            ProductBookingResponse:
+              type: object
+              properties:
+                Version:
+                  type: string
+                  example: "5.3"
+                  xml:
+                    attribute: true
+            Header:
+              $ref: '#/components/schemas/ResponseHeader'
+            ProductBookingResponseBody:
+              $ref: '#/components/schemas/ProductBookingResponseBody'
+               
+    ProductBookingResponseBody:
+      type: object
+      properties:
+        ProductBookingResponseProperties:
+           $ref: '#/components/schemas/ProductBookingProperties'
+        ProductBookingResponsePartners:
+           $ref: '#/components/schemas/ProductBookingPartners'
+        ProductBookingResponseDetails:
+          $ref: '#/components/schemas/ProductBookingDetails'
+        RetailerOrderImpactSummary:
+          type: array
+          items:
+            $ref: '#/components/schemas/RetailerResponseSummaryProductLineItem'
+            
+    RetailerResponseSummaryProductLineItem:
+      type: object
+      properties:
+        ProductIdentification:
+          $ref: '#/components/schemas/ProductIdentification'
+        IncreaseDecreaseRetailerProductQuantity:
+          $ref: '#/components/schemas/IncreaseOrDecrease'
+        TotalRetailerOrderedProductQuantity:
+          type: object
+          properties:
+            Measurement:
+              $ref: '#/components/schemas/Measurement'
+        TotalBookingDemandQuantity:
+          type: object
+          properties:
+            Measurement:
+              $ref: '#/components/schemas/Measurement'
+        TotalLongShortPosition:
+          type: object
+          properties:
+            Measurement:
+              $ref: '#/components/schemas/Measurement'
+            LongShortPositionType:
+              type: string
+              example: Short
+              
+    ProductBooking:
+      type: object
+      properties:
+        Header:
+          $ref: '#/components/schemas/RequestHeader'
+        schemaLocation:
+          type: string
+          example: "urn:cidx:names:specification:ces:schema:all:5:3 file:///Y:/B2B/SC-II/5.3/Chem_eStandards_5.3_FINAL_QA_2013-09-30a.xsd"
+          xml:
+            attribute: true
+        ProductBookingBody:
+          $ref: '#/components/schemas/ProductBookingBody'
+          
+    ProductBookingBody:
+      type: object
+      properties:
+        ProductBookingProperties:
+          $ref: '#/components/schemas/ProductBookingProperties'
+        ProductBookingPartners:
+          $ref: '#/components/schemas/ProductBookingPartners'
+        ProductBookingDetails:
+          $ref: '#/components/schemas/ProductBookingDetails'
+    
+    ProductBookingProperties:
+      type: object
+      required:
+      - ProductBookingType
+      - ProductBookingOrderNumber
+      - ProductBookingOrderTypeCode
+      - ProductBookingOrderIssuedDate
+      - LanguageCode
+      - CurrencyCode
+      - BuyerSequenceNumber
+      - SoftwareInformation
+      - ReferenceInformation
+      properties:
+        ProductBookingType:
+          type: string
+          enum: ["New", "Changed", "Cancelled"]
+          example: "New"
+        ProductBookingOrderNumber:
+          type: string
+          example: "1000"
+        ProductBookingOrderTypeCode:
+          $ref: '#/components/schemas/ProductBookingOrderTypeCode'
+        ProductBookingOrderIssuedDate:
+          $ref: '#/components/schemas/DateTime'
+      
+        LanguageCode:
+          $ref: '#/components/schemas/LanguageCode'
+        CurrencyCode:
+          $ref: '#/components/schemas/CurrencyCode'
+        BuyerSequenceNumber: 
+          type: string
+          example: "0"
+        SoftwareInformation: 
+          type: object
+          properties:
+            SoftwareSource:
+              type: string
+              example: "AgriDealer"
+            SoftwareVersion: 
+              type: string
+              example: "1.0.0"
+        
+        ReferenceInformation:
+          $ref: '#/components/schemas/ReferenceInformation'
+        ResponseStatus:
+          $ref: '#/components/schemas/ResponseStatus'
+        SpecialInstructions:
+          type: object
+          example: "West Farm"
+          properties:
+            InstructionType:
+              type: string
+              example: "MarkingInstructions"
+              xml:
+                attribute: true
+        ProductYear:
+          type: integer
+          example: 2019
+        DirectShipFlag:
+          type: integer
+          example: 0
+    
+    ResponseStatus:
+      type: object
+      properties:
+        ResponseStatusReasonIdentifier:
+          type: object
+          properties: 
+            Agency:
+              type: string
+              example: "ECMS"
+        ResponseStatusReasonDescription:
+          type: string
+          example: "Duplicate Invoice # 1000. Order 611583652 is already created for this invoice (PO)."
+    
+    ProductBookingOrderTypeCode:
+      type: object
+      example: KN
+      properties:
+        Domain:
+          type: string
+          example: "ANSI-ASC-X12-92"
+          xml:
+              attribute: true
+        
+    ProductBookingPartners:
+      type: object
+      required:
+      - Buyer
+      - Seller
+      - ShipTo
+      - SoldTo
+      - Payer
+      properties:
+        Buyer:
+          $ref: '#/components/schemas/PartnerInformation'
+        Seller:
+          $ref: '#/components/schemas/PartnerInformation'
+        ShipTo:
+          $ref: '#/components/schemas/PartnerInformation'
+        SoldTo:
+          $ref: '#/components/schemas/PartnerInformation'
+        Payer:  
+          $ref: '#/components/schemas/PartnerInformation'
+        OtherPartner:
+          type: array
+          items:
+            allOf:
+            - $ref: '#/components/schemas/PartnerInformation'
+            - type: object
+            properties:
+              PartnerRole:
+                type: string
+                example: FinancialInstitution
+                xml:
+                  attribute: true
+        
+    ProductBookingDetails:
+      type: object
+      properties:
+        ProductBookingProductLineItem:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductBookingProductLineItem'
+          
+    ProductBookingProductLineItem:
+      type: object
+      properties:
+        LineNumber:
+          type: string
+          example: "999999"
+        ActionRequest:
+          type: string
+          enum: ["Add", "Delete", "Increase", "Decrease"]
+          example: "Add"
+        LineItemType:
+          type: string
+          example: "Sale"
+        ProductBookingOrderLineItemNumber:
+          type: integer
+          example: 1
+        ProductIdentification:
+          $ref: '#/components/schemas/ProductIdentification'
+        ReferenceInformation:
+          $ref: '#/components/schemas/ReferenceInformation'
+        IncreaseOrDecrease:
+          $ref: '#/components/schemas/IncreaseOrDecrease'
+        ProductQuantity: 
+          type: object
+          properties:
+            Measurement: 
+               $ref: '#/components/schemas/Measurement'
+               
+        RequestedShipDateTime:
+          description: "only used on requests"
+          type: object
+          properties:
+            DateTimeInformation:
+             $ref: '#/components/schemas/DateTime'
+        PotentialShipDateTime:
+          description: "only used on responses"
+          type: object
+          properties:
+            DateTimeInformation:
+             $ref: '#/components/schemas/DateTime'
+       
+        SpecialInstructions:
+          type: object
+          example: "Plant Early"
+          properties:
+            InstructionType:
+              type: string
+              example: "General"
+              xml:
+                attribute: true
+      
+    IncreaseOrDecrease:
+      type: object
+      properties:
+        IncreaseOrDecreaseType: 
+          type: string
+          enum: ["Increase", "Decrease"]
+          example: "Increase"
+        ProductQuantityChange:
+          type: object
+          properties:
+            Measurement:
+              $ref: '#/components/schemas/Measurement'    
+        
+    Measurement:
+      type: object
+      properties:
+        MeasurementValue:
+          type: integer
+          example: 50
+        UnitOfMeasureCode:
+          type: object
+          example: "UN"
+          properties:
+            Domain: 
+              type: string
+              example: "UN-Rec-20"
+              xml:
+                attribute: true
+          
+    ReferenceInformation:
+      type: object
+      properties:
+        ReferenceType:
+          type: string
+          example: "SalesOrderReference" # ask enums de estos
+          xml:
+            attribute:
+              true
+        DocumentReference:
+          $ref: '#/components/schemas/DocumentIdentifier'  
+
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header

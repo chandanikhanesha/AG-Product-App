@@ -1,0 +1,76 @@
+.rt-thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: white;
+}
+.sticky {
+  position: sticky !important;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: whitesmoke;
+}
+.rt-tbody {
+  overflow: visible !important;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-desc,
+.ReactTable .rt-thead .rt-td.-sort-desc,
+.ReactTable .rt-thead.-header {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc {
+  -webkit-box-shadow: none !important;
+}
+
+.ReactTable {
+  border: none !important;
+}
+.ReactTable .-pagination {
+  box-shadow: none !important;
+  border-top: none !important;
+}
+#packageseedsize {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#packageseedsize td,
+#packageseedsize th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#packageseedsize tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#packageseedsize tr:hover {
+  background-color: #ddd;
+}
+
+#packageseedsize th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: white;
+}
+
+.rthfc.-striped .rt-tr.-odd .rt-td {
+  left: 0px !important;
+  border: none !important;
+}
+
+.rthfc.-striped .rt-tr.-even .rt-td {
+  left: 0px !important;
+  border: none !important;
+}
+
+.ReactTable .rt-thead .rt-th {
+  left: 0px !important;
+  border: none !important;
+}

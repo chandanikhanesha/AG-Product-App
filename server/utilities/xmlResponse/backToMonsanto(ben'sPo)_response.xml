@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ag:outboundData xmlns:ag="urn:aggateway:names:ws:docexchange">
+         <ag:processStep>ProductBookingWSResponse</ag:processStep>
+         <ag:messageId>c93175c0-d904-4c86-bace-3cf7ed36cd7d</ag:messageId>
+         <ag:xmlPayload>
+            <urn:ProductBookingResponse xmlns:urn="urn:cidx:names:specification:ces:schema:all:5:3" Version="5.3">
+               <urn:Header>
+                  <urn:ThisDocumentIdentifier>
+                     <urn:DocumentIdentifier>e2e76127-e567-4ddd-a9d4-5c8a0ed6f3d6</urn:DocumentIdentifier>
+                  </urn:ThisDocumentIdentifier>
+                  <urn:ThisDocumentDateTime>
+                     <urn:DateTime DateTimeQualifier="On">2022-04-22T06:45:38Z</urn:DateTime>
+                  </urn:ThisDocumentDateTime>
+                  <urn:From>
+                     <urn:PartnerInformation>
+                        <urn:PartnerName>Bayer Crop Science</urn:PartnerName>
+                        <urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+                     </urn:PartnerInformation>
+                  </urn:From>
+                  <urn:To>
+                     <urn:PartnerInformation>
+                        <urn:PartnerName>hemaxi's Farm</urn:PartnerName>
+                        <urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+                     </urn:PartnerInformation>
+                  </urn:To>
+               </urn:Header>
+               <urn:ProductBookingResponseBody>
+                  <urn:ProductBookingResponseProperties>
+                     <urn:ProductBookingType>Changed</urn:ProductBookingType>
+                     <urn:ProductBookingOrderNumber>1063557</urn:ProductBookingOrderNumber>
+                     <urn:ProductBookingOrderTypeCode Domain="ANSI-ASC-X12-92">KN</urn:ProductBookingOrderTypeCode>
+                     <urn:ProductBookingOrderIssuedDate>
+                        <urn:DateTime DateTimeQualifier="On">2022-04-22T06:45:38Z</urn:DateTime>
+                     </urn:ProductBookingOrderIssuedDate>
+                     <urn:LanguageCode Domain="ISO-639-2T">EN</urn:LanguageCode>
+                     <urn:CurrencyCode Domain="ISO-4217">USD</urn:CurrencyCode>
+                     <urn:BuyerSequenceNumber>00000000</urn:BuyerSequenceNumber>
+                     <urn:SoftwareInformation>
+                        <urn:SoftwareSource>Software Source</urn:SoftwareSource>
+                        <urn:SoftwareVersion>0.0.0</urn:SoftwareVersion>
+                     </urn:SoftwareInformation>
+                     <urn:ReferenceInformation ReferenceType="SalesOrderReference">
+                        <urn:DocumentReference>
+                           <urn:DocumentIdentifier>0038004184</urn:DocumentIdentifier>
+                        </urn:DocumentReference>
+                     </urn:ReferenceInformation>
+                     <urn:DirectShipFlag>0</urn:DirectShipFlag>
+                  </urn:ProductBookingResponseProperties>
+                  <urn:ProductBookingResponsePartners>
+                     <urn:Buyer>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>hemaxi's Farm</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+                        </urn:PartnerInformation>
+                     </urn:Buyer>
+                     <urn:Seller>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>Bayer Crop Science</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+                        </urn:PartnerInformation>
+                     </urn:Seller>
+                     <urn:ShipTo>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>ben's Farm</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="GLN">1100018447992</urn:PartnerIdentifier>
+                           <urn:AddressInformation>
+                              <urn:AddressLine>Benjamin St</urn:AddressLine>
+                              <urn:CityName>Omaha</urn:CityName>
+                              <urn:StateOrProvince>NE</urn:StateOrProvince>
+                              <urn:PostalCode>23456</urn:PostalCode>
+                              <urn:PostalCountry>US</urn:PostalCountry>
+                           </urn:AddressInformation>
+                        </urn:PartnerInformation>
+                     </urn:ShipTo>
+                     <urn:SoldTo>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>hemaxi's Farm</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+                        </urn:PartnerInformation>
+                     </urn:SoldTo>
+                     <urn:Payer>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>hemaxi's Farm</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+                        </urn:PartnerInformation>
+                     </urn:Payer>
+                  </urn:ProductBookingResponsePartners>
+                  <urn:ProductBookingResponseDetails>
+                     <urn:ProductBookingResponseProductLineItem>
+                        <urn:LineNumber>000020</urn:LineNumber>
+                        <urn:LineItemType>Sale</urn:LineItemType>
+                        <urn:ProductBookingOrderLineItemNumber>000002</urn:ProductBookingOrderLineItemNumber>
+                        <urn:ProductIdentification>
+                           <urn:ProductIdentifier Agency="AGIIS-ProductID">00190794218009</urn:ProductIdentifier>
+                        </urn:ProductIdentification>
+                        <urn:ProductQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>55.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:ProductQuantity>
+                        <urn:PotentialShipDateTime>
+                           <urn:DateTimeInformation>
+                              <urn:DateTime DateTimeQualifier="On">2022-04-22T00:00:00Z</urn:DateTime>
+                           </urn:DateTimeInformation>
+                        </urn:PotentialShipDateTime>
+                     </urn:ProductBookingResponseProductLineItem>
+                  </urn:ProductBookingResponseDetails>
+                  <urn:RetailerOrderImpactSummary>
+                     <urn:RetailerResponseSummaryProductLineItem>
+                        <urn:ProductIdentification>
+                           <urn:ProductIdentifier Agency="AGIIS-ProductID">00190794218009</urn:ProductIdentifier>
+                           <urn:ProductName>B.AS.A3253.S00.140M.L3.US</urn:ProductName>
+                        </urn:ProductIdentification>
+                        <urn:IncreaseDecreaseRetailerProductQuantity>
+                           <urn:IncreaseOrDecreaseType>Decrease</urn:IncreaseOrDecreaseType>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>0.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:IncreaseDecreaseRetailerProductQuantity>
+                        <urn:TotalRetailerOrderedProductQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>0.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalRetailerOrderedProductQuantity>
+                        <urn:TotalBookingDemandQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>208.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalBookingDemandQuantity>
+                        <urn:TotalLongShortPosition>
+                           <urn:LongShortPositionType>Short</urn:LongShortPositionType>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>208.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalLongShortPosition>
+                     </urn:RetailerResponseSummaryProductLineItem>
+                  </urn:RetailerOrderImpactSummary>
+               </urn:ProductBookingResponseBody>
+            </urn:ProductBookingResponse>
+         </ag:xmlPayload>
+      </ag:outboundData>
+   </soapenv:Body>
+</soapenv:Envelope>

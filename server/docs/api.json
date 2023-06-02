@@ -1,0 +1,333 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "0.1.0",
+    "title": "AgriDealer",
+    "description": "AgriDealer API"
+  },
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "tags": [
+    {
+      "name": "user",
+      "description": "UsersController"
+    }
+  ],
+  "paths": {
+    "/test": {
+      "get": {
+        "operationId": "test",
+        "summary": "Testing endpoint",
+        "responses": {
+          "200": {
+            "summary": "Hello world test"
+          }
+        }
+      }
+    },
+    "/api/auth/invite": {
+      "get": {
+        "tags": ["user"],
+        "summary": "Finds a user by invite token",
+        "operationId": "findUserByInviteToken",
+        "security": [{ "accessToken": [] }],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "body",
+            "description": "Generated invite token",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/api/auth/sign_in": {
+      "post": {
+        "tags": ["user"],
+        "summary": "Verify user credentials and return a JWT",
+        "operationId": "signIn",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "body",
+            "description": "User email",
+            "required": true,
+            "type": "string",
+            "format": "email"
+          },
+          {
+            "name": "password",
+            "in": "body",
+            "description": "User password",
+            "required": true,
+            "type": "string",
+            "format": "password"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful login",
+            "schema": {
+              "$ref": "#/components/schemas/UserShort"
+            }
+          },
+          "400": {
+            "description": "Unsuccessful login"
+          }
+        }
+      }
+    },
+    "/api/auth/accept_invite": {
+      "post": {
+        "tags": ["user"],
+        "summary": "Signs a user up, using the invite token",
+        "operationId": "acceptInvite",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "body",
+            "description": "Users email",
+            "required": true,
+            "type": "string",
+            "format": "email"
+          },
+          {
+            "name": "firstName",
+            "in": "body",
+            "description": "User first name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "lastName",
+            "in": "body",
+            "description": "User last name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "in": "body",
+            "description": "User password",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "passwordConfirmation",
+            "in": "body",
+            "description": "User password confirmation",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/components/schemas/UserShort"
+            }
+          }
+        }
+      }
+    },
+    "/api/admin/users/invite": {
+      "post": {
+        "tags": ["user"],
+        "summary": "Invites a user",
+        "operationId": "inviteUser",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "body",
+            "description": "New user email",
+            "required": true,
+            "type": "string",
+            "format": "email"
+          },
+          {
+            "name": "firstName",
+            "in": "body",
+            "description": "User first name",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "lastName",
+            "in": "body",
+            "description": "User last name",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful user invite",
+            "schema": {
+              "$ref": "#/components/schemas/User"
+            }
+          }
+        }
+      }
+    },
+    "/api/admin/users": {
+      "get": {
+        "tags": ["user"],
+        "summary": "Returns a list of users",
+        "operationId": "usersList",
+        "security": [{ "accessToken": [] }],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/components/schemas/Users"
+            }
+          }
+        }
+      }
+    },
+    "/api/admin/users/{id}": {
+      "delete": {
+        "tags": ["user"],
+        "summary": "Deletes a user",
+        "operationId": "deleteUser",
+        "security": [{ "accessToken": [] }],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "User id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "description": "Deleted user id"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/{id}": {
+      "get": {
+        "tags": ["user"],
+        "summary": "Returns a user",
+        "operationId": "getUser",
+        "security": [{ "accessToken": [] }],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "User id",
+            "required": true,
+            "type": "ineger"
+          }
+        ]
+      },
+      "patch": {
+        "tags": ["user"],
+        "summary": "Updates a user",
+        "operationId": "updateUser",
+        "security": [{ "accessToken": [] }],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "User id",
+            "required": true,
+            "type": "ineger"
+          },
+          {
+            "name": "firstName",
+            "in": "body",
+            "description": "User first name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "lastName",
+            "in": "body",
+            "description": "User last name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "in": "body",
+            "description": "New password",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "passwordConfirmation",
+            "in": "body",
+            "description": "Password confirmation",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  },
+  "securityDefinitions": {
+    "accessToken": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "x-access-token"
+    }
+  },
+  "components": {
+    "schemas": {
+      "Users": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/User"
+        }
+      },
+      "User": {
+        "required": ["firstName", "lastName", "email", "id"],
+        "properties": {
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "id": {
+            "type": "integer"
+          }
+        }
+      },
+      "UserShort": {
+        "required": ["email", "authToken"],
+        "properties": {
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "authToken": {
+            "type": "string",
+            "format": "JWT"
+          }
+        }
+      }
+    }
+  }
+}

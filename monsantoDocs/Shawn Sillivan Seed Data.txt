@@ -1,0 +1,25 @@
+Dealer:
+SHAWN SULLIVAN SEED
+GLN 1100032937530
+
+UserName: 3350963
+Password: USITsup$3
+
+Address:
+74971 AVENUE 358     
+WALLACE 
+NE 
+69169
+
+Payer:
+SHAWN SULLIVAN SEED
+GLN 1100032937530
+
+Dealer Price Zone Information - Corn Zone 12 (Zone Code = AB)
+
+My Monsanto TEST website = wwwq.mymonsanto.com
+Proagrica TEST URL for data exchange = https://ewsoat.us.f4f.com/F4FInbound
+
+SoftwareName: AgriDealer
+
+Grower - BOYD GIGAX GLN 1100031728863 (License#902832)73523 AVENUE 358A, Hayes Center, NE 69032

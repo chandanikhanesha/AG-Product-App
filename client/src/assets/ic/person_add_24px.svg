@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/person_add_24px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic/person_add_24px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,12.5 C17.21,12.5 19,10.71 19,8.5 C19,6.29 17.21,4.5 15,4.5 C12.79,4.5 11,6.29 11,8.5 C11,10.71 12.79,12.5 15,12.5 Z M6,10.5 L6,7.5 L4,7.5 L4,10.5 L1,10.5 L1,12.5 L4,12.5 L4,15.5 L6,15.5 L6,12.5 L9,12.5 L9,10.5 L6,10.5 Z M15,14.5 C12.33,14.5 7,15.84 7,18.5 L7,20.5 L23,20.5 L23,18.5 C23,15.84 17.67,14.5 15,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/calendar_today</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.8181818,5.45454545 L17.0909091,5.45454545 L17.0909091,4 L15.6363636,4 L15.6363636,5.45454545 L8.36363636,5.45454545 L8.36363636,4 L6.90909091,4 L6.90909091,5.45454545 L6.18181818,5.45454545 C5.38181818,5.45454545 4.72727273,6.10909091 4.72727273,6.90909091 L4.72727273,18.5454545 C4.72727273,19.3454545 5.38181818,20 6.18181818,20 L17.8181818,20 C18.6181818,20 19.2727273,19.3454545 19.2727273,18.5454545 L19.2727273,6.90909091 C19.2727273,6.10909091 18.6181818,5.45454545 17.8181818,5.45454545 Z M17.8181818,18.5454545 L6.18181818,18.5454545 L6.18181818,9.09090909 L17.8181818,9.09090909 L17.8181818,18.5454545 Z" id="path-1"></path>
+    </defs>
+    <g id="ic/calendar_today" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Shape" fill="#CCCCCC" xlink:href="#path-1"></use>
+    </g>
+</svg>

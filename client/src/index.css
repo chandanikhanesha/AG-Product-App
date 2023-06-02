@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  -webkit-print-color-adjust: exact !important;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@media print {
+  .hide-print,
+  .hide-print * {
+    display: none !important;
+    /* page-break-inside: avoid; */
+  }
+  body {
+    background: rgb(252, 252, 252) !important;
+  }
+
+  /* .ReactTable {
+    font-size: 0.8em;
+  } */
+
+  .ReactTable .rt-table {
+    overflow: hidden !important;
+  }
+
+  /* .ReactTable .rt-thead .rt-th {
+    font-size: 0.8rem;
+  } */
+
+  .show-print {
+    display: block !important;
+  }
+
+  html,
+  body,
+  #root {
+    width: 21.59cm;
+  }
+
+  @page {
+    size: auto;
+    margin: 0px;
+    padding-left: -50px;
+  }
+}
+
+.print-logo-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  margin-right: 20px;
+  z-index: 9999;
+}
+
+.print-logo {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+.show-print {
+  display: none;
+}
+
+/* .ReactTable .rt-tr, .ReactTable .rt-tr-group, .no-print-break {
+  page-break-inside: avoid;
+} */
+.print:last-child {
+  page-break-after: avoid;
+}
+.ReactTable {
+  min-height: 200px;
+}
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.snippet {
+  margin-right: 20px;
+}
+.dot-flashing {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #38a154;
+  color: #38a154;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #38a154;
+  color: #38a154;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #38a154;
+  color: #38a154;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #38a154;
+  }
+  50%,
+  100% {
+    background-color: #e6fff3;
+  }
+}
+@media print {
+  html,
+  body {
+    height: 99%;
+
+    margin-left: -35px;
+  }
+}

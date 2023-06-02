@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:urn1="urn:cidx:names:specification:ces:schema:all:5:3" xmlns:urn="urn:aggateway:names:ws:docexchange" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-BAFF8E68A8D786C41314389777816581">
+				<wsse:Username>3350963</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">USITsup$3</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soapenv:Header>
+	<soapenv:Body>
+		<urn:inboundData>
+			<urn:businessProcess>PriceAndAvailabilityWS53</urn:businessProcess>
+			<urn:processStep>PriceAndAvailabilityRequest53</urn:processStep>
+			<urn:partnerId>1100032937530</urn:partnerId>
+			<urn:partnerType>AGIIS-EBID</urn:partnerType>
+			<urn:conversationId />
+			<urn:messageId>PriceAndAvailabilityWS53_001</urn:messageId>
+			<urn:xmlPayload>
+				<ns:PriceAndAvailabilityRequest Version="5.3" xmlns:ns="urn:cidx:names:specification:ces:schema:all:5:3">
+					<ns:Header>
+						<ns:ThisDocumentIdentifier>
+							<ns:DocumentIdentifier>TEST-1234</ns:DocumentIdentifier>
+						</ns:ThisDocumentIdentifier>
+						<ns:ThisDocumentDateTime>
+							<ns:DateTime DateTimeQualifier="On">2019-06-03T01:40:32-05:00</ns:DateTime>
+						</ns:ThisDocumentDateTime>
+						<ns:From>
+							<ns:PartnerInformation>
+								<ns:PartnerName>SHAWN SULLIVAN SEED</ns:PartnerName>
+								<ns:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</ns:PartnerIdentifier>
+								<ns:ContactInformation>
+									<ns:ContactName>WS-XML</ns:ContactName>
+									<ns:ContactDescription>DataSource</ns:ContactDescription>
+								</ns:ContactInformation>
+								<ns:ContactInformation>
+									<ns:ContactName>2019</ns:ContactName>
+									<ns:ContactDescription>SeedYear</ns:ContactDescription>
+								</ns:ContactInformation>
+								<ns:ContactInformation>
+									<ns:ContactName>AgriDealer</ns:ContactName>
+									<ns:ContactDescription>SoftwareName</ns:ContactDescription>
+								</ns:ContactInformation>
+								<ns:ContactInformation>
+									<ns:ContactName>1.0.0</ns:ContactName>
+									<ns:ContactDescription>SoftwareVersion</ns:ContactDescription>
+								</ns:ContactInformation>
+							</ns:PartnerInformation>
+						</ns:From>
+						<ns:To>
+							<ns:PartnerInformation>
+								<ns:PartnerName>MONSANTO</ns:PartnerName>
+								<ns:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</ns:PartnerIdentifier>
+							</ns:PartnerInformation>
+						</ns:To>
+					</ns:Header>
+					<ns:PriceAndAvailabilityRequestBody>
+						<ns:PriceAndAvailabilityRequestProperties>
+							<ns:RequisitionNumber>
+								<ns:DocumentIdentifier>PALREQUEST1234</ns:DocumentIdentifier>
+							</ns:RequisitionNumber>
+							<ns:RequisitionTypeCode Domain="ANSI-ASC-X12-92">DEALRPAL</ns:RequisitionTypeCode>
+							<ns:LanguageCode Domain="ISO-639-2T">ENG</ns:LanguageCode>
+							<ns:CurrencyCode Domain="ISO-4217">USD</ns:CurrencyCode>
+						</ns:PriceAndAvailabilityRequestProperties>
+						<ns:PriceAndAvailabilityRequestPartners>
+							<ns:Buyer>
+								<ns:PartnerInformation>
+									<ns:PartnerName>SHAWN SULLIVAN SEED</ns:PartnerName>
+									<ns:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</ns:PartnerIdentifier>
+								</ns:PartnerInformation>
+							</ns:Buyer>
+							<ns:Seller>
+								<ns:PartnerInformation>
+									<ns:PartnerName>MONSANTO</ns:PartnerName>
+									<ns:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</ns:PartnerIdentifier>
+								</ns:PartnerInformation>
+							</ns:Seller>
+							<ns:ShipTo>
+								<ns:PartnerInformation>
+									<ns:PartnerName>SHAWN SULLIVAN SEED</ns:PartnerName>
+									<ns:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</ns:PartnerIdentifier>
+								</ns:PartnerInformation>
+							</ns:ShipTo>
+							<ns:Payer>
+								<ns:PartnerInformation>
+									<ns:PartnerName>SHAWN SULLIVAN SEED</ns:PartnerName>
+									<ns:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</ns:PartnerIdentifier>
+								</ns:PartnerInformation>
+							</ns:Payer>
+						</ns:PriceAndAvailabilityRequestPartners>
+						<ns:PriceAndAvailabilityRequestDetails>
+							<ns:PriceAndAvailabilityRequestProductLineItem>
+								<ns:LineNumber>1</ns:LineNumber>
+								<ns:RequisitionLineItemNumber>1</ns:RequisitionLineItemNumber>
+								<ns:ProductIdentification>
+									<ns:ProductIdentifier Agency="AGIIS-ProductID">00883580840033</ns:ProductIdentifier>
+									<ns:ProductClassification>C</ns:ProductClassification>
+								</ns:ProductIdentification>
+								<ns:ProductQuantity>
+									<ns:Measurement>
+										<ns:MeasurementValue>10</ns:MeasurementValue>
+										<ns:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns:UnitOfMeasureCode>
+									</ns:Measurement>
+								</ns:ProductQuantity>
+								<ns:ScheduleDateTimeInformation ScheduleType="RequestedDelivery">
+									<ns:DateTimeInformation>
+										<ns:DateTime DateTimeQualifier="On">2019-06-03T01:40:32-05:00</ns:DateTime>
+									</ns:DateTimeInformation>
+								</ns:ScheduleDateTimeInformation>
+							</ns:PriceAndAvailabilityRequestProductLineItem>
+							<ns:PriceAndAvailabilityRequestProductLineItem>
+								<ns:LineNumber>2</ns:LineNumber>
+								<ns:RequisitionLineItemNumber>2</ns:RequisitionLineItemNumber>
+								<ns:ProductIdentification>
+									<ns:ProductIdentifier Agency="AGIIS-ProductID">00888346610608</ns:ProductIdentifier>
+									<ns:ProductClassification>B</ns:ProductClassification>
+								</ns:ProductIdentification>
+								<ns:ProductQuantity>
+									<ns:Measurement>
+										<ns:MeasurementValue>10</ns:MeasurementValue>
+										<ns:UnitOfMeasureCode Domain="UN-Rec-20">UN</ns:UnitOfMeasureCode>
+									</ns:Measurement>
+								</ns:ProductQuantity>
+								<ns:ScheduleDateTimeInformation ScheduleType="RequestedDelivery">
+									<ns:DateTimeInformation>
+										<ns:DateTime DateTimeQualifier="On">2019-06-03T01:40:32-05:00</ns:DateTime>
+									</ns:DateTimeInformation>
+								</ns:ScheduleDateTimeInformation>
+							</ns:PriceAndAvailabilityRequestProductLineItem>
+							<ns:PriceAndAvailabilityRequestProductLineItem>
+								<ns:LineNumber>3</ns:LineNumber>
+								<ns:RequisitionLineItemNumber>3</ns:RequisitionLineItemNumber>
+								<ns:ProductIdentification>
+									<ns:ProductIdentifier Agency="AGIIS-ProductID">00888346807213</ns:ProductIdentifier>
+									<ns:ProductClassification>B</ns:ProductClassification>
+								</ns:ProductIdentification>
+								<ns:ProductQuantity>
+									<ns:Measurement>
+										<ns:MeasurementValue>10</ns:MeasurementValue>
+										<ns:UnitOfMeasureCode Domain="UN-Rec-20">UN</ns:UnitOfMeasureCode>
+									</ns:Measurement>
+								</ns:ProductQuantity>
+								<ns:ScheduleDateTimeInformation ScheduleType="RequestedDelivery">
+									<ns:DateTimeInformation>
+										<ns:DateTime DateTimeQualifier="On">2019-06-03T01:40:32-05:00</ns:DateTime>
+									</ns:DateTimeInformation>
+								</ns:ScheduleDateTimeInformation>
+							</ns:PriceAndAvailabilityRequestProductLineItem>
+							<ns:PriceAndAvailabilityRequestProductLineItem>
+								<ns:LineNumber>4</ns:LineNumber>
+								<ns:RequisitionLineItemNumber>4</ns:RequisitionLineItemNumber>
+								<ns:ProductIdentification>
+									<ns:ProductIdentifier Agency="AGIIS-ProductID">00888346613180</ns:ProductIdentifier>
+									<ns:ProductClassification>C</ns:ProductClassification>
+								</ns:ProductIdentification>
+								<ns:ProductQuantity>
+									<ns:Measurement>
+										<ns:MeasurementValue>10</ns:MeasurementValue>
+										<ns:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns:UnitOfMeasureCode>
+									</ns:Measurement>
+								</ns:ProductQuantity>
+								<ns:ScheduleDateTimeInformation ScheduleType="RequestedDelivery">
+									<ns:DateTimeInformation>
+										<ns:DateTime DateTimeQualifier="On">2019-06-03T01:40:32-05:00</ns:DateTime>
+									</ns:DateTimeInformation>
+								</ns:ScheduleDateTimeInformation>
+							</ns:PriceAndAvailabilityRequestProductLineItem>
+							<ns:PriceAndAvailabilityRequestProductLineItem>
+								<ns:LineNumber>5</ns:LineNumber>
+								<ns:RequisitionLineItemNumber>5</ns:RequisitionLineItemNumber>
+								<ns:ProductIdentification>
+									<ns:ProductIdentifier Agency="AGIIS-ProductID">00888346317347</ns:ProductIdentifier>
+									<ns:ProductClassification>C</ns:ProductClassification>
+								</ns:ProductIdentification>
+								<ns:ProductQuantity>
+									<ns:Measurement>
+										<ns:MeasurementValue>10</ns:MeasurementValue>
+										<ns:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns:UnitOfMeasureCode>
+									</ns:Measurement>
+								</ns:ProductQuantity>
+								<ns:ScheduleDateTimeInformation ScheduleType="RequestedDelivery">
+									<ns:DateTimeInformation>
+										<ns:DateTime DateTimeQualifier="On">2019-06-03T01:40:32-05:00</ns:DateTime>
+									</ns:DateTimeInformation>
+								</ns:ScheduleDateTimeInformation>
+							</ns:PriceAndAvailabilityRequestProductLineItem>
+							<ns:PriceAndAvailabilityRequestProductLineItem>
+								<ns:LineNumber>6</ns:LineNumber>
+								<ns:RequisitionLineItemNumber>6</ns:RequisitionLineItemNumber>
+								<ns:ProductIdentification>
+									<ns:ProductIdentifier Agency="AGIIS-ProductID">00888346336164</ns:ProductIdentifier>
+									<ns:ProductClassification>B</ns:ProductClassification>
+								</ns:ProductIdentification>
+								<ns:ProductQuantity>
+									<ns:Measurement>
+										<ns:MeasurementValue>10</ns:MeasurementValue>
+										<ns:UnitOfMeasureCode Domain="UN-Rec-20">UN</ns:UnitOfMeasureCode>
+									</ns:Measurement>
+								</ns:ProductQuantity>
+								<ns:ScheduleDateTimeInformation ScheduleType="RequestedDelivery">
+									<ns:DateTimeInformation>
+										<ns:DateTime DateTimeQualifier="On">2019-06-03T01:40:32-05:00</ns:DateTime>
+									</ns:DateTimeInformation>
+								</ns:ScheduleDateTimeInformation>
+							</ns:PriceAndAvailabilityRequestProductLineItem>
+							<ns:PriceAndAvailabilityRequestProductLineItem>
+								<ns:LineNumber>7</ns:LineNumber>
+								<ns:RequisitionLineItemNumber>7</ns:RequisitionLineItemNumber>
+								<ns:ProductIdentification>
+									<ns:ProductIdentifier Agency="AGIIS-ProductID">00888346902000</ns:ProductIdentifier>
+									<ns:ProductClassification>T</ns:ProductClassification>
+								</ns:ProductIdentification>
+								<ns:ProductQuantity>
+									<ns:Measurement>
+										<ns:MeasurementValue>10</ns:MeasurementValue>
+										<ns:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns:UnitOfMeasureCode>
+									</ns:Measurement>
+								</ns:ProductQuantity>
+								<ns:ScheduleDateTimeInformation ScheduleType="RequestedDelivery">
+									<ns:DateTimeInformation>
+										<ns:DateTime DateTimeQualifier="On">2019-06-03T01:40:32-05:00</ns:DateTime>
+									</ns:DateTimeInformation>
+								</ns:ScheduleDateTimeInformation>
+							</ns:PriceAndAvailabilityRequestProductLineItem>
+						</ns:PriceAndAvailabilityRequestDetails>
+					</ns:PriceAndAvailabilityRequestBody>
+				</ns:PriceAndAvailabilityRequest>
+			</urn:xmlPayload>
+		</urn:inboundData>
+	</soapenv:Body>
+</soapenv:Envelope>  

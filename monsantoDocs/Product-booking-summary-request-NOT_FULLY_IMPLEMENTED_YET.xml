@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="0" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-1559528172355" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>3350963</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">USITsup$3</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soapenv:Header>
+	<soapenv:Body>
+		<inboundData xmlns="urn:aggateway:names:ws:docexchange">
+			<businessProcess>ProductBookingWS53</businessProcess>
+			<processStep>ProductBookingWSRequest</processStep>
+			<partnerId>1100032937530</partnerId>
+			<partnerType>AGIIS-EBID</partnerType>
+			<conversationId/>
+			<messageId>PBS_001_TEST</messageId>
+			<xmlPayload>
+				<n1:ProductBooking xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3">
+					<n1:Header>
+						<n1:ThisDocumentIdentifier>
+							<n1:DocumentIdentifier>PBS_1234_TEST</n1:DocumentIdentifier>
+						</n1:ThisDocumentIdentifier>
+						<n1:ThisDocumentDateTime>
+							<n1:DateTime DateTimeQualifier="On">2019-06-02T21:16:03-05:00</n1:DateTime>
+						</n1:ThisDocumentDateTime>
+						<n1:From>
+							<n1:PartnerInformation>
+								<n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+								<n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+								<n1:ContactInformation>
+									<n1:ContactName>2019</n1:ContactName>
+									<n1:ContactDescription>SeedYear</n1:ContactDescription>
+								</n1:ContactInformation>
+								<n1:ContactInformation>
+									<n1:ContactName>WS-XML</n1:ContactName>
+									<n1:ContactDescription>DataSource</n1:ContactDescription>
+								</n1:ContactInformation>
+								<n1:ContactInformation>
+									<n1:ContactName>AgriDealer</n1:ContactName>
+									<n1:ContactDescription>SoftwareName</n1:ContactDescription>
+								</n1:ContactInformation>
+								<n1:ContactInformation>
+									<n1:ContactName>1.0.0</n1:ContactName>
+									<n1:ContactDescription>SoftwareVersion</n1:ContactDescription>
+								</n1:ContactInformation>
+							</n1:PartnerInformation>
+						</n1:From>
+						<n1:To>
+							<n1:PartnerInformation>
+								<n1:PartnerName>Monsanto Company</n1:PartnerName>
+								<n1:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</n1:PartnerIdentifier>
+							</n1:PartnerInformation>
+						</n1:To>
+					</n1:Header>
+					<n1:ProductBookingBody>
+						<n1:ProductBookingProperties>
+							<n1:ProductBookingType>SummaryRequest</n1:ProductBookingType>
+							<n1:ProductBookingOrderNumber>999999</n1:ProductBookingOrderNumber>
+							<n1:ProductBookingOrderTypeCode>NE</n1:ProductBookingOrderTypeCode>
+							<n1:ProductBookingOrderIssuedDate>
+								<n1:DateTime DateTimeQualifier="On">2019-06-02T21:16:04-05:00</n1:DateTime>
+							</n1:ProductBookingOrderIssuedDate>
+							<n1:LanguageCode Domain="ISO-639-2T">EN</n1:LanguageCode>
+							<n1:CurrencyCode Domain="ISO-4217">USD</n1:CurrencyCode>
+							<n1:BuyerSequenceNumber>1</n1:BuyerSequenceNumber>
+							<n1:ProductYear>2019</n1:ProductYear>
+							<n1:DirectShipFlag>0</n1:DirectShipFlag>
+						</n1:ProductBookingProperties>
+						<n1:ProductBookingPartners>
+							<n1:Buyer>
+								<n1:PartnerInformation>
+									<n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+									<n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+								</n1:PartnerInformation>
+							</n1:Buyer>
+							<n1:Seller>
+								<n1:PartnerInformation>
+									<n1:PartnerName>Monsanto Company</n1:PartnerName>
+									<n1:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</n1:PartnerIdentifier>
+								</n1:PartnerInformation>
+							</n1:Seller>
+							<n1:ShipTo>
+								<n1:PartnerInformation>
+									<n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+									<n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+								</n1:PartnerInformation>
+							</n1:ShipTo>
+							<n1:SoldTo>
+								<n1:PartnerInformation>
+									<n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+									<n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+								</n1:PartnerInformation>
+							</n1:SoldTo>
+							<n1:Payer>
+								<n1:PartnerInformation>
+									<n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+									<n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+								</n1:PartnerInformation>
+							</n1:Payer>
+						</n1:ProductBookingPartners>
+					</n1:ProductBookingBody>
+				</n1:ProductBooking>
+			</xmlPayload>
+		</inboundData>
+	</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <soapenv:Fault>
+            <faultcode>soapenv:Server</faultcode>
+            <faultstring>Backside Connection Failure</faultstring>
+            <detail>
+                <con:fault xmlns:con="http://www.bea.com/wli/sb/context">
+                    <con:reason>Failed to establish backside connection</con:reason>
+                    <con:location>
+                        <con:node>Received response code 500 from server</con:node>
+                        <con:path>reponse-pipeline</con:path>
+                    </con:location>
+                </con:fault>
+            </detail>
+        </soapenv:Fault>
+    </soapenv:Body>
+</soapenv:Envelope>

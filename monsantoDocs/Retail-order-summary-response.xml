@@ -1,0 +1,1714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<urn:outboundData xmlns:urn="urn:aggateway:names:ws:docexchange">
+			<urn:processStep>RetailerOrderSummaryResponse</urn:processStep>
+			<urn:messageId/>
+			<urn:xmlPayload>
+				<urn:RetailerOrderSummaryReport xmlns:urn="urn:cidx:names:specification:ces:schema:all:5:3" Version="5.3">
+					<urn:Header>
+						<urn:ThisDocumentIdentifier>
+							<urn:DocumentIdentifier>/H27/G1rc+FvREfHechKxg==</urn:DocumentIdentifier>
+						</urn:ThisDocumentIdentifier>
+						<urn:ThisDocumentDateTime>
+							<urn:DateTime DateTimeQualifier="On">2019-06-28T22:55:11Z</urn:DateTime>
+						</urn:ThisDocumentDateTime>
+						<urn:From>
+							<urn:PartnerInformation>
+								<urn:PartnerName>MONSANTO AGRICULTURAL CO</urn:PartnerName>
+								<urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+							</urn:PartnerInformation>
+						</urn:From>
+						<urn:To>
+							<urn:PartnerInformation>
+								<urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+								<urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+							</urn:PartnerInformation>
+						</urn:To>
+					</urn:Header>
+					<urn:RetailerOrderSummaryReportBody>
+						<urn:RetailerOrderSummaryReportProperties>
+							<urn:CurrencyCode Domain="ISO-4217">USD</urn:CurrencyCode>
+							<urn:LanguageCode Domain="ISO-639-2T">Eng</urn:LanguageCode>
+							<urn:LastRequestDate>
+								<urn:DateTime DateTimeQualifier="On">2019-06-28T22:55:05.000Z</urn:DateTime>
+							</urn:LastRequestDate>
+							<urn:ZoneID>0</urn:ZoneID>
+							<urn:ProductClassification>0</urn:ProductClassification>
+						</urn:RetailerOrderSummaryReportProperties>
+						<urn:RetailerOrderSummaryReportPartners>
+							<urn:Buyer>
+								<urn:PartnerInformation>
+									<urn:PartnerName>SHAWN SULLIVAN SEED WALLACE NE</urn:PartnerName>
+									<urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+								</urn:PartnerInformation>
+							</urn:Buyer>
+							<urn:Seller>
+								<urn:PartnerInformation>
+									<urn:PartnerName>MONSANTO AGRICULTURAL CO</urn:PartnerName>
+									<urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+								</urn:PartnerInformation>
+							</urn:Seller>
+						</urn:RetailerOrderSummaryReportPartners>
+
+						<!-- THIS IMPORTANT PART OF THE RESPONSE, ALL THIS INFO BELONGS TO INVENTORY TABLE OF OUR SYSTEM-->
+						<urn:RetailerOrderSummaryReportDetails>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>1</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580264334</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>20.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>2</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580684408</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>75.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>75.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>3</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580684446</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>25.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>25.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>4</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580834872</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>23.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>23.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>5</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835244</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>180.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>180.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>6</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835312</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>30.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>10.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>20.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>7</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580839457</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>45.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>45.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>8</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580839471</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>28.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>28.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>9</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580840873</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>30.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>30.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>10</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580952880</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>20.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>11</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953511</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>12</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953542</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>45.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>45.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>13</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953573</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>6.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>6.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>14</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346080548</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>15</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346080623</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>22.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>22.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>16</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346109508</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>17</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119910</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>100.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>100.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>18</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119941</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>42.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>42.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>19</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119958</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>20</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346120435</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>100.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>100.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>21</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346315848</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>22</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346592751</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>60.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>60.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>23</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346592805</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>200.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>200.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>24</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346610608</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>640.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>640.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>25</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346610653</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>60.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>60.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>26</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346667343</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>15.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>15.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>27</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346667398</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>250.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>250.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>28</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346883156</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>50.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>29</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00888346883163</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>16.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>16.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+							<urn:RetailerOrderSummaryReportProductLineItem>
+								<urn:LineNumber>30</urn:LineNumber>
+								<urn:ProductIdentification>
+									<urn:ProductIdentifier Agency="AGIIS-ProductID">00190794008464</urn:ProductIdentifier>
+								</urn:ProductIdentification>
+								<urn:TotalRetailerProductQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>80.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TotalRetailerProductQuantity>
+								<urn:ShippedQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ShippedQuantity>
+								<urn:ScheduledToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>80.000</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ScheduledToShipQuantity>
+								<urn:BalanceToShipQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:BalanceToShipQuantity>
+								<urn:PositionQuantity>
+									<urn:LongShortPositionType>Zero</urn:LongShortPositionType>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:PositionQuantity>
+								<urn:TransfersInQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersInQuantity>
+								<urn:TransfersOutQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:TransfersOutQuantity>
+								<urn:ReturnsQuantity>
+									<urn:Measurement>
+										<urn:MeasurementValue>0</urn:MeasurementValue>
+										<urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+									</urn:Measurement>
+								</urn:ReturnsQuantity>
+							</urn:RetailerOrderSummaryReportProductLineItem>
+						</urn:RetailerOrderSummaryReportDetails>
+					</urn:RetailerOrderSummaryReportBody>
+				</urn:RetailerOrderSummaryReport>
+			</urn:xmlPayload>
+		</urn:outboundData>
+	</soapenv:Body>
+</soapenv:Envelope>

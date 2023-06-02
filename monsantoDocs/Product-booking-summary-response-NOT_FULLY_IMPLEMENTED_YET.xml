@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:urn="urn:cidx:names:specification:ces:schema:all:5:3"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ag:outboundData xmlns:ag="urn:aggateway:names:ws:docexchange">
+            <ag:processStep>ProductBookingWSResponse</ag:processStep>
+            <ag:messageId/>
+            <ag:xmlPayload>
+                <urn:ProductBookingResponse Version="5.3">
+                    <urn:Header>
+                        <urn:ThisDocumentIdentifier>
+                            <urn:DocumentIdentifier>PBS_1234_TEST</urn:DocumentIdentifier>
+                        </urn:ThisDocumentIdentifier>
+                        <urn:ThisDocumentDateTime>
+                            <urn:DateTime DateTimeQualifier="On">2019-06-02T21:16:03-05:00</urn:DateTime>
+                        </urn:ThisDocumentDateTime>
+                        <urn:From>
+                            <urn:PartnerInformation>
+                                <urn:PartnerName>Monsanto Company</urn:PartnerName>
+                                <urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+                            </urn:PartnerInformation>
+                        </urn:From>
+                        <urn:To>
+                            <urn:PartnerInformation>
+                                <urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+                                <urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+                                <urn:ContactInformation>
+                                    <urn:ContactName>2019</urn:ContactName>
+                                    <urn:ContactDescription>SeedYear</urn:ContactDescription>
+                                </urn:ContactInformation>
+                                <urn:ContactInformation>
+                                    <urn:ContactName>WS-XML</urn:ContactName>
+                                    <urn:ContactDescription>DataSource</urn:ContactDescription>
+                                </urn:ContactInformation>
+                                <urn:ContactInformation>
+                                    <urn:ContactName>AgriDealer</urn:ContactName>
+                                    <urn:ContactDescription>SoftwareName</urn:ContactDescription>
+                                </urn:ContactInformation>
+                                <urn:ContactInformation>
+                                    <urn:ContactName>1.0.0</urn:ContactName>
+                                    <urn:ContactDescription>SoftwareVersion</urn:ContactDescription>
+                                </urn:ContactInformation>
+                            </urn:PartnerInformation>
+                        </urn:To>
+                    </urn:Header>
+                    <ProductBookingResponseBody xmlns="urn:cidx:names:specification:ces:schema:all:5:3">
+                        <ProductBookingResponseProperties>
+                            <ProductBookingType>SummaryRequest</ProductBookingType>
+                            <ProductBookingOrderNumber>611566318</ProductBookingOrderNumber>
+                            <ProductBookingOrderTypeCode>ZZ</ProductBookingOrderTypeCode>
+                            <ProductBookingOrderIssuedDate>
+                                <DateTime DateTimeQualifier="On">2019-01-09T14:11:18Z</DateTime>
+                            </ProductBookingOrderIssuedDate>
+                            <LanguageCode Domain="ISO-639-2T">eng</LanguageCode>
+                            <CurrencyCode Domain="ISO-4217">USD</CurrencyCode>
+                            <ReferenceInformation ReferenceType="SalesOrderReference">
+                                <DocumentReference>
+                                    <DocumentIdentifier>0611566318</DocumentIdentifier>
+                                </DocumentReference>
+                            </ReferenceInformation>
+                        </ProductBookingResponseProperties>
+                        <ProductBookingResponsePartners>
+                            <n1:Buyer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Buyer>
+                            <urn:Seller>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>Monsanto Company</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">0062668030000</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:Seller>
+                            <urn:ShipTo>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>BOYD B GIGAX</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">1100031728863</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:ShipTo>
+                            <n1:SoldTo xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                                xmlns="urn:aggateway:names:ws:docexchange"
+                                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:SoldTo>
+                            <n1:Payer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Payer>
+                        </ProductBookingResponsePartners>
+                        <ProductBookingResponseDetails>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000010</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835312</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC51-20RIB AF2 DGVT2P 80M BAS250</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>30.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                        </ProductBookingResponseDetails>
+                    </ProductBookingResponseBody>
+                    <ProductBookingResponseBody xmlns="urn:cidx:names:specification:ces:schema:all:5:3">
+                        <ProductBookingResponseProperties>
+                            <ProductBookingType>SummaryRequest</ProductBookingType>
+                            <ProductBookingOrderNumber>611566331</ProductBookingOrderNumber>
+                            <ProductBookingOrderTypeCode>ZZ</ProductBookingOrderTypeCode>
+                            <ProductBookingOrderIssuedDate>
+                                <DateTime DateTimeQualifier="On">2019-01-09T14:13:17Z</DateTime>
+                            </ProductBookingOrderIssuedDate>
+                            <LanguageCode Domain="ISO-639-2T">eng</LanguageCode>
+                            <CurrencyCode Domain="ISO-4217">USD</CurrencyCode>
+                            <ReferenceInformation ReferenceType="SalesOrderReference">
+                                <DocumentReference>
+                                    <DocumentIdentifier>0611566331</DocumentIdentifier>
+                                </DocumentReference>
+                            </ReferenceInformation>
+                        </ProductBookingResponseProperties>
+                        <ProductBookingResponsePartners>
+                            <n1:Buyer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Buyer>
+                            <urn:Seller>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>Monsanto Company</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">0062668030000</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:Seller>
+                            <urn:ShipTo>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>GREGORY W BURROWS</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">1100012684959</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:ShipTo>
+                            <n1:SoldTo xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                                xmlns="urn:aggateway:names:ws:docexchange"
+                                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:SoldTo>
+                            <n1:Payer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Payer>
+                        </ProductBookingResponsePartners>
+                        <ProductBookingResponseDetails>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000010</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580952385</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC50-63RIB AR SS 80M BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>20.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000030</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580834872</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC51-19RIB AR2 DGVT3P 80M BAS250</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>23.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                        </ProductBookingResponseDetails>
+                    </ProductBookingResponseBody>
+                    <ProductBookingResponseBody xmlns="urn:cidx:names:specification:ces:schema:all:5:3">
+                        <ProductBookingResponseProperties>
+                            <ProductBookingType>SummaryRequest</ProductBookingType>
+                            <ProductBookingOrderNumber>611566691</ProductBookingOrderNumber>
+                            <ProductBookingOrderTypeCode>ZZ</ProductBookingOrderTypeCode>
+                            <ProductBookingOrderIssuedDate>
+                                <DateTime DateTimeQualifier="On">2019-01-09T18:56:30Z</DateTime>
+                            </ProductBookingOrderIssuedDate>
+                            <LanguageCode Domain="ISO-639-2T">eng</LanguageCode>
+                            <CurrencyCode Domain="ISO-4217">USD</CurrencyCode>
+                            <ReferenceInformation ReferenceType="SalesOrderReference">
+                                <DocumentReference>
+                                    <DocumentIdentifier>0611566691</DocumentIdentifier>
+                                </DocumentReference>
+                            </ReferenceInformation>
+                        </ProductBookingResponseProperties>
+                        <ProductBookingResponsePartners>
+                            <n1:Buyer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Buyer>
+                            <urn:Seller>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>Monsanto Company</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">0062668030000</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:Seller>
+                            <urn:ShipTo>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>KENNY KORELL</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">1100018455911</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:ShipTo>
+                            <n1:SoldTo xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                                xmlns="urn:aggateway:names:ws:docexchange"
+                                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:SoldTo>
+                            <n1:Payer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Payer>
+                        </ProductBookingResponsePartners>
+                        <ProductBookingResponseDetails>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000010</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580264327</urn:ProductIdentifier>
+                                    <urn:ProductName>DKS28-05 50# Concep</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>20.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                        </ProductBookingResponseDetails>
+                    </ProductBookingResponseBody>
+                    <ProductBookingResponseBody xmlns="urn:cidx:names:specification:ces:schema:all:5:3">
+                        <ProductBookingResponseProperties>
+                            <ProductBookingType>SummaryRequest</ProductBookingType>
+                            <ProductBookingOrderNumber>611573213</ProductBookingOrderNumber>
+                            <ProductBookingOrderTypeCode>ZZ</ProductBookingOrderTypeCode>
+                            <ProductBookingOrderIssuedDate>
+                                <DateTime DateTimeQualifier="On">2019-01-24T14:40:48Z</DateTime>
+                            </ProductBookingOrderIssuedDate>
+                            <LanguageCode Domain="ISO-639-2T">eng</LanguageCode>
+                            <CurrencyCode Domain="ISO-4217">USD</CurrencyCode>
+                            <ReferenceInformation ReferenceType="SalesOrderReference">
+                                <DocumentReference>
+                                    <DocumentIdentifier>0611573213</DocumentIdentifier>
+                                </DocumentReference>
+                            </ReferenceInformation>
+                        </ProductBookingResponseProperties>
+                        <ProductBookingResponsePartners>
+                            <n1:Buyer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Buyer>
+                            <urn:Seller>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>Monsanto Company</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">0062668030000</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:Seller>
+                            <urn:ShipTo>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>MIKE SULLIVAN</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">1100019919634</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:ShipTo>
+                            <n1:SoldTo xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                                xmlns="urn:aggateway:names:ws:docexchange"
+                                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:SoldTo>
+                            <n1:Payer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Payer>
+                        </ProductBookingResponsePartners>
+                        <ProductBookingResponseDetails>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000010</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835244</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC51-20RIB AR2 DGVT2P SP45 BAS250</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>45.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000020</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119910</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC53-68RIB AF SS SP50 BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>100.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000030</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119941</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC53-68RIB AR2 SS 80M BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>15.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000040</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346883163</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC58-34RIB AF2 SS 80M ELT500 B-N-E</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>14.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000050</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346883156</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC58-34RIB AF2 SS SP50 ELT500 B-N-E</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>50.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000060</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346667343</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC60-67RIB AF2 SS 80M BAS500 N</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>15.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000070</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346667398</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC60-67RIB AF2 SS SP50 BAS500 N</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>250.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000080</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580839457</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC60-67RIB AR2 SS SP45 BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>45.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000090</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953573</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC61-54RIB AF2 SS 80M BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>6.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000100</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953511</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC61-54RIB AF2 SS SP50 BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>50.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000110</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953542</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC61-54RIB AR2 SS SP45 BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>45.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000120</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346080623</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC61-55RIB AF2 DGVT2P 80M BAS250</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>22.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000130</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346120435</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC63-60RIB AF SS SP50 BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>100.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000140</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346592805</urn:ProductIdentifier>
+                                    <urn:ProductName>AG26X8 RR2X 40SCU_MB UNTR</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>160.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000150</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346610608</urn:ProductIdentifier>
+                                    <urn:ProductName>AG27X8 RR2X 40SCU_MB UNTR</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>480.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                        </ProductBookingResponseDetails>
+                    </ProductBookingResponseBody>
+                    <ProductBookingResponseBody xmlns="urn:cidx:names:specification:ces:schema:all:5:3">
+                        <ProductBookingResponseProperties>
+                            <ProductBookingType>SummaryRequest</ProductBookingType>
+                            <ProductBookingOrderNumber>611573270</ProductBookingOrderNumber>
+                            <ProductBookingOrderTypeCode>ZZ</ProductBookingOrderTypeCode>
+                            <ProductBookingOrderIssuedDate>
+                                <DateTime DateTimeQualifier="On">2019-01-24T14:53:38Z</DateTime>
+                            </ProductBookingOrderIssuedDate>
+                            <LanguageCode Domain="ISO-639-2T">eng</LanguageCode>
+                            <CurrencyCode Domain="ISO-4217">USD</CurrencyCode>
+                            <ReferenceInformation ReferenceType="SalesOrderReference">
+                                <DocumentReference>
+                                    <DocumentIdentifier>0611573270</DocumentIdentifier>
+                                </DocumentReference>
+                            </ReferenceInformation>
+                        </ProductBookingResponseProperties>
+                        <ProductBookingResponsePartners>
+                            <n1:Buyer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Buyer>
+                            <urn:Seller>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>Monsanto Company</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">0062668030000</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:Seller>
+                            <urn:ShipTo>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>STEVE VANBOENING</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">1100069601657</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:ShipTo>
+                            <n1:SoldTo xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                                xmlns="urn:aggateway:names:ws:docexchange"
+                                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:SoldTo>
+                            <n1:Payer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Payer>
+                        </ProductBookingResponsePartners>
+                        <ProductBookingResponseDetails>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000010</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580835244</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC51-20RIB AR2 DGVT2P SP45 BAS250</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>90.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000020</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580839471</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC60-67RIB AR2 SS 80M BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>28.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000030</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119941</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC53-68RIB AR2 SS 80M BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>32.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000040</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346610653</urn:ProductIdentifier>
+                                    <urn:ProductName>AG27X8 RR2X 140M UNTR</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>10.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000050</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346610608</urn:ProductIdentifier>
+                                    <urn:ProductName>AG27X8 RR2X 40SCU_MB UNTR</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>120.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                        </ProductBookingResponseDetails>
+                    </ProductBookingResponseBody>
+                    <ProductBookingResponseBody xmlns="urn:cidx:names:specification:ces:schema:all:5:3">
+                        <ProductBookingResponseProperties>
+                            <ProductBookingType>SummaryRequest</ProductBookingType>
+                            <ProductBookingOrderNumber>611581434</ProductBookingOrderNumber>
+                            <ProductBookingOrderTypeCode>ZZ</ProductBookingOrderTypeCode>
+                            <ProductBookingOrderIssuedDate>
+                                <DateTime DateTimeQualifier="On">2019-03-12T11:41:47Z</DateTime>
+                            </ProductBookingOrderIssuedDate>
+                            <LanguageCode Domain="ISO-639-2T">eng</LanguageCode>
+                            <CurrencyCode Domain="ISO-4217">USD</CurrencyCode>
+                            <ReferenceInformation ReferenceType="SalesOrderReference">
+                                <DocumentReference>
+                                    <DocumentIdentifier>0611581434</DocumentIdentifier>
+                                </DocumentReference>
+                            </ReferenceInformation>
+                        </ProductBookingResponseProperties>
+                        <ProductBookingResponsePartners>
+                            <n1:Buyer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Buyer>
+                            <urn:Seller>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>Monsanto Company</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">0062668030000</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:Seller>
+                            <urn:ShipTo>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>TIM MCKILLIP</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">1100035039231</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:ShipTo>
+                            <n1:SoldTo xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                                xmlns="urn:aggateway:names:ws:docexchange"
+                                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:SoldTo>
+                            <n1:Payer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Payer>
+                        </ProductBookingResponsePartners>
+                        <ProductBookingResponseDetails>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000020</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346080548</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC61-55RIB AR DGVT2P SP50 BAS250</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>50.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000030</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346315848</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC56-45RIB AF2 SS SP50 BAS500 B</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>50.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                        </ProductBookingResponseDetails>
+                    </ProductBookingResponseBody>
+                    <ProductBookingResponseBody xmlns="urn:cidx:names:specification:ces:schema:all:5:3">
+                        <ProductBookingResponseProperties>
+                            <ProductBookingType>SummaryRequest</ProductBookingType>
+                            <ProductBookingOrderNumber>611581594</ProductBookingOrderNumber>
+                            <ProductBookingOrderTypeCode>ZZ</ProductBookingOrderTypeCode>
+                            <ProductBookingOrderIssuedDate>
+                                <DateTime DateTimeQualifier="On">2019-03-12T18:00:13Z</DateTime>
+                            </ProductBookingOrderIssuedDate>
+                            <LanguageCode Domain="ISO-639-2T">eng</LanguageCode>
+                            <CurrencyCode Domain="ISO-4217">USD</CurrencyCode>
+                            <ReferenceInformation ReferenceType="SalesOrderReference">
+                                <DocumentReference>
+                                    <DocumentIdentifier>0611581594</DocumentIdentifier>
+                                </DocumentReference>
+                            </ReferenceInformation>
+                        </ProductBookingResponseProperties>
+                        <ProductBookingResponsePartners>
+                            <n1:Buyer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Buyer>
+                            <urn:Seller>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>Monsanto Company</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">0062668030000</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:Seller>
+                            <urn:ShipTo>
+                                <urn:PartnerInformation>
+                                    <urn:PartnerName>CASEY TODD TJADEN</urn:PartnerName>
+                                    <urn:PartnerIdentifier Agency="GLN">1100019688240</urn:PartnerIdentifier>
+                                </urn:PartnerInformation>
+                            </urn:ShipTo>
+                            <n1:SoldTo xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                                xmlns="urn:aggateway:names:ws:docexchange"
+                                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:SoldTo>
+                            <n1:Payer xmlns:n1="urn:cidx:names:specification:ces:schema:all:5:3"
+                               xmlns="urn:aggateway:names:ws:docexchange"
+                               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <n1:PartnerInformation>
+                                    <n1:PartnerName>SHAWN SULLIVAN SEED</n1:PartnerName>
+                                    <n1:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</n1:PartnerIdentifier>
+                                </n1:PartnerInformation>
+                            </n1:Payer>
+                        </ProductBookingResponsePartners>
+                        <ProductBookingResponseDetails>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000010</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580684446</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC52-61RIB AF2 VT2P 80M BAS250</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>25.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000020</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580684408</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC52-61RIB AR VT2P 80M BAS250</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>75.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                            <urn:ProductBookingResponseProductLineItem>
+                                <urn:LineNumber>0000000030</urn:LineNumber>
+                                <urn:ProductBookingOrderLineItemNumber>0000000000</urn:ProductBookingOrderLineItemNumber>
+                                <urn:ProductIdentification>
+                                    <urn:ProductIdentifier Agency="AGIIS-ProductID">00888346119958</urn:ProductIdentifier>
+                                    <urn:ProductName>DKC53-68RIB AF2 SS 80M BAS500</urn:ProductName>
+                                </urn:ProductIdentification>
+                                <urn:ProductQuantity>
+                                    <urn:Measurement>
+                                        <urn:MeasurementValue>50.000</urn:MeasurementValue>
+                                        <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                                    </urn:Measurement>
+                                </urn:ProductQuantity>
+                            </urn:ProductBookingResponseProductLineItem>
+                        </ProductBookingResponseDetails>
+                    </ProductBookingResponseBody>
+                </urn:ProductBookingResponse>
+            </ag:xmlPayload>
+        </ag:outboundData>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,75 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      NODE_PG_FORCE_NATIVE: 1
+    ports:
+      - '${DATABASE_PORT}:${DATABASE_PORT}'
+    # volumes:
+    #   - ./dumps:/dumps
+
+  migrations:
+    build: ./server
+    image: agri_dealer_server
+    links:
+      - postgres
+    volumes:
+      - ./server/src:/app/src
+      - ./server/config:/app/config
+      - ./server/migrations:/app/migrations
+    environment:
+      DATABASE_HOST: ${DATABASE_HOST}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USER: ${DATABASE_USER}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+    command: bash -c 'while ! nc -q 1 ${DATABASE_HOST} ${DATABASE_PORT} </dev/null; do sleep 1; done && ./node_modules/.bin/sequelize db:migrate'
+
+  server:
+    build: ./server
+    image: agri_dealer_server
+    ports:
+      - '3001:3001'
+      - '9229:9229'
+    working_dir: /app
+    volumes:
+      - ./server/:/app/
+      - ./server/routers:/app/routers
+      - ./server/docs:/app/docs
+      - ./server/bin:/app/bin
+      - ./server/config:/app/config
+      - ./server/middleware:/app/middleware
+      - ./server/models:/app/models
+      - ./server/migrations:/app/migrations
+      - ./server/controllers:/app/controllers
+      - ./server/utilities:/app/utilities
+      - ./server/.env:/app/.env
+    cap_add:
+      - SYS_ADMIN
+    environment:
+      JWT_SECRET: ${JWT_SECRET}
+      NODE_ENV: development
+      URL_BASE: ${URL_BASE}
+    links:
+      - postgres
+      #      - rabbitmq
+      - frontend
+    command: npm start --node-flags --max_old_space_size=8000
+
+  frontend:
+    build: ./client
+    image: agri_dealer_client
+    ports:
+      - '3000:3000'
+    working_dir: /app
+    volumes:
+      - ./client/build:/app/build
+      - ./client/public:/app/public
+      - ./client/src:/app/src
+      - ./client/.env:/app/.env
+      - ./client/config:/app/config
+      - ./client/scripts:/app/scripts
+    command: yarn start

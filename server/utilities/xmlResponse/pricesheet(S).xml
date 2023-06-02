@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:urn="urn:aggateway:names:ws:docexchange"
+                  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:outboundData>
+         <urn:processStep>PriceSheet</urn:processStep>
+         <urn:messageId/>
+         <urn:xmlPayload>
+            <ns2:PriceSheet xmlns:ns2="urn:cidx:names:specification:ces:schema:all:5:1:1"
+                            Version="5.1.1">
+               <ns2:Header>
+                  <ns2:ThisDocumentIdentifier>
+                     <ns2:DocumentIdentifier>1f7a2a5d-d442-4637-8194-afe3d4fc2c58</ns2:DocumentIdentifier>
+                  </ns2:ThisDocumentIdentifier>
+                  <ns2:ThisDocumentDateTime>
+                     <ns2:DateTime DateTimeQualifier="On">2022-04-22T05:01:11.270Z</ns2:DateTime>
+                  </ns2:ThisDocumentDateTime>
+                  <ns2:From>
+                     <ns2:PartnerInformation>
+                        <ns2:PartnerName>MONSANTO COMPANY</ns2:PartnerName>
+                        <ns2:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</ns2:PartnerIdentifier>
+                     </ns2:PartnerInformation>
+                  </ns2:From>
+                  <ns2:To>
+                     <ns2:PartnerInformation>
+                        <ns2:PartnerName>hemaxi's Farm</ns2:PartnerName>
+                        <ns2:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</ns2:PartnerIdentifier>
+                        <ns2:ContactInformation>
+                           <ns2:ContactName>WS-XML</ns2:ContactName>
+                           <ns2:ContactDescription>DataSource</ns2:ContactDescription>
+                        </ns2:ContactInformation>
+                        <ns2:ContactInformation>
+                           <ns2:ContactName>AgriDealer</ns2:ContactName>
+                           <ns2:ContactDescription>SoftwareName</ns2:ContactDescription>
+                        </ns2:ContactInformation>
+                        <ns2:ContactInformation>
+                           <ns2:ContactName>2022</ns2:ContactName>
+                           <ns2:ContactDescription>SeedYear</ns2:ContactDescription>
+                        </ns2:ContactInformation>
+                     </ns2:PartnerInformation>
+                  </ns2:To>
+               </ns2:Header>
+               <ns2:PriceSheetBody>
+                  <ns2:PriceSheetProperties>
+                     <ns2:CurrencyCode>USD</ns2:CurrencyCode>
+                     <ns2:LanguageCode>eng</ns2:LanguageCode>
+                     <ns2:PriceSheetReason>Update</ns2:PriceSheetReason>
+                     <ns2:PriceSheetInformation>
+                        <ns2:PriceSheetIdentifier>110003293753020220422000112738</ns2:PriceSheetIdentifier>
+                        <ns2:PriceSheetDescription>2022 ASGROW, DEKALB, DELTAPINE SUGGESTED RETAIL PRICE</ns2:PriceSheetDescription>
+                        <ns2:PriceSheetEffectiveDate>
+                           <ns2:DateTimeInformation>
+                              <ns2:DateTime DateTimeQualifier="On">2022-04-22T00:01:12.740-05:00</ns2:DateTime>
+                           </ns2:DateTimeInformation>
+                        </ns2:PriceSheetEffectiveDate>
+                     </ns2:PriceSheetInformation>
+                     <ns2:SpecialInstructions InstructionType="Disclaimers">For Agronomic Zone Geography definition, please reference Price Sheet.  All suggested retail prices are applicable for farmers assigned to the Agronomic Zone for crops that have zone pricing.  Farmer's agronomic zone assignment lookup is available via www.MyMonsanto.com or call 1-877-AGZONE1.  PRICES, TERMS, CONDITIONS, AND PRODUCT AVAILABILITY MAY CHANGE WITHOUT NOTICE.  Please refer to the Price Sheet for further detailed information.</ns2:SpecialInstructions>
+                  </ns2:PriceSheetProperties>
+                  <ns2:PriceSheetPartners>
+                     <ns2:Seller>
+                        <ns2:PartnerInformation>
+                           <ns2:PartnerName>MONSANTO COMPANY</ns2:PartnerName>
+                           <ns2:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</ns2:PartnerIdentifier>
+                        </ns2:PartnerInformation>
+                     </ns2:Seller>
+                     <ns2:Buyer>
+                        <ns2:PartnerInformation>
+                           <ns2:PartnerName>hemaxi's Farm</ns2:PartnerName>
+                           <ns2:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</ns2:PartnerIdentifier>
+                           <ns2:ContactInformation>
+                              <ns2:ContactName>2022</ns2:ContactName>
+                              <ns2:ContactDescription>SeedYear</ns2:ContactDescription>
+                           </ns2:ContactInformation>
+                        </ns2:PartnerInformation>
+                     </ns2:Buyer>
+                  </ns2:PriceSheetPartners>
+                  <ns2:PriceSheetDetails>
+                     <ns2:PriceZoneGeographyList>
+                        <ns2:PriceZoneGeography>
+                           <ns2:PriceZone>
+                              <ns2:ZoneID>*</ns2:ZoneID>
+                              <ns2:ZoneType>General</ns2:ZoneType>
+                              <ns2:ZoneName/>
+                           </ns2:PriceZone>
+                           <ns2:ZoneGeographies>
+                              <ns2:ZoneGeography>
+                                 <ns2:PostalCountry>US</ns2:PostalCountry>
+                              </ns2:ZoneGeography>
+                           </ns2:ZoneGeographies>
+                        </ns2:PriceZoneGeography>
+                     </ns2:PriceZoneGeographyList>
+                     <ns2:PriceSheetProductLineItem Action="Replace">
+                        <ns2:LineNumber>1</ns2:LineNumber>
+                        <ns2:ProductInformation>
+                           <ns2:ProductIdentification>
+                              <ns2:ProductIdentifier Agency="UPC">883580264334</ns2:ProductIdentifier>
+                              <ns2:ProductDescription>DKS28-05 50# Concep/Poncho</ns2:ProductDescription>
+                              <ns2:ProductClassification>S</ns2:ProductClassification>
+                           </ns2:ProductIdentification>
+                        </ns2:ProductInformation>
+                        <ns2:ProductInformation>
+                           <ns2:ProductIdentification>
+                              <ns2:ProductIdentifier Agency="AssignedBySeller">000000000010668847</ns2:ProductIdentifier>
+                              <ns2:ProductDescription>DKS28-05 50# Concep/Poncho</ns2:ProductDescription>
+                              <ns2:ProductClassification>S</ns2:ProductClassification>
+                           </ns2:ProductIdentification>
+                        </ns2:ProductInformation>
+                        <ns2:ProductInformation>
+                           <ns2:ProductIdentification>
+                              <ns2:ProductIdentifier Agency="AGIIS-ProductID">00883580264334</ns2:ProductIdentifier>
+                              <ns2:ProductDescription>DKS28-05 50# Concep/Poncho</ns2:ProductDescription>
+                              <ns2:ProductClassification>S</ns2:ProductClassification>
+                           </ns2:ProductIdentification>
+                        </ns2:ProductInformation>
+                        <ns2:PriceSheetPriceData>
+                           <ns2:PriceApplicabilityCriteria>
+                              <ns2:OrderFeatures>
+                                 <ns2:PriceSheetEffectiveDate>
+                                    <ns2:DateTimeInformation>
+                                       <ns2:DateTimeRange>
+                                          <ns2:FromDateTime>2020-09-01T00:00:00.000-05:00</ns2:FromDateTime>
+                                          <ns2:ToDateTime>2022-08-31T00:00:00.000-05:00</ns2:ToDateTime>
+                                       </ns2:DateTimeRange>
+                                    </ns2:DateTimeInformation>
+                                 </ns2:PriceSheetEffectiveDate>
+                              </ns2:OrderFeatures>
+                              <ns2:ProductFeatures>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">ACRONYMNAME</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>DKS28-05</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TRAIT</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>S00</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TRAITDESCRIPTION</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>CONV</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">BASEUOM</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>BG</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">RELATIVEMATURITY</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>E</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">GRADESIZE</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>N/A</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TREATMENT</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>CP</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TREATMENTDESCRIPTION</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>Concep/Poncho</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">QUANTITYMULTIPLIER</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>1</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">QUANTITYMULTIPLIERDESCRIPTION</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>ORDER QUANTITY SHOULD BE IN MULTIPLES OF 1</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                              </ns2:ProductFeatures>
+                              <ns2:GeographicFeatures>
+                                 <ns2:Location>
+                                    <ns2:LocationType>Destination</ns2:LocationType>
+                                    <ns2:ZoneID/>
+                                 </ns2:Location>
+                              </ns2:GeographicFeatures>
+                           </ns2:PriceApplicabilityCriteria>
+                           <ns2:ListPrice>
+                              <ns2:Pricing PriceType="SuggestedGrowerOrEndUserPrice">
+                                 <ns2:PricingPerUnit>
+                                    <ns2:MonetaryAmount>
+                                       <ns2:MonetaryValue>109.00</ns2:MonetaryValue>
+                                       <ns2:CurrencyCode Domain="ISO-4217">USD</ns2:CurrencyCode>
+                                    </ns2:MonetaryAmount>
+                                    <ns2:PriceBasis>
+                                       <ns2:Measurement>
+                                          <ns2:MeasurementValue>1</ns2:MeasurementValue>
+                                          <ns2:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns2:UnitOfMeasureCode>
+                                       </ns2:Measurement>
+                                    </ns2:PriceBasis>
+                                 </ns2:PricingPerUnit>
+                              </ns2:Pricing>
+                              <ns2:Pricing PriceType="SuggestedDealerOrRetailerPrice">
+                                 <ns2:PricingPerUnit>
+                                    <ns2:MonetaryAmount>
+                                       <ns2:MonetaryValue>95.92</ns2:MonetaryValue>
+                                       <ns2:CurrencyCode Domain="ISO-4217">USD</ns2:CurrencyCode>
+                                    </ns2:MonetaryAmount>
+                                    <ns2:PriceBasis>
+                                       <ns2:Measurement>
+                                          <ns2:MeasurementValue>1</ns2:MeasurementValue>
+                                          <ns2:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns2:UnitOfMeasureCode>
+                                       </ns2:Measurement>
+                                    </ns2:PriceBasis>
+                                 </ns2:PricingPerUnit>
+                              </ns2:Pricing>
+                           </ns2:ListPrice>
+                        </ns2:PriceSheetPriceData>
+                     </ns2:PriceSheetProductLineItem>
+                     <ns2:PriceSheetProductLineItem Action="Replace">
+                        <ns2:LineNumber>2</ns2:LineNumber>
+                        <ns2:ProductInformation>
+                           <ns2:ProductIdentification>
+                              <ns2:ProductIdentifier Agency="UPC">888346280962</ns2:ProductIdentifier>
+                              <ns2:ProductDescription>DKS38-16 50# Concep/Poncho</ns2:ProductDescription>
+                              <ns2:ProductClassification>S</ns2:ProductClassification>
+                           </ns2:ProductIdentification>
+                        </ns2:ProductInformation>
+                        <ns2:ProductInformation>
+                           <ns2:ProductIdentification>
+                              <ns2:ProductIdentifier Agency="AssignedBySeller">000000000012276180</ns2:ProductIdentifier>
+                              <ns2:ProductDescription>DKS38-16 50# Concep/Poncho</ns2:ProductDescription>
+                              <ns2:ProductClassification>S</ns2:ProductClassification>
+                           </ns2:ProductIdentification>
+                        </ns2:ProductInformation>
+                        <ns2:ProductInformation>
+                           <ns2:ProductIdentification>
+                              <ns2:ProductIdentifier Agency="AGIIS-ProductID">00888346280962</ns2:ProductIdentifier>
+                              <ns2:ProductDescription>DKS38-16 50# Concep/Poncho</ns2:ProductDescription>
+                              <ns2:ProductClassification>S</ns2:ProductClassification>
+                           </ns2:ProductIdentification>
+                        </ns2:ProductInformation>
+                        <ns2:PriceSheetPriceData>
+                           <ns2:PriceApplicabilityCriteria>
+                              <ns2:OrderFeatures>
+                                 <ns2:PriceSheetEffectiveDate>
+                                    <ns2:DateTimeInformation>
+                                       <ns2:DateTimeRange>
+                                          <ns2:FromDateTime>2020-09-01T00:00:00.000-05:00</ns2:FromDateTime>
+                                          <ns2:ToDateTime>2022-08-31T00:00:00.000-05:00</ns2:ToDateTime>
+                                       </ns2:DateTimeRange>
+                                    </ns2:DateTimeInformation>
+                                 </ns2:PriceSheetEffectiveDate>
+                              </ns2:OrderFeatures>
+                              <ns2:ProductFeatures>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">ACRONYMNAME</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>DKS38-16</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TRAIT</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>S00</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TRAITDESCRIPTION</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>CONV</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">BASEUOM</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>BG</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">GRADESIZE</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>N/A</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TREATMENT</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>CP</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TREATMENTDESCRIPTION</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>Concep/Poncho</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">QUANTITYMULTIPLIER</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>1</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">QUANTITYMULTIPLIERDESCRIPTION</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>ORDER QUANTITY SHOULD BE IN MULTIPLES OF 1</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                              </ns2:ProductFeatures>
+                              <ns2:GeographicFeatures>
+                                 <ns2:Location>
+                                    <ns2:LocationType>Destination</ns2:LocationType>
+                                    <ns2:ZoneID/>
+                                 </ns2:Location>
+                              </ns2:GeographicFeatures>
+                           </ns2:PriceApplicabilityCriteria>
+                           <ns2:ListPrice>
+                              <ns2:Pricing PriceType="SuggestedGrowerOrEndUserPrice">
+                                 <ns2:PricingPerUnit>
+                                    <ns2:MonetaryAmount>
+                                       <ns2:MonetaryValue>122.00</ns2:MonetaryValue>
+                                       <ns2:CurrencyCode Domain="ISO-4217">USD</ns2:CurrencyCode>
+                                    </ns2:MonetaryAmount>
+                                    <ns2:PriceBasis>
+                                       <ns2:Measurement>
+                                          <ns2:MeasurementValue>1</ns2:MeasurementValue>
+                                          <ns2:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns2:UnitOfMeasureCode>
+                                       </ns2:Measurement>
+                                    </ns2:PriceBasis>
+                                 </ns2:PricingPerUnit>
+                              </ns2:Pricing>
+                              <ns2:Pricing PriceType="SuggestedDealerOrRetailerPrice">
+                                 <ns2:PricingPerUnit>
+                                    <ns2:MonetaryAmount>
+                                       <ns2:MonetaryValue>107.36</ns2:MonetaryValue>
+                                       <ns2:CurrencyCode Domain="ISO-4217">USD</ns2:CurrencyCode>
+                                    </ns2:MonetaryAmount>
+                                    <ns2:PriceBasis>
+                                       <ns2:Measurement>
+                                          <ns2:MeasurementValue>1</ns2:MeasurementValue>
+                                          <ns2:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns2:UnitOfMeasureCode>
+                                       </ns2:Measurement>
+                                    </ns2:PriceBasis>
+                                 </ns2:PricingPerUnit>
+                              </ns2:Pricing>
+                           </ns2:ListPrice>
+                        </ns2:PriceSheetPriceData>
+                     </ns2:PriceSheetProductLineItem>
+                     <ns2:PriceSheetProductLineItem Action="Replace">
+                        <ns2:LineNumber>3</ns2:LineNumber>
+                        <ns2:ProductInformation>
+                           <ns2:ProductIdentification>
+                              <ns2:ProductIdentifier Agency="UPC">888346594762</ns2:ProductIdentifier>
+                              <ns2:ProductDescription>DKS33-07 50# Concep/Poncho</ns2:ProductDescription>
+                              <ns2:ProductClassification>S</ns2:ProductClassification>
+                           </ns2:ProductIdentification>
+                        </ns2:ProductInformation>
+                        <ns2:ProductInformation>
+                           <ns2:ProductIdentification>
+                              <ns2:ProductIdentifier Agency="AssignedBySeller">000000000012567202</ns2:ProductIdentifier>
+                              <ns2:ProductDescription>DKS33-07 50# Concep/Poncho</ns2:ProductDescription>
+                              <ns2:ProductClassification>S</ns2:ProductClassification>
+                           </ns2:ProductIdentification>
+                        </ns2:ProductInformation>
+                        <ns2:ProductInformation>
+                           <ns2:ProductIdentification>
+                              <ns2:ProductIdentifier Agency="AGIIS-ProductID">00888346594762</ns2:ProductIdentifier>
+                              <ns2:ProductDescription>DKS33-07 50# Concep/Poncho</ns2:ProductDescription>
+                              <ns2:ProductClassification>S</ns2:ProductClassification>
+                           </ns2:ProductIdentification>
+                        </ns2:ProductInformation>
+                        <ns2:PriceSheetPriceData>
+                           <ns2:PriceApplicabilityCriteria>
+                              <ns2:OrderFeatures>
+                                 <ns2:PriceSheetEffectiveDate>
+                                    <ns2:DateTimeInformation>
+                                       <ns2:DateTimeRange>
+                                          <ns2:FromDateTime>2020-09-01T00:00:00.000-05:00</ns2:FromDateTime>
+                                          <ns2:ToDateTime>2022-08-31T00:00:00.000-05:00</ns2:ToDateTime>
+                                       </ns2:DateTimeRange>
+                                    </ns2:DateTimeInformation>
+                                 </ns2:PriceSheetEffectiveDate>
+                              </ns2:OrderFeatures>
+                              <ns2:ProductFeatures>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">ACRONYMNAME</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>DKS33-07</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TRAIT</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>S00</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TRAITDESCRIPTION</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>CONV</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">BASEUOM</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>BG</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">RELATIVEMATURITY</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>M-E</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">GRADESIZE</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>N/A</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TREATMENT</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>CP</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">TREATMENTDESCRIPTION</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>Concep/Poncho</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">QUANTITYMULTIPLIER</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>1</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                                 <ns2:ProductAttribute>
+                                    <ns2:ProductAttributeName Agency="AssignedBySeller">QUANTITYMULTIPLIERDESCRIPTION</ns2:ProductAttributeName>
+                                    <ns2:ProductAttributeValue>ORDER QUANTITY SHOULD BE IN MULTIPLES OF 1</ns2:ProductAttributeValue>
+                                 </ns2:ProductAttribute>
+                              </ns2:ProductFeatures>
+                              <ns2:GeographicFeatures>
+                                 <ns2:Location>
+                                    <ns2:LocationType>Destination</ns2:LocationType>
+                                    <ns2:ZoneID/>
+                                 </ns2:Location>
+                              </ns2:GeographicFeatures>
+                           </ns2:PriceApplicabilityCriteria>
+                           <ns2:ListPrice>
+                              <ns2:Pricing PriceType="SuggestedGrowerOrEndUserPrice">
+                                 <ns2:PricingPerUnit>
+                                    <ns2:MonetaryAmount>
+                                       <ns2:MonetaryValue>118.00</ns2:MonetaryValue>
+                                       <ns2:CurrencyCode Domain="ISO-4217">USD</ns2:CurrencyCode>
+                                    </ns2:MonetaryAmount>
+                                    <ns2:PriceBasis>
+                                       <ns2:Measurement>
+                                          <ns2:MeasurementValue>1</ns2:MeasurementValue>
+                                          <ns2:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns2:UnitOfMeasureCode>
+                                       </ns2:Measurement>
+                                    </ns2:PriceBasis>
+                                 </ns2:PricingPerUnit>
+                              </ns2:Pricing>
+                              <ns2:Pricing PriceType="SuggestedDealerOrRetailerPrice">
+                                 <ns2:PricingPerUnit>
+                                    <ns2:MonetaryAmount>
+                                       <ns2:MonetaryValue>103.84</ns2:MonetaryValue>
+                                       <ns2:CurrencyCode Domain="ISO-4217">USD</ns2:CurrencyCode>
+                                    </ns2:MonetaryAmount>
+                                    <ns2:PriceBasis>
+                                       <ns2:Measurement>
+                                          <ns2:MeasurementValue>1</ns2:MeasurementValue>
+                                          <ns2:UnitOfMeasureCode Domain="UN-Rec-20">BG</ns2:UnitOfMeasureCode>
+                                       </ns2:Measurement>
+                                    </ns2:PriceBasis>
+                                 </ns2:PricingPerUnit>
+                              </ns2:Pricing>
+                           </ns2:ListPrice>
+                        </ns2:PriceSheetPriceData>
+                     </ns2:PriceSheetProductLineItem>
+                  </ns2:PriceSheetDetails>
+               </ns2:PriceSheetBody>
+            </ns2:PriceSheet>
+         </urn:xmlPayload>
+      </urn:outboundData>
+   </soapenv:Body>
+</soapenv:Envelope>

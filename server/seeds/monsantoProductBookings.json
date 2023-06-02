@@ -1,0 +1,93 @@
+[
+  {
+    "type": "Changed",
+    "orderNumber": "1000",
+    "orderTypeCode": "KN",
+    "orderTypeCodeDomain": "ANSI-ASC-X12-92",
+    "orderIssuedDate": "2019-07-31T03:47:54Z",
+    "salesOrderReference": "0611583652",
+    "BuyerId": "1100032937530",
+    "SellerId": "0062668030000",
+    "ShipToId": "1100031728863",
+    "SoldToId": "1100032937530",
+    "PayerId": "1100032937530",
+    "products": [
+      {
+        "lineNumber": "000010",
+        "lineItemType": "Sale",
+        "orderLineItemNumber": "000001",
+        "quantityValue": 50,
+        "QuantityMeasureId": 1,
+        "potentialShipDateTime": "2019-06-03T00:00:00Z",
+        "MonsantoProductLineItemId": "00883580763448",
+        "productIdAgency": "AGIIS-ProductID"
+      },
+      {
+        "lineNumber": "000020",
+        "lineItemType": "Sale",
+        "orderLineItemNumber": "000004",
+        "quantityValue": 25,
+        "QuantityMeasureId": 2,
+        "potentialShipDateTime": "2019-06-03T00:00:00Z",
+        "MonsantoProductLineItemId": "00888346313967",
+        "productIdAgency": "AGIIS-ProductID"
+      },
+      {
+        "lineNumber": "000030",
+        "lineItemType": "Sale",
+        "orderLineItemNumber": "000005",
+        "quantityValue": 10,
+        "QuantityMeasureId": 2,
+        "potentialShipDateTime": "2019-06-03T00:00:00Z",
+        "MonsantoProductLineItemId": "00883580952880",
+        "productIdAgency": "AGIIS-ProductID"
+      }
+    ]
+  },
+
+  {
+    "type": "Changed",
+    "orderNumber": "2000",
+    "orderTypeCode": "KN",
+    "orderTypeCodeDomain": "ANSI-ASC-X12-92",
+    "orderIssuedDate": "2019-07-31T03:47:54Z",
+    "salesOrderReference": "0611583653",
+    "BuyerId": "1100032937530",
+    "SellerId": "0062668030000",
+    "ShipToId": "1100031728863",
+    "SoldToId": "1100032937530",
+    "PayerId": "1100032937530",
+    "products": [
+      {
+        "lineNumber": "000010",
+        "lineItemType": "Sale",
+        "orderLineItemNumber": "000001",
+        "quantityValue": 50,
+        "QuantityMeasureId": 1,
+        "potentialShipDateTime": "2019-06-03T00:00:00Z",
+        "MonsantoProductLineItemId": "00883580073417",
+        "productIdAgency": "AGIIS-ProductID"
+      },
+      {
+        "lineNumber": "000020",
+        "lineItemType": "Sale",
+        "orderLineItemNumber": "000004",
+        "quantityValue": 25,
+        "QuantityMeasureId": 2,
+        "potentialShipDateTime": "2019-06-03T00:00:00Z",
+        "MonsantoProductLineItemId": "00883580392754",
+        "productIdAgency": "AGIIS-ProductID"
+      },
+      {
+        "lineNumber": "000030",
+        "lineItemType": "Sale",
+        "orderLineItemNumber": "000005",
+        "quantityValue": 10,
+        "QuantityMeasureId": 2,
+        "potentialShipDateTime": "2019-06-03T00:00:00Z",
+        "MonsantoProductLineItemId": "00883580399388",
+        "productIdAgency": "AGIIS-ProductID"
+      }
+    ]
+  }
+]

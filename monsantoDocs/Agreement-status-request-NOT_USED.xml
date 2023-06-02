@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:urn1="urn:cidx:names:specification:ces:schema:all:5:3" xmlns:urn="urn:aggateway:names:ws:docexchange" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-BAFF8E68A8D786C41314389777816581">
+				<wsse:Username>3350963</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">USITsup$3</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soapenv:Header>
+	<soapenv:Body>
+		<urn:inboundData>
+			<urn:businessProcess>LicenseStatus53WS</urn:businessProcess>
+			<urn:processStep>LicenseStatusRequest</urn:processStep>
+			<urn:partnerId>1100011111111</urn:partnerId>
+			<urn:partnerType>AGIIS-EBID</urn:partnerType>
+			<urn:conversationId />
+			<urn:messageId>12345LicenseStatus53WS_001_EXAMPLE</urn:messageId>
+			<urn:xmlPayload>
+				<urn1:AgreementStatusRequest>
+					<urn1:Header>
+						<urn1:ThisDocumentIdentifier>
+							<urn1:DocumentIdentifier>ABCD12345XYZ</urn1:DocumentIdentifier>
+						</urn1:ThisDocumentIdentifier>
+						<urn1:ThisDocumentDateTime>
+							<urn1:DateTime DateTimeQualifier="On">2017-01-05T09:08:55.0454088-05:00</urn1:DateTime>
+						</urn1:ThisDocumentDateTime>
+						<urn1:From>
+							<urn1:PartnerInformation>
+								<urn1:PartnerName>SHAWN SULLIVAN</urn1:PartnerName>
+								<urn1:PartnerIdentifier Agency="GLN">1100032937530</urn1:PartnerIdentifier>
+							</urn1:PartnerInformation>
+						</urn1:From>
+						<urn1:To>
+							<urn1:PartnerInformation>
+								<urn1:PartnerName>MONSANTO AGRICULTURAL CO</urn1:PartnerName>
+								<urn1:PartnerIdentifier Agency="GLN">1100027565809</urn1:PartnerIdentifier>
+							</urn1:PartnerInformation>
+						</urn1:To>
+					</urn1:Header>
+			
+					<urn1:AgreementStatusRequestBody>
+						<urn1:AgreementStatusRequestPartners>
+							<urn1:Buyer>
+								<urn1:PartnerInformation>
+									<urn1:PartnerName>SHAWN SULLIVAN</urn1:PartnerName>
+									<urn1:PartnerIdentifier Agency="GLN">1100032937530</urn1:PartnerIdentifier>
+								</urn1:PartnerInformation>
+							</urn1:Buyer>
+							<urn1:Seller>
+								<urn1:PartnerInformation>
+									<urn1:PartnerName>MONSANTO AGRICULTURAL CO</urn1:PartnerName>
+									<urn1:PartnerIdentifier Agency="GLN">1100027565809</urn1:PartnerIdentifier>
+								</urn1:PartnerInformation>
+							</urn1:Seller>
+							<urn1:ShipTo>
+								<urn1:PartnerInformation>
+									<urn1:PartnerName>BOYD GIGAX</urn1:PartnerName>
+									<urn1:PartnerIdentifier Agency="GLN">1100031728863</urn1:PartnerIdentifier>
+								</urn1:PartnerInformation>
+							</urn1:ShipTo>
+						</urn1:AgreementStatusRequestPartners>
+					</urn1:AgreementStatusRequestBody>
+				
+				</urn1:AgreementStatusRequest>
+			</urn:xmlPayload>
+		</urn:inboundData>
+	</soapenv:Body>
+</soapenv:Envelope>

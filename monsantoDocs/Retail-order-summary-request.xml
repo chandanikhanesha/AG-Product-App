@@ -1,0 +1,86 @@
+<soapenv:Envelope xmlns:urn1="urn:cidx:names:specification:ces:schema:all:5:3" xmlns:urn="urn:aggateway:names:ws:docexchange" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-BAFF8E68A8D786C41314389777816581">
+        <wsse:Username>3350963</wsse:Username>
+        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">USITsup$3</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soapenv:Header>
+  <soapenv:Body>
+    <urn:inboundData>
+      <urn:businessProcess>RetailerOrderSummaryWS53</urn:businessProcess>
+      <urn:processStep>RetailerOrderSummaryRequest</urn:processStep>
+      <urn:partnerId>1100032937530</urn:partnerId>
+      <urn:partnerType>AGIIS-EBID</urn:partnerType>
+      <urn:conversationId />
+      <urn:messageId>RetailerOrderSummaryWS53_001</urn:messageId>
+      <urn:xmlPayload>
+        <ns:RetailerOrderSummaryRequest Version="5.3" xmlns:ns="urn:cidx:names:specification:ces:schema:all:5:3">
+          <ns:Header>
+            <ns:ThisDocumentIdentifier>
+              <ns:DocumentIdentifier>TEST0001</ns:DocumentIdentifier>
+            </ns:ThisDocumentIdentifier>
+            <ns:ThisDocumentDateTime>
+              <ns:DateTime DateTimeQualifier="On">2019-06-03T01:40:32-05:00</ns:DateTime>
+            </ns:ThisDocumentDateTime>
+            <ns:From>
+              <ns:PartnerInformation>
+                <ns:PartnerName>SHAWN SULLIVAN SEED</ns:PartnerName>
+                <ns:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</ns:PartnerIdentifier>
+                <ns:ContactInformation>
+                  <ns:ContactName>WS-XML</ns:ContactName>
+                  <ns:ContactDescription>DataSource</ns:ContactDescription>
+                </ns:ContactInformation>
+                <ns:ContactInformation>
+                  <ns:ContactName>MerchantAg</ns:ContactName>
+                  <ns:ContactDescription>SoftwareName</ns:ContactDescription>
+                </ns:ContactInformation>
+                <ns:ContactInformation>
+                  <ns:ContactName>2019</ns:ContactName>
+                  <ns:ContactDescription>SeedYear</ns:ContactDescription>
+                </ns:ContactInformation>
+                <ns:ContactInformation>
+                  <ns:ContactName>1.0.0</ns:ContactName>
+                  <ns:ContactDescription>SoftwareVersion</ns:ContactDescription>
+                </ns:ContactInformation>
+              </ns:PartnerInformation>
+            </ns:From>
+            <ns:To>
+              <ns:PartnerInformation>
+                <ns:PartnerName>MONSANTO AGRICULTURAL CO</ns:PartnerName>
+                <ns:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</ns:PartnerIdentifier>
+              </ns:PartnerInformation>
+            </ns:To>
+          </ns:Header>
+          <ns:RetailerOrderSummaryRequestBody>
+            <ns:RetailerOrderSummaryRequestProperties/>
+            <!-- EVERYTHING IS CONSTANT EXCEPT THE BUYER FIELD; THAT SHOULD HAVE SEED DEALER INFO-->
+            <ns:RetailerOrderSummaryRequestPartners>
+              <ns:Buyer>
+                <ns:PartnerInformation>
+                  <ns:PartnerName>SHAWN SULLIVAN SEED</ns:PartnerName>
+                  <ns:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</ns:PartnerIdentifier>
+                  <ns:AddressInformation>
+                    <ns:AddressLine>74971 AVENUE 358</ns:AddressLine>
+                    <ns:CityName>WALLACE</ns:CityName>
+                    <ns:StateOrProvince>NE</ns:StateOrProvince>
+                    <ns:PostalCode>69169</ns:PostalCode>
+                    <ns:PostalCountry>US</ns:PostalCountry>
+                  </ns:AddressInformation>
+                </ns:PartnerInformation>
+              </ns:Buyer>
+              <ns:Seller>
+                <ns:PartnerInformation>
+                  <ns:PartnerName>MONSANTO AGRICULTURAL CO</ns:PartnerName>
+                  <ns:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</ns:PartnerIdentifier>
+                </ns:PartnerInformation>
+              </ns:Seller>
+            </ns:RetailerOrderSummaryRequestPartners>
+            <ns:RetailerOrderSummaryRequestDetails/>
+          </ns:RetailerOrderSummaryRequestBody>
+        </ns:RetailerOrderSummaryRequest>
+      </urn:xmlPayload>
+    </urn:inboundData>
+  </soapenv:Body>
+</soapenv:Envelope>

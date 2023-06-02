@@ -1,0 +1,22 @@
+FROM node:14.20.0 as builder
+
+RUN echo "deb http://deb.debian.org/debian jessie main\ndeb http://security.debian.org jessie/updates main" > /etc/apt/sources.list
+
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash
+
+WORKDIR /app
+
+COPY . .
+
+# API URL
+ENV REACT_APP_ZONES='{ "CROP": "CORN", "ZONEID": "A0", "ZONENAME": "ZONE 10" };{ "CROP": "CORN", "ZONEID": "A1", "ZONENAME": "ZONE 1" };{ "CROP": "CORN", "ZONEID": "A2", "ZONENAME": "ZONE 2" };{ "CROP": "CORN", "ZONEID": "A3", "ZONENAME": "ZONE 3" };{ "CROP": "CORN", "ZONEID": "A4", "ZONENAME": "ZONE 4" };{ "CROP": "CORN", "ZONEID": "A5", "ZONENAME": "ZONE 5" };{ "CROP": "CORN", "ZONEID": "A6", "ZONENAME": "ZONE 6" };{ "CROP": "CORN", "ZONEID": "A7", "ZONENAME": "ZONE 7" };{ "CROP": "CORN", "ZONEID": "A8", "ZONENAME": "ZONE 8" };{ "CROP": "CORN", "ZONEID": "A9", "ZONENAME": "ZONE 9" };{ "CROP": "CORN", "ZONEID": "AA", "ZONENAME": "ZONE 11" };{ "CROP": "CORN", "ZONEID": "AB", "ZONENAME": "ZONE 12" };{ "CROP": "CORN", "ZONEID": "AD", "ZONENAME": "ZONE 13" };{ "CROP": "CORN", "ZONEID": "AF", "ZONENAME": "ZONE 14" };{ "CROP": "CORN", "ZONEID": "AH", "ZONENAME": "ZONE 15" };{ "CROP": "CORN", "ZONEID": "AJ", "ZONENAME": "ZONE 16" };{ "CROP": "CORN", "ZONEID": "AL", "ZONENAME": "ZONE 17" };{ "CROP": "CANOLA", "ZONEID": "*", "ZONENAME": "NO ZONE" };{ "CROP": "SORGHUM", "ZONEID": "*", "ZONENAME": "NO ZONE" };{ "CROP": "SOYABEAN", "ZONEID": "*", "ZONENAME": "NO ZONE" };{ "CROP": "ALFALFA", "ZONEID": "AE", "ZONENAME": "EAST 1" };{ "CROP": "ALFALFA", "ZONEID": "AW", "ZONENAME": "WEST 1" }'
+ENV REACT_APP_DO_BUCKET='https://agridealerspaces.sfo2.digitaloceanspaces.com'
+ENV REACT_APP_API_BASE='https://api.2023prod.agridealer.app/api'
+RUN yarn install && yarn build
+
+# -------------
+
+FROM nginx
+
+COPY ./ad_nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/build /usr/share/nginx/html

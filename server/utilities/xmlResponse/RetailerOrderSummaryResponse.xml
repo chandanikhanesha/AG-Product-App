@@ -1,0 +1,2261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ag:outboundData xmlns:ag="urn:aggateway:names:ws:docexchange">
+         <ag:processStep>RetailerOrderSummaryResponse</ag:processStep>
+         <ag:messageId>ba227431-d478-459e-8f38-cec3207857e4</ag:messageId>
+         <ag:xmlPayload>
+            <RetailerOrderSummaryReport xmlns="urn:cidx:names:specification:ces:schema:all:5:3" Version="5.3">
+               <Header>
+                  <ThisDocumentIdentifier>
+                     <DocumentIdentifier>ed6fa840-7cb6-4d6b-a5ca-8f4a8c78332a</DocumentIdentifier>
+                  </ThisDocumentIdentifier>
+                  <ThisDocumentDateTime>
+                     <DateTime DateTimeQualifier="On">2022-04-22T05:01:17.129Z</DateTime>
+                  </ThisDocumentDateTime>
+                  <From>
+                     <PartnerInformation>
+                        <PartnerName>BAYER COMPANY</PartnerName>
+                        <PartnerIdentifier Agency="AGIIS-EBID">0062668030000</PartnerIdentifier>
+                     </PartnerInformation>
+                  </From>
+                  <To>
+                     <PartnerInformation>
+                        <PartnerName>hemaxi's Farm</PartnerName>
+                        <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                     </PartnerInformation>
+                  </To>
+               </Header>
+               <RetailerOrderSummaryReportBody>
+                  <RetailerOrderSummaryReportProperties>
+                     <CurrencyCode Domain="ISO-4217">USD</CurrencyCode>
+                     <LanguageCode Domain="ISO-639-2T">Eng</LanguageCode>
+                     <LastRequestDate>
+                        <DateTime DateTimeQualifier="On">2022-04-22T05:01:28.457</DateTime>
+                     </LastRequestDate>
+                     <ZoneID>0</ZoneID>
+                     <ProductClassification>0</ProductClassification>
+                  </RetailerOrderSummaryReportProperties>
+                  <RetailerOrderSummaryReportPartners>
+                     <Buyer>
+                        <PartnerInformation>
+                           <PartnerName>SHAWN SULLIVAN SEED WALLACE NE</PartnerName>
+                           <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                        </PartnerInformation>
+                     </Buyer>
+                     <Seller>
+                        <PartnerInformation>
+                           <PartnerName>BAYER CROP SCIENCE</PartnerName>
+                           <PartnerIdentifier Agency="AGIIS-EBID">0062668030000</PartnerIdentifier>
+                        </PartnerInformation>
+                     </Seller>
+                  </RetailerOrderSummaryReportPartners>
+                  <RetailerOrderSummaryReportDetails>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>1</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00883580684262</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>125.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>2</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00883580684279</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>1065.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>3</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00883580684293</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>9.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>4</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00883580684309</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>41.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>5</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00883580684439</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>33.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>6</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00883580684446</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>45.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>7</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346158643</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>40.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>8</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346158605</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>22.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>9</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346280962</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>22.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>10</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346084119</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>2294.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>11</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346154881</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>80.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>12</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346594762</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>54.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>13</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346319587</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>100.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>100.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>14</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00190794477479</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>40.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>15</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346319624</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>50.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>16</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346319655</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>60.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>23.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>17</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346329173</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>54.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>18</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346329180</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>50.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>19</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346335181</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>48.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>20</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346335662</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>13.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>21</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346592737</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>33.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>22</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346593161</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>60.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>18.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>23</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346593178</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>65.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>15.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>10.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>24</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346593192</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>35.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>25</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346666230</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>2091.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>530.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>26</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346666261</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>212.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>6.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>27</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346666278</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>90.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>28</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346666285</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>450.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>29</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346666308</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>50.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>30</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346671722</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>65.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>31</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346699672</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>270.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>32</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346699696</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>240.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">F3</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">F3</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">F3</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">F3</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">F3</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">F3</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">F3</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">F3</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>33</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346750892</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>120.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>34</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00888346806803</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>12.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>35</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00190794008211</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>240.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>36</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00190794008372</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>1262.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>37</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00190794008464</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>40.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>38</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00190794009829</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>40.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>39</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00190794010733</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>39.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">BG</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                     <RetailerOrderSummaryReportProductLineItem>
+                        <LineNumber>40</LineNumber>
+                        <ProductIdentification>
+                           <ProductIdentifier Agency="AGIIS-ProductID">00190794010924</ProductIdentifier>
+                        </ProductIdentification>
+                        <TotalRetailerProductQuantity>
+                           <Measurement>
+                              <MeasurementValue>40.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TotalRetailerProductQuantity>
+                        <ShippedQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ShippedQuantity>
+                        <ScheduledToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0.000</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ScheduledToShipQuantity>
+                        <BalanceToShipQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </BalanceToShipQuantity>
+                        <PositionQuantity>
+                           <LongShortPositionType>Zero</LongShortPositionType>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </PositionQuantity>
+                        <TransfersInQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersInQuantity>
+                        <TransfersOutQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </TransfersOutQuantity>
+                        <ReturnsQuantity>
+                           <Measurement>
+                              <MeasurementValue>0</MeasurementValue>
+                              <UnitOfMeasureCode Domain="UN-Rec-20">UN</UnitOfMeasureCode>
+                           </Measurement>
+                        </ReturnsQuantity>
+                     </RetailerOrderSummaryReportProductLineItem>
+                  </RetailerOrderSummaryReportDetails>
+               </RetailerOrderSummaryReportBody>
+            </RetailerOrderSummaryReport>
+         </ag:xmlPayload>
+      </ag:outboundData>
+   </soapenv:Body>
+</soapenv:Envelope>

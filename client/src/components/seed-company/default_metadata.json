@@ -1,0 +1,57 @@
+{
+  "corn": {
+    "brand": true,
+    "blend": true,
+    "rm": true,
+    "treatment": true,
+    "msrp": true,
+    "seedCompany": true,
+    "grower": true,
+    "longShort": true,
+    "qtyWarehouse": true
+  },
+  "soybean": {
+    "brand": true,
+    "blend": true,
+    "rm": false,
+    "treatment": true,
+    "msrp": true,
+    "seedCompany": true,
+    "grower": true,
+    "longShort": true,
+    "qtyWarehouse": true
+  },
+  "sorghum": {
+    "brand": false,
+    "blend": true,
+    "rm": false,
+    "treatment": true,
+    "msrp": true,
+    "seedCompany": true,
+    "grower": true,
+    "longShort": true,
+    "qtyWarehouse": true
+  },
+  "canola": {
+    "brand": true,
+    "blend": true,
+    "rm": true,
+    "treatment": true,
+    "msrp": true,
+    "seedCompany": true,
+    "grower": true,
+    "longShort": true,
+    "qtyWarehouse": true
+  },
+  "alfalfa": {
+    "brand": true,
+    "blend": true,
+    "rm": true,
+    "treatment": true,
+    "msrp": true,
+    "seedCompany": true,
+    "grower": true,
+    "longShort": true,
+    "qtyWarehouse": true
+  }
+}

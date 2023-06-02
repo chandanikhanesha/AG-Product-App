@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic/check_box</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19,3.5 L5,3.5 C3.89,3.5 3,4.4 3,5.5 L3,19.5 C3,20.6 3.89,21.5 5,21.5 L19,21.5 C20.11,21.5 21,20.6 21,19.5 L21,5.5 C21,4.4 20.11,3.5 19,3.5 Z M10,17.5 L5,12.5 L6.41,11.09 L10,14.67 L17.59,7.08 L19,8.5 L10,17.5 Z" id="path-1"></path>
+    </defs>
+    <g id="ic/check_box" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Shape" fill="#38A154" xlink:href="#path-1"></use>
+    </g>
+</svg>

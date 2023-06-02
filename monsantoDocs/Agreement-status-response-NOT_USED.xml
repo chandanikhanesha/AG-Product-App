@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body xmlns:urn="http://schemas.xmlsoap.org/soap/envelope/">
+        <urn:outboundData xmlns:urn="urn:aggateway:names:ws:docexchange">
+            <urn:processStep>LicenseStatusResponse</urn:processStep>
+            <urn:messageId/>
+            <urn:xmlPayload>
+                <AgreementStatusResponse xmlns="urn:cidx:names:specification:ces:schema:all:5:3"
+                                     xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+                    <Header>
+                        <ThisDocumentIdentifier>
+                            <DocumentIdentifier>ABCD12345XYZ</DocumentIdentifier>
+                        </ThisDocumentIdentifier>
+                        <ThisDocumentDateTime>
+                            <DateTime DateTimeQualifier="On">2019-10-14T13:33:37.491-05:00</DateTime>
+                        </ThisDocumentDateTime>
+                        <From>
+                            <PartnerInformation>
+                                <PartnerName>MONSANTO AGRICULTURAL CO</PartnerName>
+                                <PartnerIdentifier Agency="GLN">1100027565809</PartnerIdentifier>
+                                <PartnerIdentifier Agency="AssignedBySeller">482544</PartnerIdentifier>
+                                <PartnerIdentifier Agency="AGIIS-EBID">0062668030000</PartnerIdentifier>
+                            </PartnerInformation>
+                        </From>
+                        <To>
+                            <PartnerInformation>
+                                <PartnerName>SHAWN SULLIVAN SEED WALLACE NE </PartnerName>
+                                <PartnerIdentifier Agency="GLN">1100032937530</PartnerIdentifier>
+                                <PartnerIdentifier Agency="AssignedBySeller">50835965</PartnerIdentifier>
+                                <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                            </PartnerInformation>
+                        </To>
+                    </Header>
+                    <AgreementStatusResponseBody>
+                        <AgreementStatusResponsePartners>
+                            <Buyer>
+                                <PartnerInformation>
+                                    <PartnerName>SHAWN SULLIVAN SEED WALLACE NE </PartnerName>
+                                    <PartnerIdentifier Agency="GLN">1100032937530</PartnerIdentifier>
+                                    <PartnerIdentifier Agency="AssignedBySeller">50835965</PartnerIdentifier>
+                                    <PartnerIdentifier Agency="AGIIS-EBID">1100032937530</PartnerIdentifier>
+                                </PartnerInformation>
+                            </Buyer>
+                            <Seller>
+                                <PartnerInformation>
+                                    <PartnerName>MONSANTO COMPANY KERRY SHADLEY</PartnerName>
+                                    <PartnerIdentifier Agency="GLN">1100027565809</PartnerIdentifier>
+                                    <PartnerIdentifier Agency="AssignedBySeller">482544</PartnerIdentifier>
+                                </PartnerInformation>
+                            </Seller>
+                            <ShipTo>
+                                <PartnerInformation>
+                                    <PartnerName>BOYD B GIGAX </PartnerName>
+                                    <PartnerIdentifier Agency="GLN">1100031728863</PartnerIdentifier>
+                                    <PartnerIdentifier Agency="AssignedBySeller">902832</PartnerIdentifier>
+                                </PartnerInformation>
+                            </ShipTo>
+                        </AgreementStatusResponsePartners>
+                        <AgreementStatusResponseProperties>
+                            <AgreementStatusList>
+                                <LicenseNumber>902832</LicenseNumber>
+                                <AgreementName>MTA2</AgreementName>
+                                <AgreementStatus>Licensed</AgreementStatus>
+                                <Zone>
+                                    <ProductClassification>A</ProductClassification>
+                                    <ProductDescription>ALFALFA</ProductDescription>
+                                    <ZoneID>AE</ZoneID>
+                                    <ZoneType>Roundup Ready Alfalfa Pricing Zones 2016,2017,2018,2019 and 2020</ZoneType>
+                                    <ZoneName>East</ZoneName>
+                                </Zone>
+                            </AgreementStatusList>
+                            <AgreementStatusList>
+                                <LicenseNumber>902832</LicenseNumber>
+                                <AgreementName>MTA2</AgreementName>
+                                <AgreementStatus>Licensed</AgreementStatus>
+                                <Zone>
+                                    <ProductClassification>B</ProductClassification>
+                                    <ProductDescription>SOYBEAN</ProductDescription>
+                                    <ZoneID>S2</ZoneID>
+                                    <ZoneType>Soybean Pricing Zones</ZoneType>
+                                    <ZoneName>No Zone</ZoneName>
+                                </Zone>
+                            </AgreementStatusList>
+                            <AgreementStatusList>
+                                <LicenseNumber>902832</LicenseNumber>
+                                <AgreementName>MTA2</AgreementName>
+                                <AgreementStatus>Licensed</AgreementStatus>
+                                <Zone>
+                                    <ProductClassification>C</ProductClassification>
+                                    <ProductDescription>CORN</ProductDescription>
+                                    <ZoneID>AB</ZoneID>
+                                    <ZoneType>Corn Rootworm Zones 2014, 2015, 2016, and 2017</ZoneType>
+                                    <ZoneName>Zone 12</ZoneName>
+                                </Zone>
+                            </AgreementStatusList>
+                        </AgreementStatusResponseProperties>
+                    </AgreementStatusResponseBody>
+                </AgreementStatusResponse>
+            </urn:xmlPayload>
+        </urn:outboundData>
+    </soapenv:Body>
+</soapenv:Envelope>

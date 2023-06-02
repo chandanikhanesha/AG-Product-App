@@ -1,0 +1,279 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <ag:outboundData xmlns:ag="urn:aggateway:names:ws:docexchange">
+         <ag:processStep>ProductBookingWSResponse</ag:processStep>
+         <ag:messageId/>
+         <ag:xmlPayload>
+            <urn:ProductBookingResponse Version="5.3" xmlns:urn="urn:cidx:names:specification:ces:schema:all:5:3">
+               <urn:Header>
+                  <urn:ThisDocumentIdentifier>
+                     <urn:DocumentIdentifier>+c3FpuRIfjQIYkgCFdX+Hw==</urn:DocumentIdentifier>
+                  </urn:ThisDocumentIdentifier>
+                  <urn:ThisDocumentDateTime>
+                     <urn:DateTime DateTimeQualifier="On">2018-04-06T16:01:24Z</urn:DateTime>
+                  </urn:ThisDocumentDateTime>
+                  <urn:From>
+                     <urn:PartnerInformation>
+                        <urn:PartnerName>MONSANTO AGRICULTURAL CO</urn:PartnerName>
+                        <urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+                     </urn:PartnerInformation>
+                  </urn:From>
+                  <urn:To>
+                     <urn:PartnerInformation>
+                        <urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+                        <urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+                     </urn:PartnerInformation>
+                  </urn:To>
+               </urn:Header>
+               <urn:ProductBookingResponseBody>
+                  <urn:ProductBookingResponseProperties>
+                     <urn:ProductBookingOrderNumber>1004</urn:ProductBookingOrderNumber>
+                     <urn:ProductBookingOrderIssuedDate>
+                        <urn:DateTime DateTimeQualifier="On">2018-04-06T20:38:25Z</urn:DateTime>
+                     </urn:ProductBookingOrderIssuedDate>
+                     <urn:LanguageCode Domain="ISO-639-2T">EN</urn:LanguageCode>
+                     <urn:CurrencyCode Domain="ISO-4217">USD</urn:CurrencyCode>
+                     <urn:BuyerSequenceNumber>00000000</urn:BuyerSequenceNumber>
+                     <urn:SoftwareInformation>
+                        <urn:SoftwareSource>Control SS</urn:SoftwareSource>
+                        <urn:SoftwareVersion>1.0.0</urn:SoftwareVersion>
+                     </urn:SoftwareInformation>
+                     <urn:ReferenceInformation ReferenceType="SalesOrderReference">
+                        <urn:DocumentReference>
+                           <urn:DocumentIdentifier>0611380602</urn:DocumentIdentifier>
+                        </urn:DocumentReference>
+                     </urn:ReferenceInformation>
+                  </urn:ProductBookingResponseProperties>
+                  <urn:ProductBookingResponsePartners>
+                     <urn:Buyer>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+                           <urn:AddressInformation>
+                              <urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+                              <urn:CityName>WALLACE</urn:CityName>
+                              <urn:StateOrProvince>NE</urn:StateOrProvince>
+                              <urn:PostalCode>69169</urn:PostalCode>
+                              <urn:PostalCountry>US</urn:PostalCountry>
+                           </urn:AddressInformation>
+                        </urn:PartnerInformation>
+                     </urn:Buyer>
+                     <urn:Seller>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>MONSANTO AGRICULTURAL CO</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</urn:PartnerIdentifier>
+                        </urn:PartnerInformation>
+                     </urn:Seller>
+                     <urn:ShipTo>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>SCOTT WILKEN</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="GLN">1100040077402</urn:PartnerIdentifier>
+                           <urn:AddressInformation>
+                              <urn:AddressLine>470 E 2400 NORTH RD</urn:AddressLine>
+                              <urn:CityName>DANFORTH</urn:CityName>
+                              <urn:StateOrProvince>IL</urn:StateOrProvince>
+                              <urn:PostalCode>60930</urn:PostalCode>
+                              <urn:PostalCountry>US</urn:PostalCountry>
+                           </urn:AddressInformation>
+                        </urn:PartnerInformation>
+                     </urn:ShipTo>
+                     <urn:SoldTo>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+                           <urn:AddressInformation>
+                              <urn:AddressLine>74971 AVENUE 358</urn:AddressLine>
+                              <urn:CityName>WALLACE</urn:CityName>
+                              <urn:StateOrProvince>NE</urn:StateOrProvince>
+                              <urn:PostalCode>69169</urn:PostalCode>
+                              <urn:PostalCountry>US</urn:PostalCountry>
+                           </urn:AddressInformation>
+                        </urn:PartnerInformation>
+                     </urn:SoldTo>
+                     <urn:Payer>
+                        <urn:PartnerInformation>
+                           <urn:PartnerName>SHAWN SULLIVAN SEED</urn:PartnerName>
+                           <urn:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</urn:PartnerIdentifier>
+                        </urn:PartnerInformation>
+                     </urn:Payer>
+                     <urn:OtherPartner/>
+                  </urn:ProductBookingResponsePartners>
+                  <urn:ProductBookingResponseDetails>
+                     <urn:ProductBookingResponseProductLineItem>
+                        <urn:LineNumber>000010</urn:LineNumber>
+                        <urn:LineItemType>Sale</urn:LineItemType>
+                        <urn:ProductBookingOrderLineItemNumber>000001</urn:ProductBookingOrderLineItemNumber>
+                        <urn:ProductIdentification>
+                           <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580841597</urn:ProductIdentifier>
+                        </urn:ProductIdentification>
+                        <urn:ReferenceInformation ReferenceType="ContractNumber">
+                           <urn:DocumentReference>
+                              <urn:DocumentIdentifier>1</urn:DocumentIdentifier>
+                           </urn:DocumentReference>
+                        </urn:ReferenceInformation>
+                        <urn:ProductQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>150.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:ProductQuantity>
+                        <urn:PotentialShipDateTime>
+                           <urn:DateTimeInformation>
+                              <urn:DateTime DateTimeQualifier="On">2018-04-06T00:00:00Z</urn:DateTime>
+                           </urn:DateTimeInformation>
+                        </urn:PotentialShipDateTime>
+                     </urn:ProductBookingResponseProductLineItem>
+                     <urn:ProductBookingResponseProductLineItem>
+                        <urn:LineNumber>000020</urn:LineNumber>
+                        <urn:LineItemType>Sale</urn:LineItemType>
+                        <urn:ProductBookingOrderLineItemNumber>000002</urn:ProductBookingOrderLineItemNumber>
+                        <urn:ProductIdentification>
+                           <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580952811</urn:ProductIdentifier>
+                        </urn:ProductIdentification>
+                        <urn:ReferenceInformation ReferenceType="ContractNumber">
+                           <urn:DocumentReference>
+                              <urn:DocumentIdentifier>1</urn:DocumentIdentifier>
+                           </urn:DocumentReference>
+                        </urn:ReferenceInformation>
+                        <urn:ProductQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>250.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:ProductQuantity>
+                        <urn:PotentialShipDateTime>
+                           <urn:DateTimeInformation>
+                              <urn:DateTime DateTimeQualifier="On">2018-04-06T00:00:00Z</urn:DateTime>
+                           </urn:DateTimeInformation>
+                        </urn:PotentialShipDateTime>
+                     </urn:ProductBookingResponseProductLineItem>
+                     <urn:ProductBookingResponseProductLineItem>
+                        <urn:LineNumber>000030</urn:LineNumber>
+                        <urn:LineItemType>Sale</urn:LineItemType>
+                        <urn:ProductBookingOrderLineItemNumber>000003</urn:ProductBookingOrderLineItemNumber>
+                        <urn:ProductIdentification>
+                           <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953573</urn:ProductIdentifier>
+                        </urn:ProductIdentification>
+                        <urn:ReferenceInformation ReferenceType="ContractNumber">
+                           <urn:DocumentReference>
+                              <urn:DocumentIdentifier>1</urn:DocumentIdentifier>
+                           </urn:DocumentReference>
+                        </urn:ReferenceInformation>
+                        <urn:ProductQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>0</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:ProductQuantity>
+                        <urn:PotentialShipDateTime>
+                           <urn:DateTimeInformation>
+                              <urn:DateTime DateTimeQualifier="On">2018-04-06T00:00:00Z</urn:DateTime>
+                           </urn:DateTimeInformation>
+                        </urn:PotentialShipDateTime>
+                     </urn:ProductBookingResponseProductLineItem>
+                  </urn:ProductBookingResponseDetails>
+                  <urn:RetailerOrderImpactSummary>
+                     <urn:RetailerResponseSummaryProductLineItem>
+                        <urn:ProductIdentification>
+                           <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580841597</urn:ProductIdentifier>
+                           <urn:ProductName>DKC64-87RIB AF SS SP50 BAS500</urn:ProductName>
+                        </urn:ProductIdentification>
+                        <urn:IncreaseDecreaseRetailerProductQuantity>
+                           <urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>0</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">SSU</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:IncreaseDecreaseRetailerProductQuantity>
+                        <urn:TotalRetailerOrderedProductQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>0.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalRetailerOrderedProductQuantity>
+                        <urn:TotalBookingDemandQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>200.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalBookingDemandQuantity>
+                        <urn:TotalLongShortPosition>
+                           <urn:LongShortPositionType>Short</urn:LongShortPositionType>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>-200.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">SSU</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalLongShortPosition>
+                     </urn:RetailerResponseSummaryProductLineItem>
+                     <urn:RetailerResponseSummaryProductLineItem>
+                        <urn:ProductIdentification>
+                           <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580952811</urn:ProductIdentifier>
+                           <urn:ProductName>DKC55-20RIB AF2 SS SP50 BAS500</urn:ProductName>
+                        </urn:ProductIdentification>
+                        <urn:IncreaseDecreaseRetailerProductQuantity>
+                           <urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>0</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">SSU</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:IncreaseDecreaseRetailerProductQuantity>
+                        <urn:TotalRetailerOrderedProductQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>0.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalRetailerOrderedProductQuantity>
+                        <urn:TotalBookingDemandQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>350.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">UN</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalBookingDemandQuantity>
+                        <urn:TotalLongShortPosition>
+                           <urn:LongShortPositionType>Short</urn:LongShortPositionType>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>-350.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">SSU</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalLongShortPosition>
+                     </urn:RetailerResponseSummaryProductLineItem>
+                     <urn:RetailerResponseSummaryProductLineItem>
+                        <urn:ProductIdentification>
+                           <urn:ProductIdentifier Agency="AGIIS-ProductID">00883580953573</urn:ProductIdentifier>
+                           <urn:ProductName>DKC61-54RIB AF2 SS 80M BAS500</urn:ProductName>
+                        </urn:ProductIdentification>
+                        <urn:IncreaseDecreaseRetailerProductQuantity>
+                           <!-- <urn:IncreaseOrDecreaseType>Increase</urn:IncreaseOrDecreaseType> -->
+                           <urn:Measurement>
+                              <urn:MeasurementValue>35.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:IncreaseDecreaseRetailerProductQuantity>
+                        <urn:TotalRetailerOrderedProductQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>20.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalRetailerOrderedProductQuantity>
+                        <urn:TotalBookingDemandQuantity>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>20.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20">BG</urn:UnitOfMeasureCode>
+                           </urn:Measurement>
+                        </urn:TotalBookingDemandQuantity>
+                        <urn:TotalLongShortPosition>
+                           <urn:LongShortPositionType>Short</urn:LongShortPositionType>
+                           <urn:Measurement>
+                              <urn:MeasurementValue>0.000</urn:MeasurementValue>
+                              <urn:UnitOfMeasureCode Domain="UN-Rec-20"/>
+                           </urn:Measurement>
+                        </urn:TotalLongShortPosition>
+                     </urn:RetailerResponseSummaryProductLineItem>
+                  </urn:RetailerOrderImpactSummary>
+               </urn:ProductBookingResponseBody>
+            </urn:ProductBookingResponse>
+         </ag:xmlPayload>
+      </ag:outboundData>
+   </soapenv:Body>
+</soapenv:Envelope>

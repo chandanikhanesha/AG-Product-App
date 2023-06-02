@@ -1,0 +1,78 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:aggateway:names:ws:docexchange">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-3">
+				<wsse:Username>3350963</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">USITsup$3</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soapenv:Header>
+	<soapenv:Body>
+		<urn:inboundData>
+			<urn:businessProcess>PriceSheetWS</urn:businessProcess>
+			<urn:processStep>PriceSheetRequest</urn:processStep>
+			<urn:partnerId>1100032937530</urn:partnerId>
+			<urn:partnerType>AGIIS-EBID</urn:partnerType>
+			<urn:messageId>abc1234-test</urn:messageId>
+			<urn:xmlPayload>
+				<mon:PriceSheetRequest xmlns:cidx="urn:cidx:names:specification:ces:schema:all:5:1:1" xmlns:mon="urn:mon:pricesheetrequest:5:1:1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<cidx:Header>
+						<cidx:ThisDocumentIdentifier>
+							<cidx:DocumentIdentifier>Test1234</cidx:DocumentIdentifier>
+						</cidx:ThisDocumentIdentifier>
+						<cidx:ThisDocumentDateTime>
+							<cidx:DateTime DateTimeQualifier="On">2019-06-03T02:57:59Z</cidx:DateTime>
+						</cidx:ThisDocumentDateTime>
+						<cidx:From>
+							<cidx:PartnerInformation>
+								<cidx:PartnerName>SHAWN SULLIVAN SEED</cidx:PartnerName>
+								<cidx:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</cidx:PartnerIdentifier>
+								<cidx:ContactInformation>
+									<cidx:ContactName>2019</cidx:ContactName>
+									<cidx:ContactDescription>SeedYear</cidx:ContactDescription>
+								</cidx:ContactInformation>
+								<cidx:ContactInformation>
+									<cidx:ContactName>WS-XML</cidx:ContactName>
+									<cidx:ContactDescription>DataSource</cidx:ContactDescription>
+								</cidx:ContactInformation>
+								<cidx:ContactInformation>
+									<cidx:ContactName>AgriDealer</cidx:ContactName>
+									<cidx:ContactDescription>SoftwareName</cidx:ContactDescription>
+								</cidx:ContactInformation>
+								<cidx:ContactInformation>
+									<cidx:ContactName>1.0.0</cidx:ContactName>
+									<cidx:ContactDescription>SoftwareVersion</cidx:ContactDescription>
+								</cidx:ContactInformation>
+							</cidx:PartnerInformation>
+						</cidx:From>
+						<cidx:To>
+							<cidx:PartnerInformation>
+								<cidx:PartnerName>MONSANTO COMPANY</cidx:PartnerName>
+								<cidx:PartnerIdentifier Agency="AGIIS-EBID">0062668030000</cidx:PartnerIdentifier>
+							</cidx:PartnerInformation>
+						</cidx:To>
+					</cidx:Header>
+					<mon:PriceSheetRequestBody>
+						<mon:PriceSheetRequestProperties>
+							<cidx:CurrencyCode Domain="ISO-4217">USD</cidx:CurrencyCode>
+							<cidx:LanguageCode Domain="ISO-639-2T">eng</cidx:LanguageCode>
+							<mon:LastRequestDate>
+								<cidx:DateTime DateTimeQualifier="On">2018-06-01T00:00:00Z</cidx:DateTime>
+							</mon:LastRequestDate>
+							<cidx:ZoneID>*</cidx:ZoneID>
+							<cidx:ProductClassification>B</cidx:ProductClassification>
+						</mon:PriceSheetRequestProperties>
+						<mon:PriceSheetRequestPartners>
+							<cidx:Buyer>
+								<cidx:PartnerInformation>
+									<cidx:PartnerName>SHAWN SULLIVAN SEED </cidx:PartnerName>
+									<cidx:PartnerIdentifier Agency="AGIIS-EBID">1100032937530</cidx:PartnerIdentifier>
+								</cidx:PartnerInformation>
+							</cidx:Buyer>
+						</mon:PriceSheetRequestPartners>
+					</mon:PriceSheetRequestBody>
+				</mon:PriceSheetRequest>
+			</urn:xmlPayload>
+		</urn:inboundData>
+	</soapenv:Body>
+</soapenv:Envelope>
